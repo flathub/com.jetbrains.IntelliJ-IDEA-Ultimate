@@ -18,6 +18,7 @@
     "--talk-name=org.freedesktop.secrets"
   ],
   "modules": [
+    "shared-modules/gtk2/gtk2.json",
     {
       "name": "libsecret",
       "cleanup": [
@@ -44,10 +45,10 @@
       "name": "idea-iu",
       "buildsystem": "simple",
       "build-commands": [
-        "install -Dm0755 -t /app/bin/ apply_extra",
         "install -Dm0755 idea.sh /app/bin/idea",
+        "install -Dm0755 -t /app/bin/ apply_extra",
         "install -Dm0644 -t /app/share/applications/ com.jetbrains.IntelliJ-IDEA-Ultimate.desktop",
-        "install -Dm0644 -t /app/share/icons/hicolor/128x128/apps/ com.jetbrains.IntelliJ-IDEA-Ultimate.png",
+        "install -Dm0644 -t /app/share/icons/hicolor/scalable/apps/ com.jetbrains.IntelliJ-IDEA-Ultimate.svg",
         "install -Dm0644 -t /app/share/metainfo/ com.jetbrains.IntelliJ-IDEA-Ultimate.appdata.xml"
       ],
       "sources": [
@@ -55,9 +56,9 @@
           "type": "extra-data",
           "filename": "ideaIU.tar.gz",
           "only-arches": ["x86_64"],
-          "sha256": "bca38957db9191d8932d79feca899ce4bb4cc8d32d4534de054a6541ac89ab5d",
-          "size": 686646677,
-          "url": "https://download.jetbrains.com/idea/ideaIU-2018.3.tar.gz"
+          "sha256": "d7a1881bf32f41455149fa71bff0f725320cdf2e9fde68226511e50019a48396",
+          "size": 687593174,
+          "url": "https://download.jetbrains.com/idea/ideaIU-2018.3.1.tar.gz"
         },
         {
           "type": "file",
@@ -69,7 +70,7 @@
         },
         {
           "type": "file",
-          "path": "com.jetbrains.IntelliJ-IDEA-Ultimate.png"
+          "path": "com.jetbrains.IntelliJ-IDEA-Ultimate.svg"
         },
         {
           "type": "script",
@@ -84,6 +85,7 @@
         {
           "type": "script",
           "commands": [
+            "ln -s /proc/mounts /etc/mtab",
             "exec env /app/extra/idea-IU/bin/idea.sh \"$@\""
           ],
           "dest-filename": "idea.sh"

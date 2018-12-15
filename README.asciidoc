@@ -27,6 +27,8 @@ $ flatpak uninstall --unused --user
 $ flatpak remote-delete --user flathub
 ----
 
+// git submodule foreach git pull origin master
+
 == Roadmap
 :uri-issues-tracker: https://github.com/flathub/com.jetbrains.IntelliJ-IDEA-Ultimate/issues/
 
