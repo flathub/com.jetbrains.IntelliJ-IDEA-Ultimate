@@ -25,6 +25,7 @@
         "/bin",
         "/include",
         "/lib/*.la",
+        "/lib/debug",
         "/lib/pkgconfig"
       ],
       "config-opts": [
@@ -56,9 +57,9 @@
           "type": "extra-data",
           "filename": "ideaIU.tar.gz",
           "only-arches": ["x86_64"],
-          "sha256": "d7a1881bf32f41455149fa71bff0f725320cdf2e9fde68226511e50019a48396",
-          "size": 687593174,
-          "url": "https://download.jetbrains.com/idea/ideaIU-2018.3.1.tar.gz"
+          "sha256": "885dc4fc4da5a277dcf149d7ab8fcb4ce09d1a8ed14e8e615bf6f817f386b7a4",
+          "size": 687806953,
+          "url": "https://download.jetbrains.com/idea/ideaIU-2018.3.2.tar.gz"
         },
         {
           "type": "file",
@@ -86,7 +87,7 @@
           "type": "script",
           "commands": [
             "ln -s /proc/mounts /etc/mtab",
-            "exec env /app/extra/idea-IU/bin/idea.sh \"$@\""
+            "exec env TMPDIR=${XDG_CACHE_HOME}/tmp/ /app/extra/idea-IU/bin/idea.sh \"$@\""
           ],
           "dest-filename": "idea.sh"
         }
