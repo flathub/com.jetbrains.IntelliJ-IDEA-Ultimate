@@ -37,8 +37,8 @@
       "sources": [
         {
           "type": "archive",
-          "sha256": "f4fa198d4e131f94d9ec84cfeaf6c124245e7ff3c0af11c76cc35332bfae5585",
-          "url": "https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.18.6/libsecret-0.18.6.tar.gz"
+          "sha256": "047a15af3a0eaf3344c10f138fe21561052104abd05d18d85b438e1d002c5ac3",
+          "url": "https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.18.7/libsecret-0.18.7.tar.gz"
         }
       ]
     },
@@ -57,9 +57,9 @@
           "type": "extra-data",
           "filename": "ideaIU.tar.gz",
           "only-arches": ["x86_64"],
-          "sha256": "885dc4fc4da5a277dcf149d7ab8fcb4ce09d1a8ed14e8e615bf6f817f386b7a4",
-          "size": 687806953,
-          "url": "https://download.jetbrains.com/idea/ideaIU-2018.3.2.tar.gz"
+          "sha256": "abd1db899e8536607dffba3f0ab07ab2df0cfb8a254e9fa830cfec419164d422",
+          "size": 687860467,
+          "url": "https://download.jetbrains.com/idea/ideaIU-2018.3.3.tar.gz"
         },
         {
           "type": "file",
