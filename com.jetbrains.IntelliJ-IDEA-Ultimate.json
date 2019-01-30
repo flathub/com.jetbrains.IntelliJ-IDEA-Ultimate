@@ -57,9 +57,9 @@
           "type": "extra-data",
           "filename": "ideaIU.tar.gz",
           "only-arches": ["x86_64"],
-          "sha256": "abd1db899e8536607dffba3f0ab07ab2df0cfb8a254e9fa830cfec419164d422",
-          "size": 687860467,
-          "url": "https://download.jetbrains.com/idea/ideaIU-2018.3.3.tar.gz"
+          "sha256": "3866349090ea295c0ac4f1b77d20c74d8c9647e73e5ad541c61b3dfbfc4ab5f3",
+          "size": 688032482,
+          "url": "https://download.jetbrains.com/idea/ideaIU-2018.3.4.tar.gz"
         },
         {
           "type": "file",
@@ -86,7 +86,6 @@
         {
           "type": "script",
           "commands": [
-            "ln -s /proc/mounts /etc/mtab",
             "exec env TMPDIR=${XDG_CACHE_HOME}/tmp/ /app/extra/idea-IU/bin/idea.sh \"$@\""
           ],
           "dest-filename": "idea.sh"
