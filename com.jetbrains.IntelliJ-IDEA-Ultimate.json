@@ -3,8 +3,8 @@
   "command": "idea",
   "runtime": "org.freedesktop.Sdk",
   "runtime-version": "18.08",
-  "separate-locales": false,
   "sdk": "org.freedesktop.Sdk",
+  "separate-locales": false,
   "finish-args": [
     "--device=all",
     "--device=dri",
@@ -46,20 +46,21 @@
       "name": "idea-iu",
       "buildsystem": "simple",
       "build-commands": [
-        "install -Dm0755 idea.sh /app/bin/idea",
-        "install -Dm0755 -t /app/bin/ apply_extra",
-        "install -Dm0644 -t /app/share/applications/ com.jetbrains.IntelliJ-IDEA-Ultimate.desktop",
-        "install -Dm0644 -t /app/share/icons/hicolor/scalable/apps/ com.jetbrains.IntelliJ-IDEA-Ultimate.svg",
-        "install -Dm0644 -t /app/share/metainfo/ com.jetbrains.IntelliJ-IDEA-Ultimate.appdata.xml"
+        "unzip intellij-idea_logos.zip",
+        "install -D -m0644 logo.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
+        "install -D -m0755 idea.sh /app/bin/idea",
+        "install -D -m0644 -t /app/share/applications/ ${FLATPAK_ID}.desktop",
+        "install -D -m0644 -t /app/share/metainfo/ ${FLATPAK_ID}.appdata.xml",
+        "install -D -m0755 -t /app/bin/ apply_extra"
       ],
       "sources": [
         {
           "type": "extra-data",
           "filename": "ideaIU.tar.gz",
           "only-arches": ["x86_64"],
-          "sha256": "3866349090ea295c0ac4f1b77d20c74d8c9647e73e5ad541c61b3dfbfc4ab5f3",
-          "size": 688032482,
-          "url": "https://download.jetbrains.com/idea/ideaIU-2018.3.4.tar.gz"
+          "sha256": "b696da5c3521638f83891191f3bd9063d30d0b7ea81ad0bf9500f2b41840d078",
+          "size": 688141905,
+          "url": "https://download.jetbrains.com/idea/ideaIU-2018.3.5.tar.gz"
         },
         {
           "type": "file",
@@ -71,7 +72,8 @@
         },
         {
           "type": "file",
-          "path": "com.jetbrains.IntelliJ-IDEA-Ultimate.svg"
+          "sha256": "d43ed7b21751e3950fd70ef02e252544f2a13194f7ea019543ac0d547487fc3a",
+          "url": "https://resources.jetbrains.com/storage/products/intellij-idea/docs/intellij-idea_logos.zip"
         },
         {
           "type": "script",
@@ -85,9 +87,7 @@
         },
         {
           "type": "script",
-          "commands": [
-            "exec env TMPDIR=${XDG_CACHE_HOME}/tmp/ /app/extra/idea-IU/bin/idea.sh \"$@\""
-          ],
+          "commands": ["exec env JAVA_TOOL_OPTIONS=-Djava.io.tmpdir=${XDG_CACHE_HOME}/tmp/ TMPDIR=${XDG_CACHE_HOME}/tmp/ /app/extra/idea-IU/bin/idea.sh \"$@\""],
           "dest-filename": "idea.sh"
         }
       ]
