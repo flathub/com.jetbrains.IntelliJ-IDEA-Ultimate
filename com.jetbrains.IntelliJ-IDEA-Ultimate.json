@@ -58,9 +58,9 @@
           "type": "extra-data",
           "filename": "ideaIU.tar.gz",
           "only-arches": ["x86_64"],
-          "sha256": "b696da5c3521638f83891191f3bd9063d30d0b7ea81ad0bf9500f2b41840d078",
-          "size": 688141905,
-          "url": "https://download.jetbrains.com/idea/ideaIU-2018.3.5.tar.gz"
+          "sha256": "dc1bd00266c295a377a8a97032942cb3a61a045e7b8d09e281238ae0e6a294e8",
+          "size": 688365363,
+          "url": "https://download.jetbrains.com/idea/ideaIU-2018.3.6.tar.gz"
         },
         {
           "type": "file",
