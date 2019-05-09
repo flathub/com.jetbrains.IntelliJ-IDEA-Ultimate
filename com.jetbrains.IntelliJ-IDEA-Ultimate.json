@@ -58,9 +58,9 @@
           "type": "extra-data",
           "filename": "ideaIU.tar.gz",
           "only-arches": ["x86_64"],
-          "sha256": "8b56b2f70d8cea53668943c75b95655efccffe8bc7c6903d9e3ff2018b5af274",
-          "size": 699758759,
-          "url": "https://download.jetbrains.com/idea/ideaIU-2019.1.1.tar.gz"
+          "sha256": "f090f524c01f1a47bdf2d2cfc9dc6be046137466efa14046916eeb9d1467a81b",
+          "size": 700598701,
+          "url": "https://download.jetbrains.com/idea/ideaIU-2019.1.2.tar.gz"
         },
         {
           "type": "file",
