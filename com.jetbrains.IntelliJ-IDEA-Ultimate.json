@@ -6,13 +6,12 @@
   "sdk": "org.freedesktop.Sdk",
   "separate-locales": false,
   "finish-args": [
-    "--device=all",
     "--device=dri",
     "--env=IDEA_JDK=/app/extra/idea-IU/jre64/",
-    "--env=IDEA_VM_OPTIONS=/app/extra/idea-IU/bin/idea64.vmoptions",
     "--filesystem=host",
     "--share=ipc",
     "--share=network",
+    "--socket=wayland",
     "--socket=x11",
     "--talk-name=org.freedesktop.Notifications",
     "--talk-name=org.freedesktop.secrets"
@@ -25,12 +24,10 @@
         "/bin",
         "/include",
         "/lib/*.la",
-        "/lib/debug",
         "/lib/pkgconfig"
       ],
       "config-opts": [
         "--disable-gtk-doc",
-        "--disable-introspection",
         "--disable-manpages",
         "--disable-static"
       ],
@@ -58,9 +55,9 @@
           "type": "extra-data",
           "filename": "ideaIU.tar.gz",
           "only-arches": ["x86_64"],
-          "sha256": "f090f524c01f1a47bdf2d2cfc9dc6be046137466efa14046916eeb9d1467a81b",
-          "size": 700598701,
-          "url": "https://download.jetbrains.com/idea/ideaIU-2019.1.2.tar.gz"
+          "sha256": "e3c19c6ebd99bd78c5e7b14c58362ddb441ad31d56d477ac719e89d367f9e14d",
+          "size": 705826359,
+          "url": "https://download.jetbrains.com/idea/ideaIU-2019.1.3.tar.gz"
         },
         {
           "type": "file",
