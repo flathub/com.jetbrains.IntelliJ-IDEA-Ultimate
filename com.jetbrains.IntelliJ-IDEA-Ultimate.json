@@ -83,7 +83,7 @@
         },
         {
           "type": "script",
-          "commands": ["exec env JAVA_TOOL_OPTIONS=-Djava.io.tmpdir=${XDG_CACHE_HOME}/tmp/ TMPDIR=${XDG_CACHE_HOME}/tmp/ /app/extra/idea-IU/bin/idea.sh \"$@\""],
+          "commands": ["exec env PATH=$PATH:/run/host/usr/bin JAVA_TOOL_OPTIONS=-Djava.io.tmpdir=${XDG_CACHE_HOME}/tmp/ TMPDIR=${XDG_CACHE_HOME}/tmp/ /app/extra/idea-IU/bin/idea.sh \"$@\""],
           "dest-filename": "idea.sh"
         }
       ]
