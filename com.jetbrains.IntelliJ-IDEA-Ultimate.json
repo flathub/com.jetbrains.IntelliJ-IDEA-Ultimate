@@ -84,7 +84,7 @@
             "export JAVA_TOOL_OPTIONS",
             "TMPDIR=${XDG_CACHE_HOME}/tmp/",
             "export TMPDIR",
-            "exec env 'PATH=$PATH:$EXTRA_PATH' /app/extra/idea-IU/bin/idea.sh \"$@\""
+            "exec env \"PATH=${EXTRA_PATH}:${PATH}\" /app/extra/idea-IU/bin/idea.sh \"$@\""
           ],
           "dest-filename": "idea.sh"
         }
