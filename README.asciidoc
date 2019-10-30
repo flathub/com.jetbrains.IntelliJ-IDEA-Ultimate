@@ -9,7 +9,7 @@ clever code completion, on-the-fly code analysis and reliable refactoring tools.
 
 == Build, Install and Run Flatpak (locally)
 
-Assuming `flatpak` and `flatpak-builder` are installed, follow the next steps:
+Assuming `flatpak`, `flatpak-builder`, and `git` are installed, then execute the following commands:
 
 [source,shell]
 ----
