@@ -1,82 +1,90 @@
 {
-  "app-id": "com.jetbrains.IntelliJ-IDEA-Ultimate",
-  "command": "idea",
-  "runtime": "org.freedesktop.Sdk",
-  "runtime-version": "19.08",
-  "sdk": "org.freedesktop.Sdk",
-  "separate-locales": false,
-  "finish-args": [
-    "--device=dri",
-    "--env=IDEA_JDK=/app/extra/idea-IU/jre64",
-    "--filesystem=host",
-    "--filesystem=xdg-run/keyring",
-    "--share=ipc",
-    "--share=network",
-    "--socket=ssh-auth",
-    "--socket=wayland",
-    "--socket=x11",
-    "--talk-name=org.freedesktop.Flatpak",
-    "--talk-name=org.freedesktop.Notifications",
-    "--talk-name=org.freedesktop.secrets"
-  ],
-  "modules": [
-    {
-      "name": "libsecret",
-      "buildsystem": "meson",
-      "config-opts": [
-        "-Dgtk_doc=false",
-        "-Dmanpage=false",
-        "-Dvapi=false"
-      ],
-      "sources": [
+    "app-id": "com.jetbrains.IntelliJ-IDEA-Ultimate",
+    "command": "idea",
+    "runtime": "org.freedesktop.Sdk",
+    "runtime-version": "19.08",
+    "sdk": "org.freedesktop.Sdk",
+    "separate-locales": false,
+    "finish-args": [
+        "--device=dri",
+        "--env=IDEA_JDK=/app/extra/idea-IU/jre64",
+        "--filesystem=host",
+        "--filesystem=xdg-run/keyring",
+        "--share=ipc",
+        "--share=network",
+        "--socket=ssh-auth",
+        "--socket=wayland",
+        "--socket=x11",
+        "--talk-name=org.freedesktop.Flatpak",
+        "--talk-name=org.freedesktop.Notifications",
+        "--talk-name=org.freedesktop.secrets"
+    ],
+    "modules": [
         {
-          "type": "git",
-          "commit": "f576dfbe50f9aed22802ad0db0356d081f467d7a",
-          "tag": "0.19.1",
-          "url": "https://gitlab.gnome.org/GNOME/libsecret.git"
-        }
-      ]
-    }, {
-      "name": "idea",
-      "buildsystem": "simple",
-      "build-commands": [
-        "unzip intellij-idea_logos.zip",
-        "install -D --mode=0644 logo.svg /app/share/icons/hicolor/scalable/apps/com.jetbrains.IntelliJ-IDEA-Ultimate.svg",
-        "install -D --mode=0755 entrypoint.sh /app/bin/idea",
-        "install -D --mode=0644 --target-directory=/app/share/applications/ com.jetbrains.IntelliJ-IDEA-Ultimate.desktop",
-        "install -D --mode=0644 --target-directory=/app/share/metainfo/ com.jetbrains.IntelliJ-IDEA-Ultimate.appdata.xml",
-        "install -D --mode=0755 apply_extra.sh /app/bin/apply_extra"
-      ],
-      "sources": [
+            "name": "libsecret",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dgtk_doc=false",
+                "-Dmanpage=false",
+                "-Dvapi=false"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "commit": "f576dfbe50f9aed22802ad0db0356d081f467d7a",
+                    "tag": "0.19.1",
+                    "url": "https://gitlab.gnome.org/GNOME/libsecret.git"
+                }
+            ]
+        },
         {
-          "type": "file",
-          "sha256": "d43ed7b21751e3950fd70ef02e252544f2a13194f7ea019543ac0d547487fc3a",
-          "url": "https://resources.jetbrains.com/storage/products/intellij-idea/docs/intellij-idea_logos.zip"
-        }, {
-          "type": "file",
-          "path": "apply_extra.sh"
-        }, {
-          "type": "file",
-          "path": "entrypoint.sh"
-        }, {
-          "type": "file",
-          "path": "com.jetbrains.IntelliJ-IDEA-Ultimate.appdata.xml"
-        }, {
-          "type": "file",
-          "path": "com.jetbrains.IntelliJ-IDEA-Ultimate.desktop"
-        }, {
-          "type": "extra-data",
-          "filename": "ideaIU.tar.gz",
-          "only-arches": ["x86_64"],
-          "sha256": "739b1eeb14587fa3fa7c3ceb14293c2773fbe355d12af977aee3a8803beab34b",
-          "size": 795790818,
-          "url": "https://download.jetbrains.com/idea/ideaIU-2019.3.tar.gz",
-          "x-checker-data": {
-            "type": "jetbrains",
-            "code": "IIU"
-          }
+            "name": "idea",
+            "buildsystem": "simple",
+            "build-commands": [
+                "unzip intellij-idea_logos.zip",
+                "install -D --mode=0644 logo.svg /app/share/icons/hicolor/scalable/apps/com.jetbrains.IntelliJ-IDEA-Ultimate.svg",
+                "install -D --mode=0755 entrypoint.sh /app/bin/idea",
+                "install -D --mode=0644 --target-directory=/app/share/applications/ com.jetbrains.IntelliJ-IDEA-Ultimate.desktop",
+                "install -D --mode=0644 --target-directory=/app/share/metainfo/ com.jetbrains.IntelliJ-IDEA-Ultimate.appdata.xml",
+                "install -D --mode=0755 apply_extra.sh /app/bin/apply_extra"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "sha256": "d43ed7b21751e3950fd70ef02e252544f2a13194f7ea019543ac0d547487fc3a",
+                    "url": "https://resources.jetbrains.com/storage/products/intellij-idea/docs/intellij-idea_logos.zip"
+                },
+                {
+                    "type": "file",
+                    "path": "apply_extra.sh"
+                },
+                {
+                    "type": "file",
+                    "path": "entrypoint.sh"
+                },
+                {
+                    "type": "file",
+                    "path": "com.jetbrains.IntelliJ-IDEA-Ultimate.appdata.xml"
+                },
+                {
+                    "type": "file",
+                    "path": "com.jetbrains.IntelliJ-IDEA-Ultimate.desktop"
+                },
+                {
+                    "type": "extra-data",
+                    "filename": "ideaIU.tar.gz",
+                    "only-arches": [
+                        "x86_64"
+                    ],
+                    "sha256": "87543537c524c6f67c88e1e2af3865bb233099bf405db2df131a66ebf4655532",
+                    "size": 809193649,
+                    "url": "https://download.jetbrains.com/idea/ideaIU-2019.3.1.tar.gz",
+                    "x-checker-data": {
+                        "type": "jetbrains",
+                        "code": "IIU"
+                    }
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
