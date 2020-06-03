@@ -60,9 +60,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "sha256": "ca485decf8b91549a1c8e20309a7a7b6a7e032ff96e10fde2ff5dbae9e0108e3",
-                    "size": 781274338,
-                    "url": "https://download.jetbrains.com/idea/ideaIU-2020.1.1.tar.gz",
+                    "sha256": "183d9f1c01122b3cc6ec1c0ae4367f519f48c4314a23c5e46edf18cff8977af4",
+                    "size": 781180202,
+                    "url": "https://download.jetbrains.com/idea/ideaIU-2020.1.2.tar.gz",
                     "x-checker-data": {
                         "type": "jetbrains",
                         "code": "IIU"
