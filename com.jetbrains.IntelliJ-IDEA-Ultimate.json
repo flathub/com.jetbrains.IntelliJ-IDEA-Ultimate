@@ -35,8 +35,9 @@
             "sources": [
                 {
                     "type": "file",
-                    "sha256": "d43ed7b21751e3950fd70ef02e252544f2a13194f7ea019543ac0d547487fc3a",
-                    "url": "https://resources.jetbrains.com/storage/products/intellij-idea/docs/intellij-idea_logos.zip"
+                    "sha256": "5c47981343bf869fb7356ce20565e3d836bed7be1b538e77a879a191eeff457f",
+                    "url": "https://resources.jetbrains.com/storage/products/intellij-idea/docs/intellij-idea_logos.zip",
+                    "size": 1103723
                 },
                 {
                     "type": "file",
