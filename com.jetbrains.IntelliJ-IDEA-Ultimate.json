@@ -23,21 +23,21 @@
         {
             "name": "idea",
             "buildsystem": "simple",
-            "build-commands": [
-                "unzip intellij-idea_logos.zip",
-                "install -D --mode=0644 logo.svg /app/share/icons/hicolor/scalable/apps/com.jetbrains.IntelliJ-IDEA-Ultimate.svg",
-                "install -D --mode=0755 entrypoint.sh /app/bin/idea",
-                "install -D --mode=0644 --target-directory=/app/share/applications/ com.jetbrains.IntelliJ-IDEA-Ultimate.desktop",
-                "install -D --mode=0644 --target-directory=/app/share/metainfo/ com.jetbrains.IntelliJ-IDEA-Ultimate.metainfo.xml",
-                "install -D --mode=0755 apply_extra.sh /app/bin/apply_extra"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "sha256": "5c47981343bf869fb7356ce20565e3d836bed7be1b538e77a879a191eeff457f",
-                    "url": "https://resources.jetbrains.com/storage/products/intellij-idea/docs/intellij-idea_logos.zip",
-                    "size": 1103723
-                },
+          "build-commands": [
+              "unzip intellij-idea_logos.zip",
+              "install -D --mode=0644 intellij-idea_logos/icon-intellij-idea.svg /app/share/icons/hicolor/scalable/apps/com.jetbrains.IntelliJ-IDEA-Ultimate.svg",
+              "install -D --mode=0755 entrypoint.sh /app/bin/idea",
+              "install -D --mode=0644 --target-directory=/app/share/applications/ com.jetbrains.IntelliJ-IDEA-Ultimate.desktop",
+              "install -D --mode=0644 --target-directory=/app/share/metainfo/ com.jetbrains.IntelliJ-IDEA-Ultimate.metainfo.xml",
+              "install -D --mode=0755 apply_extra.sh /app/bin/apply_extra"
+          ],
+          "sources": [
+            {
+                "type": "file",
+                "sha256": "5c47981343bf869fb7356ce20565e3d836bed7be1b538e77a879a191eeff457f",
+                "size": 1103723,
+                "url": "https://resources.jetbrains.com/storage/products/intellij-idea/docs/intellij-idea_logos.zip"
+            },
                 {
                     "type": "file",
                     "path": "apply_extra.sh"
