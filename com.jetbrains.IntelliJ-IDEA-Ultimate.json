@@ -7,7 +7,6 @@
     "separate-locales": false,
     "finish-args": [
         "--device=dri",
-        "--env=IDEA_JDK=/app/extra/idea-IU/jre64",
         "--filesystem=host",
         "--filesystem=xdg-run/keyring",
         "--share=ipc",
@@ -29,7 +28,7 @@
                 "install -D --mode=0644 logo.svg /app/share/icons/hicolor/scalable/apps/com.jetbrains.IntelliJ-IDEA-Ultimate.svg",
                 "install -D --mode=0755 entrypoint.sh /app/bin/idea",
                 "install -D --mode=0644 --target-directory=/app/share/applications/ com.jetbrains.IntelliJ-IDEA-Ultimate.desktop",
-                "install -D --mode=0644 --target-directory=/app/share/metainfo/ com.jetbrains.IntelliJ-IDEA-Ultimate.appdata.xml",
+                "install -D --mode=0644 --target-directory=/app/share/metainfo/ com.jetbrains.IntelliJ-IDEA-Ultimate.metainfo.xml",
                 "install -D --mode=0755 apply_extra.sh /app/bin/apply_extra"
             ],
             "sources": [
@@ -49,7 +48,7 @@
                 },
                 {
                     "type": "file",
-                    "path": "com.jetbrains.IntelliJ-IDEA-Ultimate.appdata.xml"
+                    "path": "com.jetbrains.IntelliJ-IDEA-Ultimate.metainfo.xml"
                 },
                 {
                     "type": "file",
