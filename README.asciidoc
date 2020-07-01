@@ -22,14 +22,9 @@ $ flatpak-builder build --force-clean --install-deps-from=flathub --install --us
 $ flatpak uninstall --delete-data --user com.jetbrains.IntelliJ-IDEA-Ultimate
 
 # ...and to clean-up everything
-$ rm -rf .flatpak-builder/ build/
+$ rm --force --recursive .flatpak-builder/ build/
 $ flatpak uninstall --unused --user
 $ flatpak remote-delete --user flathub
 ----
 
 // git submodule foreach git pull origin master
-
-== Roadmap
-:uri-issues-tracker: https://github.com/flathub/com.jetbrains.IntelliJ-IDEA-Ultimate/issues/
-
-See the {uri-issues-tracker}[Issues^] tracker.
