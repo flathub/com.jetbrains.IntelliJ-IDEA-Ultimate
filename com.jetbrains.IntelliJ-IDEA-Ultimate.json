@@ -23,21 +23,21 @@
         {
             "name": "idea",
             "buildsystem": "simple",
-          "build-commands": [
-              "unzip intellij-idea_logos.zip",
-              "install -D --mode=0644 intellij-idea_logos/icon-intellij-idea.svg /app/share/icons/hicolor/scalable/apps/com.jetbrains.IntelliJ-IDEA-Ultimate.svg",
-              "install -D --mode=0755 entrypoint.sh /app/bin/idea",
-              "install -D --mode=0644 --target-directory=/app/share/applications/ com.jetbrains.IntelliJ-IDEA-Ultimate.desktop",
-              "install -D --mode=0644 --target-directory=/app/share/metainfo/ com.jetbrains.IntelliJ-IDEA-Ultimate.metainfo.xml",
-              "install -D --mode=0755 apply_extra.sh /app/bin/apply_extra"
-          ],
-          "sources": [
-            {
-                "type": "file",
-                "sha256": "5c47981343bf869fb7356ce20565e3d836bed7be1b538e77a879a191eeff457f",
-                "size": 1103723,
-                "url": "https://resources.jetbrains.com/storage/products/intellij-idea/docs/intellij-idea_logos.zip"
-            },
+            "build-commands": [
+                "unzip intellij-idea_logos.zip",
+                "install -D --mode=0644 intellij-idea_logos/icon-intellij-idea.svg /app/share/icons/hicolor/scalable/apps/com.jetbrains.IntelliJ-IDEA-Ultimate.svg",
+                "install -D --mode=0755 entrypoint.sh /app/bin/idea",
+                "install -D --mode=0644 --target-directory=/app/share/applications/ com.jetbrains.IntelliJ-IDEA-Ultimate.desktop",
+                "install -D --mode=0644 --target-directory=/app/share/metainfo/ com.jetbrains.IntelliJ-IDEA-Ultimate.metainfo.xml",
+                "install -D --mode=0755 apply_extra.sh /app/bin/apply_extra"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "sha256": "5c47981343bf869fb7356ce20565e3d836bed7be1b538e77a879a191eeff457f",
+                    "size": 1103723,
+                    "url": "https://resources.jetbrains.com/storage/products/intellij-idea/docs/intellij-idea_logos.zip"
+                },
                 {
                     "type": "file",
                     "path": "apply_extra.sh"
@@ -60,9 +60,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "sha256": "183d9f1c01122b3cc6ec1c0ae4367f519f48c4314a23c5e46edf18cff8977af4",
-                    "size": 781180202,
-                    "url": "https://download.jetbrains.com/idea/ideaIU-2020.1.2.tar.gz",
+                    "sha256": "b238a4613bf87daa67f807381f6c7f951b345e0fb03a7ef1dc3c7c4735f43607",
+                    "size": 781602452,
+                    "url": "https://download.jetbrains.com/idea/ideaIU-2020.1.3.tar.gz",
                     "x-checker-data": {
                         "type": "jetbrains",
                         "code": "IIU"
