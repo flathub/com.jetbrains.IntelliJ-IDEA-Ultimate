@@ -8,6 +8,7 @@ finish-args:
   - --device=dri
   - --filesystem=host
   - --filesystem=xdg-run/keyring
+  - --filesystem=xdg-run/app/com.discordapp.Discord:create
   - --share=ipc
   - --share=network
   - --socket=ssh-auth
