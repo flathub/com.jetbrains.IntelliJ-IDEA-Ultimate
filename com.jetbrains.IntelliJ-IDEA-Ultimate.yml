@@ -35,7 +35,7 @@ modules:
         only-arches:
           - x86_64
         sha256: 39be57e086f2dcb489d3eb1ba0e8e88db0ab242f4e5e29e0e7985d2caef894aa
-        size: 941404572
+        size: 941417519
         url: https://download.jetbrains.com/idea/ideaIU-2021.1.3.tar.gz
         x-checker-data:
           code: IIU
