@@ -23,8 +23,7 @@ modules:
   - name: idea
     buildsystem: simple
     build-commands:
-      - unzip intellij-idea_logos.zip
-      - install -D --mode=0644 intellij-idea_logos/icon-intellij-idea.svg /app/share/icons/hicolor/scalable/apps/com.jetbrains.IntelliJ-IDEA-Ultimate.svg
+      - install -D --mode=0644 intellij-idea-icon.svg /app/share/icons/hicolor/scalable/apps/com.jetbrains.IntelliJ-IDEA-Ultimate.svg
       - install -D --mode=0755 entrypoint.sh /app/bin/idea
       - install -D --mode=0644 --target-directory=/app/share/applications/ com.jetbrains.IntelliJ-IDEA-Ultimate.desktop
       - install -D --mode=0644 --target-directory=/app/share/metainfo/ com.jetbrains.IntelliJ-IDEA-Ultimate.metainfo.xml
@@ -41,10 +40,6 @@ modules:
           code: IIU
           type: jetbrains
       - type: file
-        sha256: 5c47981343bf869fb7356ce20565e3d836bed7be1b538e77a879a191eeff457f
-        size: 1103723
-        url: https://resources.jetbrains.com/storage/products/intellij-idea/docs/intellij-idea_logos.zip
-      - type: file
         path: apply_extra.sh
       - type: file
         path: com.jetbrains.IntelliJ-IDEA-Ultimate.desktop
@@ -52,3 +47,8 @@ modules:
         path: com.jetbrains.IntelliJ-IDEA-Ultimate.metainfo.xml
       - type: file
         path: entrypoint.sh
+      - type: file # https://www.jetbrains.com/company/brand/#logos-and-icons
+        dest-filename: intellij-idea-icon.svg
+        sha256: e80013a85454435dd1ebb80254c0aa0ed5ebaac825f93d82c801e7dd55c75d50
+        size: 2201
+        url: https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg
