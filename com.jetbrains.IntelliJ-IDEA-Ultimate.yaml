@@ -33,9 +33,9 @@ modules:
         filename: ideaIU.tar.gz
         only-arches:
           - x86_64
-        sha256: 16929fd22b84b400d0b9e24fd356dd2e7a614511a2d779ee37082c90df179c25
-        size: 963927272
-        url: https://download.jetbrains.com/idea/ideaIU-2021.2.3.tar.gz
+        sha256: 429838940b2312ea15f12a2c2e7a1bdd65a885df96fec6270c91856c012294fe
+        size: 958697327
+        url: https://download.jetbrains.com/idea/ideaIU-2021.3.tar.gz
         x-checker-data:
           code: IIU
           type: jetbrains
