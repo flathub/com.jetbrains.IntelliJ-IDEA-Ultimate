@@ -19,6 +19,7 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.gnome.keyring.SystemPrompter
+  - --talk-name=com.canonical.AppMenu.Registrar
 modules:
   - shared-modules/libsecret/libsecret.json
 
