@@ -13,7 +13,7 @@ Assuming `flatpak`, `flatpak-builder`, and `git` are installed, then execute the
 
 [source,shell]
 ----
-$ git clone https://github.com/flathub/com.jetbrains.IntelliJ-IDEA-Ultimate.git
+$ git clone --recurse-submodules https://github.com/flathub/com.jetbrains.IntelliJ-IDEA-Ultimate.git
 $ cd com.jetbrains.IntelliJ-IDEA-Ultimate/
 $ flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
 $ flatpak-builder build --force-clean --install-deps-from=flathub --install --user com.jetbrains.IntelliJ-IDEA-Ultimate.yaml
