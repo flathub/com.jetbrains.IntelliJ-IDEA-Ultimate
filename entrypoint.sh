@@ -8,6 +8,8 @@ TMPDIR="${XDG_CACHE_HOME}/tmp"
 export TMPDIR
 PATH="${PATH}:${EXTRA_PATH}"
 export PATH
+GRADLE_OPTS="-Djava.io.tmpdir=${TMPDIR}"
+export GRADLE_OPTS
 
 # https://plugins.jetbrains.com/plugin/10233-discord-integration
 for i in {0..9}; do
