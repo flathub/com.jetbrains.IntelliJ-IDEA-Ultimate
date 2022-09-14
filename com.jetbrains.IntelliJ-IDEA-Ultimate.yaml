@@ -1,7 +1,7 @@
 app-id: com.jetbrains.IntelliJ-IDEA-Ultimate
 command: idea
 runtime: org.freedesktop.Sdk
-runtime-version: '21.08'
+runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
 separate-locales: false
 finish-args:
@@ -91,9 +91,9 @@ modules:
         filename: ideaIU.tar.gz
         only-arches:
           - x86_64
-        sha256: 69d3600b94cdd45a0954d7424e6e87d86fb4c86f64974ff678ba6a4e2a885c47
-        size: 1038327020
-        url: https://download.jetbrains.com/idea/ideaIU-2022.2.1.tar.gz
+        sha256: bbc1793715c7a75228de6914bea0a881d982d38da3b48b89df08f08fbe8e5e54
+        size: 1038875090
+        url: https://download.jetbrains.com/idea/ideaIU-2022.2.2.tar.gz
         x-checker-data:
           code: IIU
           type: jetbrains
