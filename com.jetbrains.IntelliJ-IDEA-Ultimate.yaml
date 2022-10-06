@@ -20,31 +20,33 @@ finish-args:
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.gnome.keyring.SystemPrompter
   - --talk-name=com.canonical.AppMenu.Registrar
-cleanup:
-  - /include
-  - /lib/debug
-  - /lib/pkgconfig
-  - /man
-  - /share/gtk-doc
-  - /share/info
-  - /share/man
-  - /share/pkgconfig
-  - '*.a'
-  - '*.la'
 modules:
   - shared-modules/libsecret/libsecret.json
 
   - name: gcr
-    buildsystem: meson
+    cleanup:
+      - /include
+      - /lib/debug
+      - /lib/girepository-1.0
+      - /lib/pkgconfig
+      - /man
+      - /share/gir-1.0
+      - /share/gtk-doc
+      - /share/doc
+      - /share/man
+      - /share/pkgconfig
+      - '*.a'
+      - '*.la'
     config-opts:
-      - -Dgtk4=false
-      - -Dgtk_doc=false
-      - -Dintrospection=false
-      - -Dvapi=false
+      - --disable-schemas-compile
+      - --disable-static
+      - --disable-update-mime
+      - --disable-vala
+      - --enable-valgrind=no
     sources:
       - type: archive
-        sha256: bb7128a3c2febbfee9c03b90d77d498d0ceb237b0789802d60185c71c4bea24f
-        url: https://download.gnome.org/sources/gcr/3.41/gcr-3.41.1.tar.xz
+        sha256: 29df50974a90987af694c0fb8926a6b366e68cacd8abd813817cfe1eb5d54524
+        url: https://download.gnome.org/sources/gcr/3.34/gcr-3.34.0.tar.xz
 
   - name: openssh
     buildsystem: simple
@@ -52,6 +54,12 @@ modules:
       - ln --symbolic /usr/bin/ssh /app/bin/ssh
 
   - name: pinentry
+    cleanup:
+      - /include
+      - /lib/debug
+      - /share/info
+      - '*.a'
+      - '*.la'
     config-opts:
       - --disable-fallback-curses
       - --disable-ncurses
