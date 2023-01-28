@@ -131,3 +131,13 @@ modules:
         sha256: e80013a85454435dd1ebb80254c0aa0ed5ebaac825f93d82c801e7dd55c75d50
         size: 2201
         url: https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg
+
+  - name: wrapper
+    buildsystem: meson
+    config-opts:
+      - -Deditor_binary=/app/extra/idea-IU/bin/idea.sh # Path to the editor executable
+      - -Dprogram_name=idea # Install wrapper under this name
+      - -Deditor_title=Intellij IDEA Ultimate # Human-readable editor name
+    sources:
+      - type: dir
+        path: jetbrains-flatpak-wrapper
