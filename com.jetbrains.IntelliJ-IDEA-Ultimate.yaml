@@ -111,9 +111,9 @@ modules:
         filename: ideaIU.tar.gz
         only-arches:
           - x86_64
-        sha256: 6fa3aff1c730bb79bf3e2e29edcce6d4cdbccfa631524c6253de518be6b6f3d2
-        size: 1112131672
-        url: https://download.jetbrains.com/idea/ideaIU-2022.3.2.tar.gz
+        sha256: c302bd84b48a56ef1b0f033e8e93a0da5590f80482eae172db6130da035314a6
+        size: 1112197802
+        url: https://download.jetbrains.com/idea/ideaIU-2022.3.3.tar.gz
         x-checker-data:
           code: IIU
           is-main-source: true
