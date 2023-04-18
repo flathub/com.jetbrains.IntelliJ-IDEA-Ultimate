@@ -1,9 +1,5 @@
 app-id: com.jetbrains.IntelliJ-IDEA-Ultimate
 command: idea
-runtime: org.freedesktop.Sdk
-runtime-version: '22.08'
-sdk: org.freedesktop.Sdk
-separate-locales: false
 finish-args:
   - --device=all
   - --filesystem=host
@@ -22,26 +18,6 @@ finish-args:
   - --talk-name=com.canonical.AppMenu.Registrar
 modules:
   - shared-modules/libsecret/libsecret.json
-
-  - name: rsync
-    cleanup:
-      - /share/man
-    config-opts:
-      - --prefix=${FLATPAK_DEST}
-      - --with-included-popt
-      - --with-included-zlib
-      - --disable-debug
-      - --disable-md2man
-      - --disable-xxhash
-    sources:
-      - type: archive
-        url: https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz
-        sha256: 4e7d9d3f6ed10878c58c5fb724a67dacf4b6aac7340b13e488fb2dc41346f2bb
-        x-checker-data:
-          type: anitya
-          project-id: 4217
-          stable-only: true
-          url-template: https://download.samba.org/pub/rsync/src/rsync-$version.tar.gz
 
   - name: gcr
     cleanup:
@@ -98,6 +74,42 @@ modules:
         sha256: cd12a064013ed18e2ee8475e669b9f58db1b225a0144debdb85a68cecddba57f
         url: https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.1.1.tar.bz2
 
+  - name: rsync
+    cleanup:
+      - /share/man
+    config-opts:
+      - --disable-debug
+      - --disable-md2man
+      - --disable-xxhash
+      - --prefix=${FLATPAK_DEST}
+      - --with-included-popt
+      - --with-included-zlib
+    sources:
+      - type: archive
+        url: https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz
+        sha256: 4e7d9d3f6ed10878c58c5fb724a67dacf4b6aac7340b13e488fb2dc41346f2bb
+        x-checker-data:
+          project-id: 4217
+          stable-only: true
+          type: anitya
+          url-template: https://download.samba.org/pub/rsync/src/rsync-$version.tar.gz
+
+  - name: wrapper
+    buildsystem: meson
+    config-opts:
+      - -Deditor_binary=/app/extra/idea-IU/bin/idea.sh
+      - -Deditor_title=Intellij IDEA Ultimate
+      - -Dprogram_name=idea
+    sources:
+      - type: dir
+        path: jetbrains-flatpak-wrapper
+
+  - name: zypak
+    sources:
+      - type: git
+        tag: v2022.04
+        url: https://github.com/refi64/zypak
+
   - name: idea
     buildsystem: simple
     build-commands:
@@ -132,12 +144,7 @@ modules:
         size: 2201
         url: https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg
 
-  - name: wrapper
-    buildsystem: meson
-    config-opts:
-      - -Deditor_binary=/app/extra/idea-IU/bin/idea.sh # Path to the editor executable
-      - -Dprogram_name=idea # Install wrapper under this name
-      - -Deditor_title=Intellij IDEA Ultimate # Human-readable editor name
-    sources:
-      - type: dir
-        path: jetbrains-flatpak-wrapper
+runtime: org.freedesktop.Sdk
+runtime-version: '22.08'
+sdk: org.freedesktop.Sdk
+separate-locales: false
