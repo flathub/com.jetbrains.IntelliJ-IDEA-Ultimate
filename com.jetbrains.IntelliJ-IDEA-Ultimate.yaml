@@ -94,16 +94,6 @@ modules:
           type: anitya
           url-template: https://download.samba.org/pub/rsync/src/rsync-$version.tar.gz
 
-  - name: wrapper
-    buildsystem: meson
-    config-opts:
-      - -Deditor_binary=/app/extra/idea-IU/bin/idea.sh
-      - -Deditor_title=Intellij IDEA Ultimate
-      - -Dprogram_name=idea
-    sources:
-      - type: dir
-        path: jetbrains-flatpak-wrapper
-
   - name: zypak
     sources:
       - type: git
