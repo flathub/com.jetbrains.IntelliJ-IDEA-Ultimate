@@ -1,24 +1,24 @@
 app-id: com.jetbrains.IntelliJ-IDEA-Ultimate
 command: idea
 finish-args:
+  - --allow=devel
   - --device=all
-  - --filesystem=host
-  - --filesystem=xdg-run/gnupg:ro
-  - --filesystem=xdg-run/keyring
+  - --env=IDEA_PROPERTIES=/app/bin/idea.properties
   - --filesystem=xdg-run/app/com.discordapp.Discord:create
+  - --filesystem=xdg-run/gnupg:ro
+  - --filesystem=host
+  - --filesystem=xdg-run/keyring
   - --share=ipc
   - --share=network
   - --socket=ssh-auth
   - --socket=wayland
   - --socket=x11
+  - --talk-name=com.canonical.AppMenu.Registrar
   - --talk-name=org.freedesktop.Flatpak
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.gnome.keyring.SystemPrompter
-  - --talk-name=com.canonical.AppMenu.Registrar
 modules:
-  - shared-modules/libsecret/libsecret.json
-
   - name: gcr
     cleanup:
       - /include
@@ -43,6 +43,18 @@ modules:
       - type: archive
         sha256: 29df50974a90987af694c0fb8926a6b366e68cacd8abd813817cfe1eb5d54524
         url: https://download.gnome.org/sources/gcr/3.34/gcr-3.34.0.tar.xz
+
+  - name: jetbrains-flatpak-wrapper
+    buildsystem: meson
+    config-opts:
+      - -Deditor_binary=/app/extra/IDEA-U/bin/idea.sh
+      - -Deditor_title=IntelliJ IDEA Ultimate
+      - -Dprogram_name=idea
+    sources:
+      - type: dir
+        path: jetbrains-flatpak-wrapper
+
+  - shared-modules/libsecret/libsecret.json
 
   - name: openssh
     buildsystem: simple
@@ -97,11 +109,11 @@ modules:
   - name: idea
     buildsystem: simple
     build-commands:
-      - install -D --mode=0644 intellij-idea-icon.svg /app/share/icons/hicolor/scalable/apps/com.jetbrains.IntelliJ-IDEA-Ultimate.svg
-      - install -D --mode=0755 entrypoint.sh /app/bin/idea
+      - install -D --mode=0755 apply_extra.sh /app/bin/apply_extra
       - install -D --mode=0644 --target-directory=/app/share/applications/ com.jetbrains.IntelliJ-IDEA-Ultimate.desktop
       - install -D --mode=0644 --target-directory=/app/share/metainfo/ com.jetbrains.IntelliJ-IDEA-Ultimate.metainfo.xml
-      - install -D --mode=0755 apply_extra.sh /app/bin/apply_extra
+      - install -D --mode=0644 --target-directory=/app/share/icons/hicolor/scalable/apps/ com.jetbrains.IntelliJ-IDEA-Ultimate.svg
+      - install -D --mode=0644 --target-directory=/app/bin/ idea.properties
     sources:
       - type: extra-data
         filename: ideaIU.tar.gz
@@ -118,15 +130,15 @@ modules:
         path: apply_extra.sh
       - type: file
         path: com.jetbrains.IntelliJ-IDEA-Ultimate.desktop
-      - type: file
-        path: com.jetbrains.IntelliJ-IDEA-Ultimate.metainfo.xml
-      - type: file
-        path: entrypoint.sh
       - type: file # https://www.jetbrains.com/company/brand/#logos-and-icons
-        dest-filename: intellij-idea-icon.svg
+        dest-filename: com.jetbrains.IntelliJ-IDEA-Ultimate.svg
         sha256: e80013a85454435dd1ebb80254c0aa0ed5ebaac825f93d82c801e7dd55c75d50
         size: 2201
         url: https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg
+      - type: file
+        path: com.jetbrains.IntelliJ-IDEA-Ultimate.metainfo.xml
+      - type: file
+        path: idea.properties
 
 runtime: org.freedesktop.Sdk
 runtime-version: '22.08'

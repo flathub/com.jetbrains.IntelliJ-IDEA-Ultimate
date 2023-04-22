@@ -1,6 +1,7 @@
-[submodule "shared-modules"]
-	path = shared-modules
-	url = https://github.com/flathub/shared-modules.git
 [submodule "jetbrains-flatpak-wrapper"]
-	path = jetbrains-flatpak-wrapper
-	url = https://github.com/Lctrs/jetbrains-flatpak-wrapper.git
+  path = jetbrains-flatpak-wrapper
+  url = https://github.com/Lctrs/jetbrains-flatpak-wrapper.git
+
+[submodule "shared-modules"]
+  path = shared-modules
+  url = https://github.com/flathub/shared-modules.git
