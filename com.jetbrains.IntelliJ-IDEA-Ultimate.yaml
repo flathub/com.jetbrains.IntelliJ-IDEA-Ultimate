@@ -94,12 +94,6 @@ modules:
           type: anitya
           url-template: https://download.samba.org/pub/rsync/src/rsync-$version.tar.gz
 
-  - name: zypak
-    sources:
-      - type: git
-        tag: v2022.04
-        url: https://github.com/refi64/zypak
-
   - name: idea
     buildsystem: simple
     build-commands:
