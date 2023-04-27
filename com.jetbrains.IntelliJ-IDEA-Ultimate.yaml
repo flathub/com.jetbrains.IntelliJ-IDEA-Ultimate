@@ -51,8 +51,9 @@ modules:
       - -Deditor_title=IntelliJ IDEA Ultimate
       - -Dprogram_name=idea
     sources:
-      - type: dir
-        path: jetbrains-flatpak-wrapper
+      - type: git
+        commit: 5a054811ab2144ceaf343169b240a70eeb4dfb47
+        url: https://github.com/Lctrs/jetbrains-flatpak-wrapper.git
 
   - shared-modules/libsecret/libsecret.json
 
