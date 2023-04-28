@@ -113,16 +113,17 @@ modules:
       - install -D --mode=0755 apply_extra.sh /app/bin/apply_extra
       - install -D --mode=0644 --target-directory=/app/share/applications/ com.jetbrains.IntelliJ-IDEA-Ultimate.desktop
       - install -D --mode=0644 --target-directory=/app/share/metainfo/ com.jetbrains.IntelliJ-IDEA-Ultimate.metainfo.xml
-      - install -D --mode=0644 --target-directory=/app/share/icons/hicolor/scalable/apps/ com.jetbrains.IntelliJ-IDEA-Ultimate.svg
+      - install -D --mode=0644 --target-directory=/app/share/icons/hicolor/scalable/apps/
+        com.jetbrains.IntelliJ-IDEA-Ultimate.svg
       - install -D --mode=0644 --target-directory=/app/bin/ idea.properties
     sources:
       - type: extra-data
         filename: ideaIU.tar.gz
         only-arches:
           - x86_64
-        sha256: 3029c751c36d86fef0021feceb8f3010d37aebd42aef6d6aed9e3b9207c2d2ac
-        size: 1113623838
-        url: https://download.jetbrains.com/idea/ideaIU-2023.1.tar.gz
+        sha256: 62ac9a6a801e5e029c3ca5ea28ee5de2680e3d58ae233cf1cb3d3636c6b205ca
+        size: 1115550539
+        url: https://download.jetbrains.com/idea/ideaIU-2023.1.1.tar.gz
         x-checker-data:
           code: IIU
           is-main-source: true
