@@ -152,8 +152,8 @@ modules:
       x-checker-data:
         type: json
         url: https://api.github.com/repos/git-lfs/git-lfs/releases/latest
-        version-query: tag_name | sub(\"^[vV]\";\"\")
-        url-query: .assets[] | select(.label==\"Source\") | .browser_download_url
+        version-query: "tag_name | sub(\"^[vV]\";\"\")"
+        url-query: ".assets[] | select(.label==\"Source\") | .browser_download_url"
 
 runtime: org.freedesktop.Sdk
 runtime-version: '22.08'
