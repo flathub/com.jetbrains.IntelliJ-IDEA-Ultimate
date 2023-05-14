@@ -153,7 +153,7 @@ modules:
           project-id: 11551
           stable-only: true
           type: anitya
-          url-template: https://github.com/git-lfs/git-lfs/releases/download/$version/git-lfs-linux-amd64-$version.tar.gz
+          url-template: https://github.com/git-lfs/git-lfs/releases/download/v$version/git-lfs-linux-amd64-v$version.tar.gz
 
 runtime: org.freedesktop.Sdk
 runtime-version: '22.08'
