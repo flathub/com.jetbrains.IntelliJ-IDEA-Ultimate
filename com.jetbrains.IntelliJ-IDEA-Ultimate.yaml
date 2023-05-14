@@ -150,10 +150,10 @@ modules:
       url: https://github.com/git-lfs/git-lfs/releases/download/v3.3.0/git-lfs-linux-amd64-v3.3.0.tar.gz
       sha256: 6a4e6bd7d06d5c024bc70c8ee8c9da143ffc37d2646e252a17a6126d30cdebc1
       x-checker-data:
-        type: json
-        url: https://api.github.com/repos/git-lfs/git-lfs/releases/latest
-        version-query: "tag_name | sub(\"^[vV]\";\"\")"
-        url-query: ".assets[] | select(.label==\"Source\") | .browser_download_url"
+          project-id: 4217
+          stable-only: true
+          type: anitya
+          url-template: https://github.com/git-lfs/git-lfs/releases/download/$version/git-lfs-linux-amd64-$version.tar.gz
 
 runtime: org.freedesktop.Sdk
 runtime-version: '22.08'
