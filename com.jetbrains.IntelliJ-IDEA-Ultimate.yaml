@@ -121,9 +121,9 @@ modules:
         filename: ideaIU.tar.gz
         only-arches:
           - x86_64
-        sha256: e1a26070e91bdc6a7d262aeda316a72908d1ffbb8b500f086665bfcd29de249a
-        size: 1115791388
-        url: https://download.jetbrains.com/idea/ideaIU-2023.1.2.tar.gz
+        sha256: a58954ed6732eb799502e14b250ead8b21e00c3f064e196ada34dcd6a3a3f399
+        size: 1115915778
+        url: https://download.jetbrains.com/idea/ideaIU-2023.1.3.tar.gz
         x-checker-data:
           code: IIU
           is-main-source: true
@@ -146,14 +146,14 @@ modules:
     build-commands:
       - PREFIX=${FLATPAK_DEST} ./install.sh
     sources:
-    - type: archive
-      url: https://github.com/git-lfs/git-lfs/releases/download/v3.3.0/git-lfs-linux-amd64-v3.3.0.tar.gz
-      sha256: 6a4e6bd7d06d5c024bc70c8ee8c9da143ffc37d2646e252a17a6126d30cdebc1
-      x-checker-data:
-        project-id: 11551
-        stable-only: true
-        type: anitya
-        url-template: https://github.com/git-lfs/git-lfs/releases/download/v$version/git-lfs-linux-amd64-v$version.tar.gz
+      - type: archive
+        url: https://github.com/git-lfs/git-lfs/releases/download/v3.3.0/git-lfs-linux-amd64-v3.3.0.tar.gz
+        sha256: 6a4e6bd7d06d5c024bc70c8ee8c9da143ffc37d2646e252a17a6126d30cdebc1
+        x-checker-data:
+          project-id: 11551
+          stable-only: true
+          type: anitya
+          url-template: https://github.com/git-lfs/git-lfs/releases/download/v$version/git-lfs-linux-amd64-v$version.tar.gz
 
 runtime: org.freedesktop.Sdk
 runtime-version: '22.08'
