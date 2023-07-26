@@ -147,8 +147,8 @@ modules:
       - PREFIX=${FLATPAK_DEST} ./install.sh
     sources:
       - type: archive
-        url: https://github.com/git-lfs/git-lfs/releases/download/v3.3.0/git-lfs-linux-amd64-v3.3.0.tar.gz
-        sha256: 6a4e6bd7d06d5c024bc70c8ee8c9da143ffc37d2646e252a17a6126d30cdebc1
+        url: https://github.com/git-lfs/git-lfs/releases/download/v3.4.0/git-lfs-linux-amd64-v3.4.0.tar.gz
+        sha256: 60b7e9b9b4bca04405af58a2cd5dff3e68a5607c5bc39ee88a5256dd7a07f58c
         x-checker-data:
           project-id: 11551
           stable-only: true
