@@ -119,9 +119,9 @@ modules:
     sources:
       - type: extra-data
         filename: ideaIU.tar.gz
-        sha256: d398599557cc732fd1f58f38104d7cda35e326e4cd394245a8358e02fb8878b3
-        size: 1143968558
-        url: https://download.jetbrains.com/idea/ideaIU-2023.2.tar.gz
+        sha256: 8ac0a30e2a063f606e0fcfcd49ab59f9c851c3daed942134c81886bca35212d9
+        size: 1153009058
+        url: https://download.jetbrains.com/idea/ideaIU-2023.2.1.tar.gz
         only-arches:
           - x86_64
         x-checker-data:
@@ -130,9 +130,9 @@ modules:
           type: jetbrains
       - type: extra-data
         filename: ideaIU.tar.gz
-        sha256: 2bd1142fa91ff36c913fa1f8d57094d233c523dc66f5034d2c7335257077aaee
-        size: 1145314378
-        url: https://download.jetbrains.com/idea/ideaIU-2023.2-aarch64.tar.gz
+        sha256: 47c58ae618b8179eacb14b6f3f34fd50b0aee13d5fa3f1297d5d4a6518a372c1
+        size: 1154356682
+        url: https://download.jetbrains.com/idea/ideaIU-2023.2.1-aarch64.tar.gz
         only-arches:
           - aarch64
         x-checker-data:
