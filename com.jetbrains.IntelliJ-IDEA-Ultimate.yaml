@@ -77,7 +77,8 @@ modules:
       - install -D --mode=0755 apply_extra.sh /app/bin/apply_extra
       - install -D --mode=0644 --target-directory=/app/share/applications/ ${FLATPAK_ID}.desktop
       - install -D --mode=0644 --target-directory=/app/share/metainfo/ ${FLATPAK_ID}.metainfo.xml
-      - install -D --mode=0644 --target-directory=/app/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg
+      - install -D --mode=0644 --target-directory=/app/share/icons/hicolor/scalable/apps/
+        ${FLATPAK_ID}.svg
       - install -D --mode=0644 --target-directory=/app/bin/ idea.properties
     buildsystem: simple
     sources:
@@ -85,9 +86,9 @@ modules:
         filename: ideaIU.tar.gz
         only-arches:
           - x86_64
-        sha256: 8ac0a30e2a063f606e0fcfcd49ab59f9c851c3daed942134c81886bca35212d9
-        size: 1153009058
-        url: https://download.jetbrains.com/idea/ideaIU-2023.2.1.tar.gz
+        sha256: 8a0dc4c495b8547fafa90eb81b6fdfc4a9fbbc7b5806d20ebb2f6538330cd3a5
+        size: 1154286941
+        url: https://download.jetbrains.com/idea/ideaIU-2023.2.2.tar.gz
         x-checker-data:
           code: IIU
           is-main-source: true
@@ -96,9 +97,9 @@ modules:
         filename: ideaIU.tar.gz
         only-arches:
           - aarch64
-        sha256: 47c58ae618b8179eacb14b6f3f34fd50b0aee13d5fa3f1297d5d4a6518a372c1
-        size: 1154356682
-        url: https://download.jetbrains.com/idea/ideaIU-2023.2.1-aarch64.tar.gz
+        sha256: f3a6671b9a52fdaf4f438004b2688876174702252e1a6763db40fede7304cf18
+        size: 1155631494
+        url: https://download.jetbrains.com/idea/ideaIU-2023.2.2-aarch64.tar.gz
         x-checker-data:
           code: IIU
           is-main-source: true
