@@ -1,5 +1,7 @@
 app-id: com.jetbrains.IntelliJ-IDEA-Ultimate
+
 command: idea
+
 finish-args:
   - --allow=devel
   - --device=all
@@ -17,10 +19,14 @@ finish-args:
   - --socket=x11
   - --talk-name=com.canonical.AppMenu.Registrar
   - --talk-name=org.freedesktop.Flatpak
-  - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.gnome.keyring.SystemPrompter
+
 modules:
+  # -----------------------------------------------------------------------------------------------
+  #   D E P E N D E N C I E S
+  # -----------------------------------------------------------------------------------------------
+
   - name: gcr
     cleanup:
       - /include
@@ -71,52 +77,6 @@ modules:
           stable-only: true
           type: anitya
           url-template: https://github.com/git-lfs/git-lfs/releases/download/v$version/git-lfs-linux-arm64-v$version.tar.gz
-
-  - name: idea
-    build-commands:
-      - install -D --mode=0755 apply_extra.sh /app/bin/apply_extra
-      - install -D --mode=0644 --target-directory=/app/share/applications/ ${FLATPAK_ID}.desktop
-      - install -D --mode=0644 --target-directory=/app/share/metainfo/ ${FLATPAK_ID}.metainfo.xml
-      - install -D --mode=0644 --target-directory=/app/share/icons/hicolor/scalable/apps/
-        ${FLATPAK_ID}.svg
-      - install -D --mode=0644 --target-directory=/app/bin/ idea.properties
-    buildsystem: simple
-    sources:
-      - type: extra-data
-        filename: ideaIU.tar.gz
-        only-arches:
-          - x86_64
-        sha256: 8a0dc4c495b8547fafa90eb81b6fdfc4a9fbbc7b5806d20ebb2f6538330cd3a5
-        size: 1154286941
-        url: https://download.jetbrains.com/idea/ideaIU-2023.2.2.tar.gz
-        x-checker-data:
-          code: IIU
-          is-main-source: true
-          type: jetbrains
-      - type: extra-data
-        filename: ideaIU.tar.gz
-        only-arches:
-          - aarch64
-        sha256: f3a6671b9a52fdaf4f438004b2688876174702252e1a6763db40fede7304cf18
-        size: 1155631494
-        url: https://download.jetbrains.com/idea/ideaIU-2023.2.2-aarch64.tar.gz
-        x-checker-data:
-          code: IIU
-          is-main-source: true
-          type: jetbrains
-      - type: file
-        path: apply_extra.sh
-      - type: file
-        path: com.jetbrains.IntelliJ-IDEA-Ultimate.desktop
-      - type: file # https://www.jetbrains.com/company/brand/#logos-and-icons
-        dest-filename: com.jetbrains.IntelliJ-IDEA-Ultimate.svg
-        sha256: e80013a85454435dd1ebb80254c0aa0ed5ebaac825f93d82c801e7dd55c75d50
-        size: 2201
-        url: https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg
-      - type: file
-        path: com.jetbrains.IntelliJ-IDEA-Ultimate.metainfo.xml
-      - type: file
-        path: idea.properties
 
   - name: jetbrains-flatpak-wrapper
     buildsystem: meson
@@ -181,7 +141,59 @@ modules:
           type: anitya
           url-template: https://download.samba.org/pub/rsync/src/rsync-$version.tar.gz
 
+  # -----------------------------------------------------------------------------------------------
+  #
+  # -----------------------------------------------------------------------------------------------
+
+  - name: idea
+    build-commands:
+      - install -D --mode 0644 --target-directory /app/bin/ idea.properties
+      - install -D --mode 0644 --target-directory /app/share/applications/ ${FLATPAK_ID}.desktop
+      - install -D --mode 0644 --target-directory /app/share/metainfo/ ${FLATPAK_ID}.metainfo.xml
+      - install -D --mode 0644 --target-directory /app/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg
+      - install -D --mode 0755 apply_extra.sh /app/bin/apply_extra
+    buildsystem: simple
+    sources:
+      - type: extra-data
+        filename: ideaIU.tar.gz
+        only-arches:
+          - aarch64
+        sha256: f3a6671b9a52fdaf4f438004b2688876174702252e1a6763db40fede7304cf18
+        size: 1155631494
+        url: https://download.jetbrains.com/idea/ideaIU-2023.2.2-aarch64.tar.gz
+        x-checker-data:
+          code: IIU
+          is-main-source: true
+          type: jetbrains
+      - type: extra-data
+        filename: ideaIU.tar.gz
+        only-arches:
+          - x86_64
+        sha256: 8a0dc4c495b8547fafa90eb81b6fdfc4a9fbbc7b5806d20ebb2f6538330cd3a5
+        size: 1154286941
+        url: https://download.jetbrains.com/idea/ideaIU-2023.2.2.tar.gz
+        x-checker-data:
+          code: IIU
+          is-main-source: true
+          type: jetbrains
+      - type: file
+        path: apply_extra.sh
+      - type: file
+        path: com.jetbrains.IntelliJ-IDEA-Ultimate.desktop
+      - type: file # https://www.jetbrains.com/company/brand/#logos-and-icons
+        dest-filename: com.jetbrains.IntelliJ-IDEA-Ultimate.svg
+        sha256: e80013a85454435dd1ebb80254c0aa0ed5ebaac825f93d82c801e7dd55c75d50
+        size: 2201
+        url: https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg
+      - type: file
+        path: com.jetbrains.IntelliJ-IDEA-Ultimate.metainfo.xml
+      - type: file
+        path: idea.properties
+
 runtime: org.freedesktop.Sdk
+
 runtime-version: '23.08'
+
 sdk: org.freedesktop.Sdk
+
 separate-locales: false
