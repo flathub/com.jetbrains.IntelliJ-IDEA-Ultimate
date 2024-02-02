@@ -6,6 +6,6 @@ Icon=com.jetbrains.IntelliJ-IDEA-Ultimate
 Keywords=development;idea;ide;intellij;java;
 Name=IntelliJ IDEA Ultimate
 StartupNotify=true
-StartupWMClass=jetbrains-idea-ultimate
+StartupWMClass=jetbrains-idea
 Terminal=false
 Type=Application
