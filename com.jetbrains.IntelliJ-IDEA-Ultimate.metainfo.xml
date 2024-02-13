@@ -36,6 +36,7 @@
   <update_contact>idea@jetbrains.com</update_contact>
   <content_rating type="oars-1.1"/>
   <releases>
+    <release version="2023.3.4" date="2024-02-13"/>
     <release version="2023.3.3" date="2024-01-25"/>
     <release version="2023.3.2" date="2023-12-20"/>
     <release version="2023.3.1" date="2023-12-12"/>
