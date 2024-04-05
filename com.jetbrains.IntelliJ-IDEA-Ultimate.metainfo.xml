@@ -23,10 +23,10 @@
   <launchable type="desktop-id">com.jetbrains.IntelliJ-IDEA-Ultimate.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://www.jetbrains.com/idea/img/screenshots/idea_overview_2.png</image>
+      <image>https://resources.jetbrains.com/help/img/idea/2024.1/new_ui_dark_theme.png</image>
     </screenshot>
     <screenshot>
-      <image>https://www.jetbrains.com/idea/img/screenshots/idea_overview_5_1.png</image>
+      <image>https://resources.jetbrains.com/help/img/idea/2024.1/new_ui_light_theme.png</image>
     </screenshot>
   </screenshots>
   <url type="bugtracker">https://youtrack.jetbrains.com/issues/IDEA/</url>
