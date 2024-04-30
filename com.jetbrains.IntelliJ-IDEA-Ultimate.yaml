@@ -182,7 +182,7 @@ modules:
         path: com.jetbrains.IntelliJ-IDEA-Ultimate.desktop
       - type: file # https://www.jetbrains.com/company/brand/#logos-and-icons
         dest-filename: com.jetbrains.IntelliJ-IDEA-Ultimate.svg
-        sha256: e80013a85454435dd1ebb80254c0aa0ed5ebaac825f93d82c801e7dd55c75d50
+        sha256: 77950f507eab46765204cf67639808bd37f7233dce6223954dacae45bd246a84
         size: 2201
         url: https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg
       - type: file
