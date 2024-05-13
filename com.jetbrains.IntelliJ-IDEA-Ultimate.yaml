@@ -11,9 +11,11 @@ finish-args:
   - --filesystem=xdg-run/docker
   - --filesystem=xdg-run/gnupg:ro
   - --filesystem=xdg-run/keyring
+  - --filesystem=xdg-run/pipewire-0:ro
   - --filesystem=xdg-run/podman
   - --share=ipc
   - --share=network
+  - --socket=pulseaudio
   - --socket=ssh-auth
   - --socket=wayland
   - --socket=x11
