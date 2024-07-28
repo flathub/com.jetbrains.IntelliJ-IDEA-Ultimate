@@ -9,7 +9,7 @@ finish-args:
   - --filesystem=host
   - --filesystem=xdg-run/app/com.discordapp.Discord:create
   - --filesystem=xdg-run/docker
-  - --filesystem=xdg-run/gnupg:ro # This is required instead of --socket=gpg-agent for the pinentry dialog to work
+  - --filesystem=xdg-run/gnupg:ro
   - --filesystem=xdg-run/keyring
   - --filesystem=xdg-run/pipewire-0:ro
   - --filesystem=xdg-run/podman
@@ -17,9 +17,6 @@ finish-args:
   - --share=network
   - --socket=pulseaudio
   - --socket=ssh-auth
-# https://github.com/flatpak/flatpak/issues/5863 breaks pinentry (GPG commit signing),
-# disable Wayland socket as a workaround since JetBrains IDEs aren't Wayland-native yet
-#  - --socket=wayland
   - --socket=x11
   - --talk-name=com.canonical.AppMenu.Registrar
   - --talk-name=org.freedesktop.Flatpak
