@@ -104,9 +104,9 @@ modules:
         filename: ideaIU.tar.gz
         only-arches:
           - aarch64
-        sha256: c2a5071e10f69f80889c8c310b6534a578fd90a7f11208f988caf070a3e650ec
-        size: 1537898163
-        url: https://download.jetbrains.com/idea/ideaIU-2024.2.0.1-aarch64.tar.gz
+        sha256: 0da7909451157394d190b5041aaa61475ab30afd7af16a77651b40b90b78ef0e
+        size: 1537852081
+        url: https://download.jetbrains.com/idea/ideaIU-2024.2.0.2-aarch64.tar.gz
         x-checker-data:
           code: IIU
           is-main-source: true
@@ -115,9 +115,9 @@ modules:
         filename: ideaIU.tar.gz
         only-arches:
           - x86_64
-        sha256: 293fa50d4cbae4da55526b72c19650eca26efc8ef3a7107fed2371b70b812d6f
-        size: 1539065575
-        url: https://download.jetbrains.com/idea/ideaIU-2024.2.0.1.tar.gz
+        sha256: cf2159b9ea61ea910d27ad0e661cdd93575f65cdb443f99bd15600f5960b7f4b
+        size: 1539004977
+        url: https://download.jetbrains.com/idea/ideaIU-2024.2.0.2.tar.gz
         x-checker-data:
           code: IIU
           is-main-source: true
