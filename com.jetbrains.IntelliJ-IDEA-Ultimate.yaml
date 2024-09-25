@@ -1,7 +1,5 @@
 app-id: com.jetbrains.IntelliJ-IDEA-Ultimate
-
 command: idea
-
 finish-args:
   - --allow=devel
   - --device=all
@@ -17,17 +15,11 @@ finish-args:
   - --share=network
   - --socket=pulseaudio
   - --socket=ssh-auth
-  - --socket=wayland
   - --socket=x11
   - --talk-name=com.canonical.AppMenu.Registrar
   - --talk-name=org.freedesktop.Flatpak
   - --talk-name=org.freedesktop.secrets
-
 modules:
-  # -----------------------------------------------------------------------------------------------
-  #   D E P E N D E N C I E S
-  # -----------------------------------------------------------------------------------------------
-
   - name: git-lfs
     build-commands:
       - PREFIX=${FLATPAK_DEST} ./install.sh
@@ -87,10 +79,6 @@ modules:
           type: anitya
           url-template: https://download.samba.org/pub/rsync/src/rsync-$version.tar.gz
 
-  # -----------------------------------------------------------------------------------------------
-  #
-  # -----------------------------------------------------------------------------------------------
-
   - name: idea
     build-commands:
       - install -D --mode 0644 --target-directory /app/bin/ idea.properties
@@ -135,11 +123,9 @@ modules:
         path: com.jetbrains.IntelliJ-IDEA-Ultimate.metainfo.xml
       - type: file
         path: idea.properties
-
 runtime: org.freedesktop.Sdk
-
-runtime-version: '23.08'
-
+runtime-version: "24.08"
 sdk: org.freedesktop.Sdk
-
 separate-locales: false
+tags:
+  - proprietary
