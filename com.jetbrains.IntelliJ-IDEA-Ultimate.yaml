@@ -7,12 +7,13 @@ finish-args:
   - --filesystem=host
   - --filesystem=xdg-run/app/com.discordapp.Discord:create
   - --filesystem=xdg-run/docker
-  - --filesystem=xdg-run/gnupg:ro
+  - --filesystem=xdg-run/gnupg
   - --filesystem=xdg-run/keyring
-  - --filesystem=xdg-run/pipewire-0:ro
+  - --filesystem=xdg-run/pipewire-0
   - --filesystem=xdg-run/podman
   - --share=ipc
   - --share=network
+  - --socket=gpg-agent
   - --socket=pulseaudio
   - --socket=ssh-auth
   - --socket=x11
