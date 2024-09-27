@@ -50,7 +50,7 @@ modules:
   - name: jetbrains-flatpak-wrapper
     buildsystem: meson
     config-opts:
-      - -Deditor_binary=/app/extra/IDEA-U/bin/idea.sh
+      - -Deditor_binary=/app/extra/IIU/bin/idea.sh
       - -Deditor_title=IntelliJ IDEA Ultimate
       - -Dprogram_name=idea
     sources:
@@ -112,8 +112,6 @@ modules:
           is-main-source: true
           type: jetbrains
       - type: file
-        path: apply_extra.sh
-      - type: file
         path: com.jetbrains.IntelliJ-IDEA-Ultimate.desktop
       - type: file # https://www.jetbrains.com/company/brand/#logos-and-icons
         dest-filename: com.jetbrains.IntelliJ-IDEA-Ultimate.svg
@@ -124,6 +122,12 @@ modules:
         path: com.jetbrains.IntelliJ-IDEA-Ultimate.metainfo.xml
       - type: file
         path: idea.properties
+      - type: script
+        commands:
+          - install --directory --mode 0755 IIU/
+          - tar --directory IIU/ --extract --file ideaIU.tar.gz --gunzip --strip-components 1
+          - rm --force ideaIU.tar.gz
+        dest-filename: apply_extra.sh
 runtime: org.freedesktop.Sdk
 runtime-version: "24.08"
 sdk: org.freedesktop.Sdk
