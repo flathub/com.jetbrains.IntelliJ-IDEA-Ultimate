@@ -50,7 +50,7 @@ modules:
   - name: jetbrains-flatpak-wrapper
     buildsystem: meson
     config-opts:
-      - -Deditor_binary=/app/extra/IIU/bin/idea.sh
+      - -Deditor_binary=/app/extra/IIU/bin/idea
       - -Deditor_title=IntelliJ IDEA Ultimate
       - -Dprogram_name=idea
     sources:
