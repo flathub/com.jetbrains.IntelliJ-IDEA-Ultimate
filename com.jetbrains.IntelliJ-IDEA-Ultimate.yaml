@@ -93,9 +93,9 @@ modules:
         filename: ideaIU.tar.gz
         only-arches:
           - aarch64
-        sha256: c6bf5a8183fb1c3422dec061e5198fa18bb6edaf2c64724efecf77fddaf747e1
-        size: 1435985035
-        url: https://download.jetbrains.com/idea/ideaIU-2024.2.3-aarch64.tar.gz
+        sha256: 902494f3f7857c92019feff6a97d3001f5615d0c6844920218f5bf2625397a92
+        size: 1436203362
+        url: https://download.jetbrains.com/idea/ideaIU-2024.2.4-aarch64.tar.gz
         x-checker-data:
           code: IIU
           is-main-source: true
@@ -104,9 +104,9 @@ modules:
         filename: ideaIU.tar.gz
         only-arches:
           - x86_64
-        sha256: 579021f82d31dceb0dd8581fe5c12d7481e52c24a10688898ed00af1a0295eb3
-        size: 1437187790
-        url: https://download.jetbrains.com/idea/ideaIU-2024.2.3.tar.gz
+        sha256: 8411fda793a20356a4982e4f18f6691839d8a471e2081ab6d8cc78b3f8b02532
+        size: 1437390140
+        url: https://download.jetbrains.com/idea/ideaIU-2024.2.4.tar.gz
         x-checker-data:
           code: IIU
           is-main-source: true
@@ -129,7 +129,7 @@ modules:
           - rm --force ideaIU.tar.gz
         dest-filename: apply_extra.sh
 runtime: org.freedesktop.Sdk
-runtime-version: "24.08"
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 separate-locales: false
 tags:
