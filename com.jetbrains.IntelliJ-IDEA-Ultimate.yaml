@@ -29,8 +29,8 @@ modules:
       - type: archive
         only-arches:
           - x86_64
-        sha256: 6f28eb19faa7a968882dca190d92adc82493378b933958d67ceaeb9ebe4d731e
-        url: https://github.com/git-lfs/git-lfs/releases/download/v3.5.1/git-lfs-linux-amd64-v3.5.1.tar.gz
+        sha256: fff4746159aa7a7b42ef1aa30fed03b534df48a7dbe116d65296c0f0c43c594d
+        url: https://github.com/git-lfs/git-lfs/releases/download/v3.6.0/git-lfs-linux-amd64-v3.6.0.tar.gz
         x-checker-data:
           project-id: 11551
           stable-only: true
@@ -39,8 +39,8 @@ modules:
       - type: archive
         only-arches:
           - aarch64
-        sha256: 4f8700aacaa0fd26ae5300fb0996aed14d1fd0ce1a63eb690629c132ff5163a9
-        url: https://github.com/git-lfs/git-lfs/releases/download/v3.5.1/git-lfs-linux-arm64-v3.5.1.tar.gz
+        sha256: 9509504b3b825054c3d07af5edc1cc9c00732c6f0fd4a060f04bfbf0f1279fca
+        url: https://github.com/git-lfs/git-lfs/releases/download/v3.6.0/git-lfs-linux-arm64-v3.6.0.tar.gz
         x-checker-data:
           project-id: 11551
           stable-only: true
