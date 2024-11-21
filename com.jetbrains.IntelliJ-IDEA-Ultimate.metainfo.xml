@@ -4,6 +4,15 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LicenseRef-proprietary</project_license>
   <name>IntelliJ IDEA Ultimate</name>
+  <launchable type="desktop-id">com.jetbrains.IntelliJ-IDEA-Ultimate.desktop</launchable>
+  <update_contact>idea@jetbrains.com</update_contact>
+  <content_rating type="oars-1.1" />
+  <url type="bugtracker">https://youtrack.jetbrains.com/issues/IDEA/</url>
+  <url type="help">https://www.jetbrains.com/idea/documentation/</url>
+  <url type="homepage">https://www.jetbrains.com/idea/</url>
+  <developer id="com.jetbrains">
+    <name>JetBrains s.r.o.</name>
+  </developer>
   <summary>The Leading Java and Kotlin IDE</summary>
   <description>
     <p>IntelliJ IDEA Ultimate is a full-featured Java and Kotlin IDE that provides everything you need out of the box,
@@ -15,7 +24,6 @@
     </p>
     <p>NOTE: This wrapper is not verified by, affiliated with, or supported by JetBrains s.r.o.</p>
   </description>
-  <launchable type="desktop-id">com.jetbrains.IntelliJ-IDEA-Ultimate.desktop</launchable>
   <screenshots>
     <screenshot type="default">
       <image>https://www.jetbrains.com/idea/img/overview-heading-screenshot.png</image>
@@ -66,14 +74,6 @@
       <caption>Detection of code duplicates</caption>
     </screenshot>
   </screenshots>
-  <url type="bugtracker">https://youtrack.jetbrains.com/issues/IDEA/</url>
-  <url type="help">https://www.jetbrains.com/idea/documentation/</url>
-  <url type="homepage">https://www.jetbrains.com/idea/</url>
-  <developer id="com.jetbrains">
-    <name>JetBrains s.r.o.</name>
-  </developer>
-  <update_contact>idea@jetbrains.com</update_contact>
-  <content_rating type="oars-1.1" />
   <releases>
     <release date="2024-11-12" version="2024.3">
       <url type="details">https://www.jetbrains.com/idea/whatsnew/2024-3/</url>
