@@ -4,40 +4,74 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LicenseRef-proprietary</project_license>
   <name>IntelliJ IDEA Ultimate</name>
-  <summary>Capable and Ergonomic Java IDE for Enterprise, Web and Mobile Development</summary>
+  <summary>The Leading Java and Kotlin IDE</summary>
   <description>
-    <p>
-      IntelliJ IDEA Ultimate is a fully-fledged commercial IDE for the JVM platform. IntelliJ IDEA provides all the
-      tools you need for productive enterprise, Web, and mobile development. IntelliJ IDEA supports Java, Groovy,
-      Kotlin, Scala, Android, JavaScript, SQL and lots of other languages and frameworks. It offers instant and clever
-      code completion, on-the-fly code analysis and reliable refactoring tools. Mission-critical tools such as
-      integrated version controls systems and a wide variety of supported languages and frameworks are at hand — no
-      plugin hustle included.
-    </p>
-    <p>
-      IntelliJ IDEA Ultimate is available for a free 30-day evaluation. Monthly and yearly subscription options are
-      available for companies and individual users.
-    </p>
+    <p>IntelliJ IDEA Ultimate – a full-featured Java and Kotlin IDE that provides everything you need out of the box, including built-in developer tools such as database tools and profilers, web and enterprise frameworks, remote development, and much more.</p>
+    <p>IntelliJ IDEA Ultimate is available for a free 30-day evaluation. Monthly and yearly subscription options are available for companies and individual users.</p>
     <p>NOTE: This wrapper is not verified by, affiliated with, or supported by JetBrains s.r.o.</p>
   </description>
   <launchable type="desktop-id">com.jetbrains.IntelliJ-IDEA-Ultimate.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://resources.jetbrains.com/help/img/idea/2024.1/new_ui_dark_theme.png</image>
+      <image>https://www.jetbrains.com/idea/img/overview-heading-screenshot.png</image>
+      <caption>Overview heading</caption>
     </screenshot>
     <screenshot>
-      <image>https://resources.jetbrains.com/help/img/idea/2024.1/new_ui_light_theme.png</image>
+      <image>https://www.jetbrains.com/idea/features/screenshots/java-and-kotlin-support-1.png</image>
+      <caption>Java support</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://www.jetbrains.com/idea/features/screenshots/java-and-kotlin-support-2.png</image>
+      <caption>Kotlin support</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://www.jetbrains.com/idea/features/screenshots/full-line-code-completion.png</image>
+      <caption>Full line code completion</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://www.jetbrains.com/idea/features/screenshots/features_2023/AI_Assistant_features_v2.png</image>
+      <caption>AI Assistant</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://www.jetbrains.com/idea/features/screenshots/features_2021/LanguageInjections.png</image>
+      <caption>Language injections</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://www.jetbrains.com/idea/features/screenshots/features_2021/IntelligentCodeCompletion.png</image>
+      <caption>Intelligent code completion</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://www.jetbrains.com/idea/features/screenshots/features_2023/ProblemsToolsWindow.png</image>
+      <caption>The Problems tool window</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://www.jetbrains.com/idea/features/screenshots/features_2023/InspectionsAndContextActions.png</image>
+      <caption>Inspections and context actions</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://www.jetbrains.com/idea/features/screenshots/features_2021/LiveTemplates.png</image>
+      <caption>Live templates</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://www.jetbrains.com/idea/features/screenshots/features_2021/ProjectWideRefactoring.png</image>
+      <caption>Project-wide refactoring</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://www.jetbrains.com/idea/features/screenshots/features_2023/CodeDuplicates.png</image>
+      <caption>Detection of code duplicates</caption>
     </screenshot>
   </screenshots>
   <url type="bugtracker">https://youtrack.jetbrains.com/issues/IDEA/</url>
   <url type="help">https://www.jetbrains.com/idea/documentation/</url>
   <url type="homepage">https://www.jetbrains.com/idea/</url>
-  <developer_name>JetBrains s.r.o.</developer_name>
+  <developer id="com.jetbrains">
+    <name>JetBrains s.r.o.</name>
+  </developer>
   <update_contact>idea@jetbrains.com</update_contact>
   <content_rating type="oars-1.1"/>
   <releases>
     <release version="2024.3" date="2024-11-12">
-      <description></description>
+      <description/>
     </release>
     <release version="2024.2.4" date="2024-10-23">
       <description/>
@@ -51,47 +85,5 @@
     <release version="2024.2.1" date="2024-08-29">
       <description/>
     </release>
-    <release version="2024.2.0.1" date="2024-08-13">
-      <description/>
-    </release>
-    <release version="2024.2" date="2024-08-07">
-      <description/>
-    </release>
-    <release version="2024.1.5" date="2024-08-06">
-      <description/>
-    </release>
-    <release version="2024.1.4" date="2024-06-21">
-      <description/>
-    </release>
-    <release version="2024.1.3" date="2024-06-10">
-      <description/>
-    </release>
-    <release version="2024.1.2" date="2024-05-23">
-      <description/>
-    </release>
-    <release version="2024.1.1" date="2024-04-30"/>
-    <release version="2024.1" date="2024-04-04"/>
-    <release version="2023.3.6" date="2024-03-21"/>
-    <release version="2023.3.5" date="2024-03-12"/>
-    <release version="2023.3.4" date="2024-02-13"/>
-    <release version="2023.3.3" date="2024-01-25"/>
-    <release version="2023.3.2" date="2023-12-20"/>
-    <release version="2023.3.1" date="2023-12-12"/>
-    <release version="2023.3" date="2023-12-06"/>
-    <release version="2023.2.5" date="2023-11-09"/>
-    <release version="2023.2.4" date="2023-10-24"/>
-    <release version="2023.2.3" date="2023-10-11"/>
-    <release version="2023.2.2" date="2023-09-13"/>
-    <release version="2023.2.1" date="2023-08-23"/>
-    <release version="2023.2" date="2023-07-26"/>
-    <release version="2023.1.5" date="2023-07-25"/>
-    <release version="2023.1.4" date="2023-07-12"/>
-    <release version="2023.1.3" date="2023-06-20"/>
-    <release version="2023.1.2" date="2023-05-16"/>
-    <release version="2023.1.1" date="2023-04-28"/>
-    <release version="2023.1" date="2023-03-28"/>
-    <release version="2022.3.3" date="2023-03-08"/>
-    <release version="2022.3.2" date="2023-01-26"/>
-    <release version="2022.3.1" date="2022-12-20"/>
   </releases>
 </component>
