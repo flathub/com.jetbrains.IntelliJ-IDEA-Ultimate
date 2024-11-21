@@ -81,7 +81,7 @@
         <p>IntelliJ IDEA 2024.3 introduces a range of powerful new features to elevate your development experience. The
           IDE now offers a representation of your code’s logical structure, streamlines the debugging experience for
           Kubernetes applications, provides cluster-wide Kubernetes log access, and officially moves K2 mode out of
-          Beta. Explore this page for detailed updates across all areas of the IDE.
+          Beta.
         </p>
         <p>Key highlights</p>
         <ul>
@@ -119,8 +119,7 @@
           IDEA Ultimate now boasts full line code completion, providing comprehensive code-aware suggestions for entire
           lines of code. Support for Java 22 ensures compatibility with the latest language features. The overhauled
           terminal enhances command-line operations, while sticky lines in the editor facilitate smoother navigation
-          through codebases. There are dozens of other improvements to various parts of the IDE in version 2024.1. Check
-          them out below!
+          through codebases.
         </p>
         <p>Key highlights</p>
         <ul>
@@ -155,8 +154,7 @@
       <description>
         <p>IntelliJ IDEA 2023.2 introduces AI Assistant to enhance your development with a set of AI-powered features.
           The upgraded IntelliJ Profiler now provides in-editor hints, making the profiling process more intuitive and
-          informative. This release also includes GitLab integration, which helps streamline your development workflow,
-          and comes with many other notable updates and refinements described below.
+          informative. This release also includes GitLab integration, which helps streamline your development workflow.
         </p>
         <p>Key highlights</p>
         <ul>
