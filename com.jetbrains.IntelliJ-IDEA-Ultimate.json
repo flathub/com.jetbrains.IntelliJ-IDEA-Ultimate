@@ -8,7 +8,7 @@
     "--allow=devel",
     "--device=all",
     "--env=IDEA_PROPERTIES=/app/bin/idea.properties",
-    "--filesystem=host",
+    "--filesystem=home",
     "--filesystem=xdg-run/app/com.discordapp.Discord:create",
     "--filesystem=xdg-run/docker",
     "--filesystem=xdg-run/gnupg",
@@ -23,47 +23,9 @@
     "--socket=x11",
     "--env=JAVA_HOME=/app/extra/idea-IU/jbr",
     "--talk-name=com.canonical.AppMenu.Registrar",
-    "--talk-name=org.freedesktop.Flatpak",
     "--talk-name=org.freedesktop.secrets"
   ],
   "modules": [
-    {
-      "name": "git-lfs",
-      "build-commands": [
-        "PREFIX=${FLATPAK_DEST} ./install.sh"
-      ],
-      "buildsystem": "simple",
-      "sources": [
-        {
-          "type": "archive",
-          "only-arches": [
-            "x86_64"
-          ],
-          "sha256": "fff4746159aa7a7b42ef1aa30fed03b534df48a7dbe116d65296c0f0c43c594d",
-          "url": "https://github.com/git-lfs/git-lfs/releases/download/v3.6.0/git-lfs-linux-amd64-v3.6.0.tar.gz",
-          "x-checker-data": {
-            "project-id": 11551,
-            "stable-only": true,
-            "type": "anitya",
-            "url-template": "https://github.com/git-lfs/git-lfs/releases/download/v$version/git-lfs-linux-amd64-v$version.tar.gz"
-          }
-        },
-        {
-          "type": "archive",
-          "only-arches": [
-            "aarch64"
-          ],
-          "sha256": "9509504b3b825054c3d07af5edc1cc9c00732c6f0fd4a060f04bfbf0f1279fca",
-          "url": "https://github.com/git-lfs/git-lfs/releases/download/v3.6.0/git-lfs-linux-arm64-v3.6.0.tar.gz",
-          "x-checker-data": {
-            "project-id": 11551,
-            "stable-only": true,
-            "type": "anitya",
-            "url-template": "https://github.com/git-lfs/git-lfs/releases/download/v$version/git-lfs-linux-arm64-v$version.tar.gz"
-          }
-        }
-      ]
-    },
     {
       "name": "ide-flatpak-wrapper",
       "buildsystem": "meson",
@@ -86,33 +48,6 @@
       ]
     },
     "shared-modules/libsecret/libsecret.json",
-    {
-      "name": "rsync",
-      "cleanup": [
-        "/share/man"
-      ],
-      "config-opts": [
-        "--disable-debug",
-        "--disable-md2man",
-        "--disable-xxhash",
-        "--prefix=${FLATPAK_DEST}",
-        "--with-included-popt",
-        "--with-included-zlib"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://download.samba.org/pub/rsync/src/rsync-3.3.0.tar.gz",
-          "sha256": "7399e9a6708c32d678a72a63219e96f23be0be2336e50fd1348498d07041df90",
-          "x-checker-data": {
-            "project-id": 4217,
-            "stable-only": true,
-            "type": "anitya",
-            "url-template": "https://download.samba.org/pub/rsync/src/rsync-$version.tar.gz"
-          }
-        }
-      ]
-    },
     {
       "name": "idea",
       "build-commands": [
