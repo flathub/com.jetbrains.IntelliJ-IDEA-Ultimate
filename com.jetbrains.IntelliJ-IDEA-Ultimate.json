@@ -175,8 +175,8 @@
         {
           "type": "script",
           "commands": [
-            "tar xzf /app/extra/ideaIU.tar.gz --one-top-level=/app/extra/idea-IU --strip-components=1",
-            "rm /app/extra/ideaIU.tar.gz"
+            "tar xzf ideaIU.tar.gz --one-top-level=idea-IU --strip-components=1",
+            "rm ideaIU.tar.gz"
           ],
           "dest-filename": "apply_extra"
         }
