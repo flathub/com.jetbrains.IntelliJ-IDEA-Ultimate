@@ -21,6 +21,7 @@
     "--socket=pulseaudio",
     "--socket=ssh-auth",
     "--socket=x11",
+    "--env=JAVA_HOME=/app/extra/idea-IU/jbr",
     "--talk-name=com.canonical.AppMenu.Registrar",
     "--talk-name=org.freedesktop.Flatpak",
     "--talk-name=org.freedesktop.secrets"
@@ -67,7 +68,7 @@
       "name": "ide-flatpak-wrapper",
       "buildsystem": "meson",
       "config-opts": [
-        "-Deditor_binary=/app/extra/IIU/bin/idea",
+        "-Deditor_binary=/app/extra/idea-IU/bin/idea",
         "-Deditor_title=IntelliJ IDEA Ultimate",
         "-Dprogram_name=idea",
         "-Dfirst_run_template=first_run.txt",
@@ -115,11 +116,11 @@
     {
       "name": "idea",
       "build-commands": [
-        "install -D --mode 0644 --target-directory /app/bin/ idea.properties",
-        "install -D --mode 0644 --target-directory /app/share/applications/ ${FLATPAK_ID}.desktop",
-        "install -D --mode 0644 --target-directory /app/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
-        "install -D --mode 0644 --target-directory /app/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg",
-        "install -D --mode 0755 apply_extra.sh /app/bin/apply_extra"
+        "install -Dm644 -t ${FLATPAK_DEST}/bin/ idea.properties",
+        "install -Dm644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
+        "install -Dm644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
+        "install -Dm644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg",
+        "install -D apply_extra ${FLATPAK_DEST}/bin/apply_extra"
       ],
       "buildsystem": "simple",
       "sources": [
@@ -175,17 +176,12 @@
         {
           "type": "script",
           "commands": [
-            "install --directory --mode 0755 IIU/",
-            "tar --directory IIU/ --extract --file ideaIU.tar.gz --gunzip --strip-components 1",
-            "rm --force ideaIU.tar.gz"
+            "tar xzf ideaIU.tar.gz --one-top-level=idea-IU --strip-components=1",
+            "rm ideaIU.tar.gz"
           ],
-          "dest-filename": "apply_extra.sh"
+          "dest-filename": "apply_extra"
         }
       ]
     }
-  ],
-  "separate-locales": false,
-  "tags": [
-    "proprietary"
   ]
 }
