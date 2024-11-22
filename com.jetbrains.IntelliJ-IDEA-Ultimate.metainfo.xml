@@ -6,14 +6,44 @@
   <name>IntelliJ IDEA Ultimate</name>
   <launchable type="desktop-id">com.jetbrains.IntelliJ-IDEA-Ultimate.desktop</launchable>
   <update_contact>idea@jetbrains.com</update_contact>
-  <content_rating type="oars-1.1" />
+  <summary>The Leading Java and Kotlin IDE</summary>
   <url type="bugtracker">https://youtrack.jetbrains.com/issues/IDEA/</url>
   <url type="help">https://www.jetbrains.com/idea/documentation/</url>
   <url type="homepage">https://www.jetbrains.com/idea/</url>
   <developer id="com.jetbrains">
     <name>JetBrains s.r.o.</name>
   </developer>
-  <summary>The Leading Java and Kotlin IDE</summary>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-info">moderate</content_attribute>
+  </content_rating>
+  <branding>
+    <color scheme_preference="light" type="primary">#9d4f94</color>
+    <color scheme_preference="dark" type="primary">#000000</color>
+  </branding>
+  <categories>
+    <category>Development</category>
+    <category>IDE</category>
+  </categories>
+  <keywords>
+    <keyword>kotlin</keyword>
+    <keyword>java</keyword>
+    <keyword>development</keyword>
+    <keyword>ide</keyword>
+  </keywords>
+  <requires>
+    <memory>2048</memory>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <display_length compare="ge">768</display_length>
+  </requires>
+  <recommends>
+    <memory>8192</memory>
+    <display_length compare="ge">1080</display_length>
+    <internet>always</internet>
+  </recommends>
+  <supports>
+    <internet>offline-only</internet>
+  </supports>
   <description>
     <p>IntelliJ IDEA Ultimate is a full-featured Java and Kotlin IDE that provides everything you need out of the box,
       including built-in developer tools such as database tools and profilers, web and enterprise frameworks, remote

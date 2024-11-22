@@ -5,49 +5,28 @@
   "sdk": "org.freedesktop.Sdk",
   "command": "idea",
   "finish-args": [
-    "--allow=devel",
+    "--socket=x11",
+    "--socket=pulseaudio",
+    "--socket=ssh-auth",
+    "--share=ipc",
+    "--share=network",
     "--device=all",
-    "--env=IDEA_PROPERTIES=/app/bin/idea.properties",
     "--filesystem=home",
+    "--env=JAVA_HOME=/app/extra/idea-IU/jbr",
+    "--talk-name=org.freedesktop.Notifications",
+    "--talk-name=org.freedesktop.secrets",
+    "--talk-name=com.canonical.AppMenu.Registrar",
+    "--env=IDEA_PROPERTIES=/app/bin/idea.properties",
+    "--allow=devel",
     "--filesystem=xdg-run/app/com.discordapp.Discord:create",
     "--filesystem=xdg-run/docker",
     "--filesystem=xdg-run/gnupg",
     "--filesystem=xdg-run/keyring",
     "--filesystem=xdg-run/pipewire-0",
     "--filesystem=xdg-run/podman",
-    "--share=ipc",
-    "--share=network",
-    "--socket=gpg-agent",
-    "--socket=pulseaudio",
-    "--socket=ssh-auth",
-    "--socket=x11",
-    "--env=JAVA_HOME=/app/extra/idea-IU/jbr",
-    "--talk-name=com.canonical.AppMenu.Registrar",
-    "--talk-name=org.freedesktop.secrets"
+    "--socket=gpg-agent"
   ],
   "modules": [
-    {
-      "name": "ide-flatpak-wrapper",
-      "buildsystem": "meson",
-      "config-opts": [
-        "-Deditor_binary=/app/extra/idea-IU/bin/idea",
-        "-Deditor_title=IntelliJ IDEA Ultimate",
-        "-Dprogram_name=idea",
-        "-Dfirst_run_template=first_run.txt",
-        "-Dflagfile_prefix=flatpak-idea"
-      ],
-      "sources": [
-        {
-          "type": "dir",
-          "path": "ide-flatpak-wrapper"
-        },
-        {
-          "type": "file",
-          "path": "first_run.txt"
-        }
-      ]
-    },
-    "shared-modules/libsecret/libsecret.json",
     {
       "name": "idea",
       "build-commands": [
@@ -117,6 +96,28 @@
           "dest-filename": "apply_extra"
         }
       ]
-    }
+    },
+    {
+      "name": "ide-flatpak-wrapper",
+      "buildsystem": "meson",
+      "config-opts": [
+        "-Deditor_binary=/app/extra/idea-IU/bin/idea",
+        "-Deditor_title=IntelliJ IDEA Ultimate",
+        "-Dprogram_name=idea",
+        "-Dfirst_run_template=first_run.txt",
+        "-Dflagfile_prefix=flatpak-idea"
+      ],
+      "sources": [
+        {
+          "type": "dir",
+          "path": "ide-flatpak-wrapper"
+        },
+        {
+          "type": "file",
+          "path": "first_run.txt"
+        }
+      ]
+    },
+    "shared-modules/libsecret/libsecret.json"
   ]
 }
