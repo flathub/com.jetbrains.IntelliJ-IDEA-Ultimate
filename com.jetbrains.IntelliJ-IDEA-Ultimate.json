@@ -21,6 +21,7 @@
     "--socket=pulseaudio",
     "--socket=ssh-auth",
     "--socket=x11",
+    "--env=JAVA_HOME=/app/extra/idea-IU/jbr",
     "--talk-name=com.canonical.AppMenu.Registrar",
     "--talk-name=org.freedesktop.Flatpak",
     "--talk-name=org.freedesktop.secrets"
