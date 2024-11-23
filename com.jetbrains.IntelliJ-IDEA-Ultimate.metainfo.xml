@@ -1,198 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>com.jetbrains.IntelliJ-IDEA-Ultimate</id>
-  <metadata_license>CC0-1.0</metadata_license>
-  <project_license>LicenseRef-proprietary</project_license>
-  <name>IntelliJ IDEA Ultimate</name>
-  <launchable type="desktop-id">com.jetbrains.IntelliJ-IDEA-Ultimate.desktop</launchable>
-  <update_contact>idea@jetbrains.com</update_contact>
-  <summary>The Leading Java and Kotlin IDE</summary>
-  <url type="bugtracker">https://youtrack.jetbrains.com/issues/IDEA/</url>
-  <url type="help">https://www.jetbrains.com/idea/documentation/</url>
-  <url type="homepage">https://www.jetbrains.com/idea/</url>
-  <developer id="com.jetbrains">
-    <name>JetBrains s.r.o.</name>
-  </developer>
-  <content_rating type="oars-1.1">
-    <content_attribute id="social-info">moderate</content_attribute>
-  </content_rating>
-  <branding>
-    <color scheme_preference="light" type="primary">#9d4f94</color>
-    <color scheme_preference="dark" type="primary">#000000</color>
-  </branding>
-  <categories>
-    <category>Development</category>
-    <category>IDE</category>
-  </categories>
-  <keywords>
-    <keyword>kotlin</keyword>
-    <keyword>java</keyword>
-    <keyword>development</keyword>
-    <keyword>ide</keyword>
-  </keywords>
-  <requires>
-    <memory>2048</memory>
-    <control>keyboard</control>
-    <control>pointing</control>
-    <display_length compare="ge">768</display_length>
-  </requires>
-  <recommends>
-    <memory>8192</memory>
-    <display_length compare="ge">1080</display_length>
-    <internet>always</internet>
-  </recommends>
-  <supports>
-    <internet>offline-only</internet>
-  </supports>
-  <description>
-    <p>IntelliJ IDEA Ultimate is a full-featured Java and Kotlin IDE that provides everything you need out of the box,
-      including built-in developer tools such as database tools and profilers, web and enterprise frameworks, remote
-      development, and much more.
-    </p>
-    <p>IntelliJ IDEA Ultimate is available for a free 30-day evaluation. Monthly and yearly subscription options are
-      available for companies and individual users.
-    </p>
-    <p>NOTE: This wrapper is not verified by, affiliated with, or supported by JetBrains s.r.o.</p>
-  </description>
-  <screenshots>
-    <screenshot type="default">
-      <image>https://www.jetbrains.com/idea/img/overview-heading-screenshot.png</image>
-      <caption>Overview heading</caption>
-    </screenshot>
-    <screenshot>
-      <image>https://www.jetbrains.com/idea/features/screenshots/java-and-kotlin-support-1.png</image>
-      <caption>Java support</caption>
-    </screenshot>
-    <screenshot>
-      <image>https://www.jetbrains.com/idea/features/screenshots/java-and-kotlin-support-2.png</image>
-      <caption>Kotlin support</caption>
-    </screenshot>
-    <screenshot>
-      <image>https://www.jetbrains.com/idea/features/screenshots/full-line-code-completion.png</image>
-      <caption>Full line code completion</caption>
-    </screenshot>
-    <screenshot>
-      <image>https://www.jetbrains.com/idea/features/screenshots/features_2023/AI_Assistant_features_v2.png</image>
-      <caption>AI Assistant</caption>
-    </screenshot>
-    <screenshot>
-      <image>https://www.jetbrains.com/idea/features/screenshots/features_2021/LanguageInjections.png</image>
-      <caption>Language injections</caption>
-    </screenshot>
-    <screenshot>
-      <image>https://www.jetbrains.com/idea/features/screenshots/features_2021/IntelligentCodeCompletion.png</image>
-      <caption>Intelligent code completion</caption>
-    </screenshot>
-    <screenshot>
-      <image>https://www.jetbrains.com/idea/features/screenshots/features_2023/ProblemsToolsWindow.png</image>
-      <caption>The Problems tool window</caption>
-    </screenshot>
-    <screenshot>
-      <image>https://www.jetbrains.com/idea/features/screenshots/features_2023/InspectionsAndContextActions.png</image>
-      <caption>Inspections and context actions</caption>
-    </screenshot>
-    <screenshot>
-      <image>https://www.jetbrains.com/idea/features/screenshots/features_2021/LiveTemplates.png</image>
-      <caption>Live templates</caption>
-    </screenshot>
-    <screenshot>
-      <image>https://www.jetbrains.com/idea/features/screenshots/features_2021/ProjectWideRefactoring.png</image>
-      <caption>Project-wide refactoring</caption>
-    </screenshot>
-    <screenshot>
-      <image>https://www.jetbrains.com/idea/features/screenshots/features_2023/CodeDuplicates.png</image>
-      <caption>Detection of code duplicates</caption>
-    </screenshot>
-  </screenshots>
-  <releases>
-    <release date="2024-11-12" version="2024.3">
-      <url type="details">https://www.jetbrains.com/idea/whatsnew/2024-3/</url>
-      <description>
-        <p>IntelliJ IDEA 2024.3 introduces a range of powerful new features to elevate your development experience. The
-          IDE now offers a representation of your code’s logical structure, streamlines the debugging experience for
-          Kubernetes applications, provides cluster-wide Kubernetes log access, and officially moves K2 mode out of
-          Beta.
-        </p>
-        <p>Key highlights</p>
-        <ul>
-          <li>Logical code structure in the Structure tool window</li>
-          <li>Improved Kubernetes application debugging experience</li>
-          <li>Kubernetes cluster logs</li>
-          <li>Stable K2 mode</li>
-        </ul>
-      </description>
-    </release>
-    <release date="2024-08-07" version="2024.2">
-      <url type="details">https://www.jetbrains.com/idea/whatsnew/2024-2/</url>
-      <description>
-        <p>IntelliJ IDEA 2024.2 Ultimate lets you run Spring Data JPA methods directly in the IDE for instant repository
-          query verification. It also simplifies the management of cron expressions by providing inline descriptions and
-          advanced autocompletion, and it upgrades the HTTP Client to use the GraalJS execution engine. Additionally,
-          this version enhances IntelliJ IDEA’s overall startup efficiency by enabling key functionalities during
-          project indexing, and it integrates K2 mode, now in Beta, to further boost the IDE’s performance and stability
-          for Kotlin, as well as its support for language features.
-        </p>
-        <p>Key highlights</p>
-        <ul>
-          <li>Improved Spring Data JPA support</li>
-          <li>Improved cron expression support</li>
-          <li>GraalJS as the execution engine for the HTTP Client</li>
-          <li>Faster time to code</li>
-          <li>Improved stability and performance for Kotlin in K2 mode</li>
-        </ul>
-      </description>
-    </release>
-    <release date="2024-04-04" version="2024.1">
-      <url type="details">https://www.jetbrains.com/idea/whatsnew/2024-1/</url>
-      <description>
-        <p>IntelliJ IDEA 2024.1 introduces an array of exciting upgrades to help streamline your workflows. IntelliJ
-          IDEA Ultimate now boasts full line code completion, providing comprehensive code-aware suggestions for entire
-          lines of code. Support for Java 22 ensures compatibility with the latest language features. The overhauled
-          terminal enhances command-line operations, while sticky lines in the editor facilitate smoother navigation
-          through codebases.
-        </p>
-        <p>Key highlights</p>
-        <ul>
-          <li>Full line code completion</li>
-          <li>Support for Java 22 features</li>
-          <li>New terminal</li>
-          <li>Sticky lines in the editor</li>
-        </ul>
-      </description>
-    </release>
-    <release date="2023-12-06" version="2023.3">
-      <url type="details">https://www.jetbrains.com/idea/whatsnew/2023-3/</url>
-      <description>
-        <p>The IntelliJ IDEA 2023.3 release signifies the continued evolution of AI Assistant, which has now moved
-          beyond the technical preview stage and features a host of exciting improvements. In other areas, this version
-          includes comprehensive support for the latest Java 21 features, introduces an intuitive floating toolbar with
-          editing actions, and adds a Run to Cursor inlay option for an enhanced debugging workflow. IntelliJ IDEA
-          Ultimate now provides a seamless out-of-the-box Kubernetes development experience.
-        </p>
-        <p>Key highlights</p>
-        <ul>
-          <li>AI Assistant is out of preview</li>
-          <li>Full support for Java 21 features</li>
-          <li>Run to Cursor inlay option in the debugger</li>
-          <li>Floating toolbar with editing actions</li>
-          <li>Out-of-the-box Kubernetes development experience</li>
-        </ul>
-      </description>
-    </release>
-    <release date="2023-07-26" version="2023.2">
-      <url type="details">https://www.jetbrains.com/idea/whatsnew/2023-2/</url>
-      <description>
-        <p>IntelliJ IDEA 2023.2 introduces AI Assistant to enhance your development with a set of AI-powered features.
-          The upgraded IntelliJ Profiler now provides in-editor hints, making the profiling process more intuitive and
-          informative. This release also includes GitLab integration, which helps streamline your development workflow.
-        </p>
-        <p>Key highlights</p>
-        <ul>
-          <li>AI Assistant</li>
-          <li>In-editor performance hints</li>
-          <li>GitLab integration</li>
-        </ul>
-      </description>
-    </release>
-  </releases>
+    <id>com.jetbrains.IntelliJ-IDEA-Ultimate</id>
+    <metadata_license>CC0-1.0</metadata_license>
+    <project_license>LicenseRef-proprietary</project_license>
+    <name>IntelliJ IDEA Ultimate</name>
+    <launchable type="desktop-id">com.jetbrains.IntelliJ-IDEA-Ultimate.desktop</launchable>
+    <update_contact>idea@jetbrains.com</update_contact>
+    <summary>The Leading Java and Kotlin IDE</summary>
+    <url type="bugtracker">https://youtrack.jetbrains.com/issues/IDEA/</url>
+    <url type="help">https://www.jetbrains.com/idea/documentation/</url>
+    <url type="homepage">https://www.jetbrains.com/idea/</url>
+    <developer id="com.jetbrains">
+        <name>JetBrains s.r.o.</name>
+    </developer>
+    <content_rating type="oars-1.1">
+        <content_attribute id="social-info">moderate</content_attribute>
+    </content_rating>
+    <branding>
+        <color scheme_preference="light" type="primary">#9d4f94</color>
+        <color scheme_preference="dark" type="primary">#000000</color>
+    </branding>
+    <categories>
+        <category>Development</category>
+        <category>IDE</category>
+    </categories>
+    <keywords>
+        <keyword>kotlin</keyword>
+        <keyword>java</keyword>
+        <keyword>development</keyword>
+        <keyword>ide</keyword>
+    </keywords>
+    <requires>
+        <memory>2048</memory>
+        <control>keyboard</control>
+        <control>pointing</control>
+        <display_length compare="ge">768</display_length>
+    </requires>
+    <recommends>
+        <memory>8192</memory>
+        <display_length compare="ge">1080</display_length>
+        <internet>always</internet>
+    </recommends>
+    <supports>
+        <internet>offline-only</internet>
+    </supports>
+    <description>
+        <p>IntelliJ IDEA Ultimate is a full-featured Java and Kotlin IDE that provides everything you need out of the box, including built-in developer tools such as database tools and profilers, web and enterprise frameworks, remote development, and much more.</p>
+        <p>IntelliJ IDEA Ultimate is available for a free 30-day evaluation. Monthly and yearly subscription options are available for companies and individual users.</p>
+        <p>NOTE: This wrapper is not verified by, affiliated with, or supported by JetBrains s.r.o.</p>
+    </description>
+    <screenshots>
+        <screenshot type="default">
+            <image>https://www.jetbrains.com/idea/img/overview-heading-screenshot.png</image>
+            <caption>Overview heading</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://www.jetbrains.com/idea/features/screenshots/java-and-kotlin-support-1.png</image>
+            <caption>Java support</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://www.jetbrains.com/idea/features/screenshots/java-and-kotlin-support-2.png</image>
+            <caption>Kotlin support</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://www.jetbrains.com/idea/features/screenshots/full-line-code-completion.png</image>
+            <caption>Full line code completion</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://www.jetbrains.com/idea/features/screenshots/features_2023/AI_Assistant_features_v2.png</image>
+            <caption>AI Assistant</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://www.jetbrains.com/idea/features/screenshots/features_2021/LanguageInjections.png</image>
+            <caption>Language injections</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://www.jetbrains.com/idea/features/screenshots/features_2021/IntelligentCodeCompletion.png</image>
+            <caption>Intelligent code completion</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://www.jetbrains.com/idea/features/screenshots/features_2023/ProblemsToolsWindow.png</image>
+            <caption>The Problems tool window</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://www.jetbrains.com/idea/features/screenshots/features_2023/InspectionsAndContextActions.png</image>
+            <caption>Inspections and context actions</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://www.jetbrains.com/idea/features/screenshots/features_2021/LiveTemplates.png</image>
+            <caption>Live templates</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://www.jetbrains.com/idea/features/screenshots/features_2021/ProjectWideRefactoring.png</image>
+            <caption>Project-wide refactoring</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://www.jetbrains.com/idea/features/screenshots/features_2023/CodeDuplicates.png</image>
+            <caption>Detection of code duplicates</caption>
+        </screenshot>
+    </screenshots>
+    <releases>
+        <release date="2024-11-12" version="2024.3">
+            <url type="details">https://www.jetbrains.com/idea/whatsnew/2024-3/</url>
+            <description>
+                <p>IntelliJ IDEA 2024.3 introduces a range of powerful new features to elevate your development experience. The IDE now offers a representation of your code’s logical structure, streamlines the debugging experience for Kubernetes applications, provides cluster-wide Kubernetes log access, and officially moves K2 mode out of Beta.</p>
+                <p>Key highlights</p>
+                <ul>
+                    <li>Logical code structure in the Structure tool window</li>
+                    <li>Improved Kubernetes application debugging experience</li>
+                    <li>Kubernetes cluster logs</li>
+                    <li>Stable K2 mode</li>
+                </ul>
+            </description>
+        </release>
+        <release date="2024-08-07" version="2024.2">
+            <url type="details">https://www.jetbrains.com/idea/whatsnew/2024-2/</url>
+            <description>
+                <p>IntelliJ IDEA 2024.2 Ultimate lets you run Spring Data JPA methods directly in the IDE for instant repository query verification. It also simplifies the management of cron expressions by providing inline descriptions and advanced autocompletion, and it upgrades the HTTP Client to use the GraalJS execution engine. Additionally, this version enhances IntelliJ IDEA’s overall startup efficiency by enabling key functionalities during project indexing, and it integrates K2 mode, now in Beta, to further boost the IDE’s performance and stability for Kotlin, as well as its support for language features.</p>
+                <p>Key highlights</p>
+                <ul>
+                    <li>Improved Spring Data JPA support</li>
+                    <li>Improved cron expression support</li>
+                    <li>GraalJS as the execution engine for the HTTP Client</li>
+                    <li>Faster time to code</li>
+                    <li>Improved stability and performance for Kotlin in K2 mode</li>
+                </ul>
+            </description>
+        </release>
+        <release date="2024-04-04" version="2024.1">
+            <url type="details">https://www.jetbrains.com/idea/whatsnew/2024-1/</url>
+            <description>
+                <p>IntelliJ IDEA 2024.1 introduces an array of exciting upgrades to help streamline your workflows. IntelliJ IDEA Ultimate now boasts full line code completion, providing comprehensive code-aware suggestions for entire lines of code. Support for Java 22 ensures compatibility with the latest language features. The overhauled terminal enhances command-line operations, while sticky lines in the editor facilitate smoother navigation through codebases.</p>
+                <p>Key highlights</p>
+                <ul>
+                    <li>Full line code completion</li>
+                    <li>Support for Java 22 features</li>
+                    <li>New terminal</li>
+                    <li>Sticky lines in the editor</li>
+                </ul>
+            </description>
+        </release>
+        <release date="2023-12-06" version="2023.3">
+            <url type="details">https://www.jetbrains.com/idea/whatsnew/2023-3/</url>
+            <description>
+                <p>The IntelliJ IDEA 2023.3 release signifies the continued evolution of AI Assistant, which has now moved beyond the technical preview stage and features a host of exciting improvements. In other areas, this version includes comprehensive support for the latest Java 21 features, introduces an intuitive floating toolbar with editing actions, and adds a Run to Cursor inlay option for an enhanced debugging workflow. IntelliJ IDEA Ultimate now provides a seamless out-of-the-box Kubernetes development experience.</p>
+                <p>Key highlights</p>
+                <ul>
+                    <li>AI Assistant is out of preview</li>
+                    <li>Full support for Java 21 features</li>
+                    <li>Run to Cursor inlay option in the debugger</li>
+                    <li>Floating toolbar with editing actions</li>
+                    <li>Out-of-the-box Kubernetes development experience</li>
+                </ul>
+            </description>
+        </release>
+        <release date="2023-07-26" version="2023.2">
+            <url type="details">https://www.jetbrains.com/idea/whatsnew/2023-2/</url>
+            <description>
+                <p>IntelliJ IDEA 2023.2 introduces AI Assistant to enhance your development with a set of AI-powered features. The upgraded IntelliJ Profiler now provides in-editor hints, making the profiling process more intuitive and informative. This release also includes GitLab integration, which helps streamline your development workflow.</p>
+                <p>Key highlights</p>
+                <ul>
+                    <li>AI Assistant</li>
+                    <li>In-editor performance hints</li>
+                    <li>GitLab integration</li>
+                </ul>
+            </description>
+        </release>
+    </releases>
 </component>
