@@ -17,7 +17,6 @@
     "--talk-name=org.freedesktop.secrets",
     "--talk-name=com.canonical.AppMenu.Registrar",
     "--env=IDEA_PROPERTIES=/app/bin/idea.properties",
-    "--allow=devel",
     "--filesystem=xdg-run/app/com.discordapp.Discord:create",
     "--filesystem=xdg-run/docker",
     "--filesystem=xdg-run/gnupg",
