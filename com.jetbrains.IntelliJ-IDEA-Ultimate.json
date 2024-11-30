@@ -13,6 +13,7 @@
     "--device=all",
     "--filesystem=home",
     "--env=JAVA_HOME=/app/extra/idea-IU/jbr",
+    "--talk-name=org.freedesktop.Flatpak",
     "--talk-name=org.freedesktop.Notifications",
     "--talk-name=org.freedesktop.secrets",
     "--talk-name=com.canonical.AppMenu.Registrar",
