@@ -3,7 +3,7 @@
   "runtime": "org.freedesktop.Sdk",
   "runtime-version": "24.08",
   "sdk": "org.freedesktop.Sdk",
-  "command": "idea",
+  "command": "idea-wrapper",
   "finish-args": [
     "--socket=x11",
     "--socket=pulseaudio",
@@ -15,7 +15,6 @@
     "--env=JAVA_HOME=/app/extra/idea-IU/jbr",
     "--talk-name=org.freedesktop.Notifications",
     "--talk-name=org.freedesktop.secrets",
-    "--talk-name=com.canonical.AppMenu.Registrar",
     "--env=IDEA_PROPERTIES=/app/bin/idea.properties",
     "--filesystem=xdg-run/app/com.discordapp.Discord:create",
     "--filesystem=xdg-run/docker",
@@ -102,8 +101,8 @@
       "config-opts": [
         "-Deditor_binary=/app/extra/idea-IU/bin/idea",
         "-Deditor_title=IntelliJ IDEA Ultimate",
-        "-Dprogram_name=idea",
-        "-Dfirst_run_template=first_run.txt",
+        "-Dprogram_name=idea-wrapper",
+        "-Dfirst_run_template=README.md",
         "-Dflagfile_prefix=flatpak-idea"
       ],
       "sources": [
