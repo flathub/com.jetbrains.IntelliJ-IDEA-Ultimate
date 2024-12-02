@@ -112,7 +112,7 @@
         },
         {
           "type": "file",
-          "path": "first_run.txt"
+          "path": "README.md"
         }
       ]
     },
