@@ -6,7 +6,7 @@
     <name>IntelliJ IDEA Ultimate</name>
     <launchable type="desktop-id">com.jetbrains.IntelliJ-IDEA-Ultimate.desktop</launchable>
     <update_contact>idea@jetbrains.com</update_contact>
-    <summary>The Leading Java and Kotlin IDE</summary>
+    <summary>Leading Java and Kotlin IDE</summary>
     <url type="bugtracker">https://youtrack.jetbrains.com/issues/IDEA/</url>
     <url type="help">https://www.jetbrains.com/idea/documentation/</url>
     <url type="homepage">https://www.jetbrains.com/idea/</url>
