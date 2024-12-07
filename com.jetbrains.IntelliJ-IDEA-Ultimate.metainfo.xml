@@ -17,8 +17,8 @@
         <content_attribute id="social-info">moderate</content_attribute>
     </content_rating>
     <branding>
-        <color scheme_preference="light" type="primary">#9d4f94</color>
-        <color scheme_preference="dark" type="primary">#000000</color>
+        <color scheme_preference="light" type="primary">#f4f4f4</color>
+        <color scheme_preference="dark" type="primary">#9d4f94</color>
     </branding>
     <categories>
         <category>Development</category>
