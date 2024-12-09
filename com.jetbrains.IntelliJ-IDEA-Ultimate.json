@@ -1,121 +1,121 @@
 {
-  "app-id": "com.jetbrains.IntelliJ-IDEA-Ultimate",
-  "runtime": "org.freedesktop.Sdk",
-  "runtime-version": "24.08",
-  "sdk": "org.freedesktop.Sdk",
-  "command": "idea-wrapper",
-  "finish-args": [
-    "--socket=x11",
-    "--socket=pulseaudio",
-    "--socket=ssh-auth",
-    "--share=ipc",
-    "--share=network",
-    "--device=all",
-    "--filesystem=home",
-    "--env=JAVA_HOME=/app/extra/idea-IU/jbr",
-    "--talk-name=org.freedesktop.Notifications",
-    "--talk-name=org.freedesktop.secrets",
-    "--env=IDEA_PROPERTIES=/app/bin/idea.properties",
-    "--filesystem=xdg-run/app/com.discordapp.Discord:create",
-    "--filesystem=xdg-run/docker",
-    "--filesystem=xdg-run/gnupg",
-    "--filesystem=xdg-run/keyring",
-    "--filesystem=xdg-run/pipewire-0",
-    "--filesystem=xdg-run/podman",
-    "--socket=gpg-agent"
-  ],
-  "modules": [
-    {
-      "name": "idea",
-      "build-commands": [
-        "install -Dm644 -t ${FLATPAK_DEST}/bin/ idea.properties",
-        "install -Dm644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
-        "install -Dm644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
-        "install -Dm644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg",
-        "install -D apply_extra ${FLATPAK_DEST}/bin/apply_extra"
-      ],
-      "buildsystem": "simple",
-      "sources": [
+    "app-id": "com.jetbrains.IntelliJ-IDEA-Ultimate",
+    "runtime": "org.freedesktop.Sdk",
+    "runtime-version": "24.08",
+    "sdk": "org.freedesktop.Sdk",
+    "command": "idea-wrapper",
+    "finish-args": [
+        "--socket=x11",
+        "--socket=pulseaudio",
+        "--socket=ssh-auth",
+        "--share=ipc",
+        "--share=network",
+        "--device=all",
+        "--filesystem=home",
+        "--env=JAVA_HOME=/app/extra/idea-IU/jbr",
+        "--talk-name=org.freedesktop.Notifications",
+        "--talk-name=org.freedesktop.secrets",
+        "--env=IDEA_PROPERTIES=/app/bin/idea.properties",
+        "--filesystem=xdg-run/app/com.discordapp.Discord:create",
+        "--filesystem=xdg-run/docker",
+        "--filesystem=xdg-run/gnupg",
+        "--filesystem=xdg-run/keyring",
+        "--filesystem=xdg-run/pipewire-0",
+        "--filesystem=xdg-run/podman",
+        "--socket=gpg-agent"
+    ],
+    "modules": [
         {
-          "type": "extra-data",
-          "filename": "ideaIU.tar.gz",
-          "only-arches": [
-            "aarch64"
-          ],
-          "sha256": "8b262ad7dc6efd2ef4b953701771ec6cf526b5e628a1b07afb6092d6e70a55a2",
-          "size": 1557365463,
-          "url": "https://download.jetbrains.com/idea/ideaIU-2024.3-aarch64.tar.gz",
-          "x-checker-data": {
-            "code": "IIU",
-            "is-main-source": true,
-            "type": "jetbrains"
-          }
+            "name": "idea",
+            "build-commands": [
+                "install -Dm644 -t ${FLATPAK_DEST}/bin/ idea.properties",
+                "install -Dm644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
+                "install -Dm644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
+                "install -Dm644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg",
+                "install -D apply_extra ${FLATPAK_DEST}/bin/apply_extra"
+            ],
+            "buildsystem": "simple",
+            "sources": [
+                {
+                    "type": "extra-data",
+                    "filename": "ideaIU.tar.gz",
+                    "only-arches": [
+                        "aarch64"
+                    ],
+                    "sha256": "f6f328b4a088f1254a1cbac76149c8afa07ff86ed921663392172af070117bce",
+                    "size": 1558499529,
+                    "url": "https://download.jetbrains.com/idea/ideaIU-2024.3.1-aarch64.tar.gz",
+                    "x-checker-data": {
+                        "code": "IIU",
+                        "is-main-source": true,
+                        "type": "jetbrains"
+                    }
+                },
+                {
+                    "type": "extra-data",
+                    "filename": "ideaIU.tar.gz",
+                    "only-arches": [
+                        "x86_64"
+                    ],
+                    "sha256": "f427f4eea252d574f6135c020113f02c6d880e428265b943be26ee6110876610",
+                    "size": 1559152957,
+                    "url": "https://download.jetbrains.com/idea/ideaIU-2024.3.1.tar.gz",
+                    "x-checker-data": {
+                        "code": "IIU",
+                        "is-main-source": true,
+                        "type": "jetbrains"
+                    }
+                },
+                {
+                    "type": "file",
+                    "path": "com.jetbrains.IntelliJ-IDEA-Ultimate.desktop"
+                },
+                {
+                    "type": "file",
+                    "dest-filename": "com.jetbrains.IntelliJ-IDEA-Ultimate.svg",
+                    "sha256": "77950f507eab46765204cf67639808bd37f7233dce6223954dacae45bd246a84",
+                    "size": 2201,
+                    "url": "https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg"
+                },
+                {
+                    "type": "file",
+                    "path": "com.jetbrains.IntelliJ-IDEA-Ultimate.metainfo.xml"
+                },
+                {
+                    "type": "file",
+                    "path": "idea.properties"
+                },
+                {
+                    "type": "script",
+                    "commands": [
+                        "tar xzf ideaIU.tar.gz --one-top-level=idea-IU --strip-components=1",
+                        "rm ideaIU.tar.gz"
+                    ],
+                    "dest-filename": "apply_extra"
+                }
+            ]
         },
         {
-          "type": "extra-data",
-          "filename": "ideaIU.tar.gz",
-          "only-arches": [
-            "x86_64"
-          ],
-          "sha256": "c0627c42510bdd25b82127db62997fe6b7b98cc7e30987a83fa0b419692a15c1",
-          "size": 1557879126,
-          "url": "https://download.jetbrains.com/idea/ideaIU-2024.3.tar.gz",
-          "x-checker-data": {
-            "code": "IIU",
-            "is-main-source": true,
-            "type": "jetbrains"
-          }
+            "name": "ide-flatpak-wrapper",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Deditor_binary=/app/extra/idea-IU/bin/idea",
+                "-Deditor_title=IntelliJ IDEA Ultimate",
+                "-Dprogram_name=idea-wrapper",
+                "-Dfirst_run_template=README.md",
+                "-Dflagfile_prefix=flatpak-idea"
+            ],
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "ide-flatpak-wrapper"
+                },
+                {
+                    "type": "file",
+                    "path": "README.md"
+                }
+            ]
         },
-        {
-          "type": "file",
-          "path": "com.jetbrains.IntelliJ-IDEA-Ultimate.desktop"
-        },
-        {
-          "type": "file",
-          "dest-filename": "com.jetbrains.IntelliJ-IDEA-Ultimate.svg",
-          "sha256": "77950f507eab46765204cf67639808bd37f7233dce6223954dacae45bd246a84",
-          "size": 2201,
-          "url": "https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg"
-        },
-        {
-          "type": "file",
-          "path": "com.jetbrains.IntelliJ-IDEA-Ultimate.metainfo.xml"
-        },
-        {
-          "type": "file",
-          "path": "idea.properties"
-        },
-        {
-          "type": "script",
-          "commands": [
-            "tar xzf ideaIU.tar.gz --one-top-level=idea-IU --strip-components=1",
-            "rm ideaIU.tar.gz"
-          ],
-          "dest-filename": "apply_extra"
-        }
-      ]
-    },
-    {
-      "name": "ide-flatpak-wrapper",
-      "buildsystem": "meson",
-      "config-opts": [
-        "-Deditor_binary=/app/extra/idea-IU/bin/idea",
-        "-Deditor_title=IntelliJ IDEA Ultimate",
-        "-Dprogram_name=idea-wrapper",
-        "-Dfirst_run_template=README.md",
-        "-Dflagfile_prefix=flatpak-idea"
-      ],
-      "sources": [
-        {
-          "type": "dir",
-          "path": "ide-flatpak-wrapper"
-        },
-        {
-          "type": "file",
-          "path": "README.md"
-        }
-      ]
-    },
-    "shared-modules/libsecret/libsecret.json"
-  ]
+        "shared-modules/libsecret/libsecret.json"
+    ]
 }
