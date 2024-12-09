@@ -100,6 +100,9 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2024.3.1" date="2024-12-09">
+            <description></description>
+        </release>
         <release date="2024-11-12" version="2024.3">
             <url type="details">https://www.jetbrains.com/idea/whatsnew/2024-3/</url>
             <description>IntelliJ IDEA 2024.3 introduces a range of powerful new features to elevate your development experience. The IDE now offers a representation of your code’s logical structure, streamlines the debugging experience for Kubernetes applications, provides cluster-wide Kubernetes log access, and officially moves K2 mode out of Beta.</description>
