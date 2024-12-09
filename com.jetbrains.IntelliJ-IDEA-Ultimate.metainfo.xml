@@ -101,36 +101,45 @@
     </screenshots>
     <releases>
         <release version="2024.3.1" date="2024-12-09">
-            <description></description>
+            <url type="details">https://blog.jetbrains.com/idea/2024/12/intellij-idea-2024-3-1/</url>
+            <description>
+                <p>v2024.3.1 introduces advanced interprocedural data flow analysis capabilities for Java and Kotlin. This allows you to find and fix security vulnerabilities in real time, ensuring your code is not only more efficient but also more secure – simply install the Security Analysis by Qodana plugin.</p>
+                <ul>
+                    <li>JSON schema validation is now aware of YAML tags, for example, !reference in a .gitlab-ci.yml file.</li>
+                    <li>When changing the Version Control setting for remote development environments, the Open Diff as Editor Tab checkbox now works as intended.</li>
+                    <li>The Render documentation comments option again works as expected.</li>
+                    <li>Settings sync again works with self-signed certificates when a proxy is used.</li>
+                    <li>Debugging a web application deployed on WebLogic 12.2 no longer affects IDE performance.</li>
+                    <li>The IDE once again correctly matches Maven config files when working with several Maven projects simultaneously within one IDEA project.</li>
+                    <li>Scroll positions are once again in sync for split panes of the same file, when the “Open in Opposite Group” and “Split…” actions are used.</li>
+                    <li>The Merge Request Diff view again correctly shows the selected file.</li>
+                    <li>The conversion to an enhanced switch now retains the default value.</li>
+                    <li>We fixed the issue where, in some cases, Inline Method refactoring created unnecessary intermediate variables.</li>
+                </ul>
+            </description>
         </release>
-        <release date="2024-11-12" version="2024.3">
+        <release version="2024.3" date="2024-11-12">
             <url type="details">https://www.jetbrains.com/idea/whatsnew/2024-3/</url>
             <description>
                 <p>IntelliJ IDEA 2024.3 introduces a range of powerful new features to elevate your development experience. The IDE now offers a representation of your code’s logical structure, streamlines the debugging experience for Kubernetes applications, provides cluster-wide Kubernetes log access, and officially moves K2 mode out of Beta.</p>
             </description>
         </release>
-        <release date="2024-08-07" version="2024.2">
+        <release version="2024.2" date="2024-08-07">
             <url type="details">https://www.jetbrains.com/idea/whatsnew/2024-2/</url>
             <description>
                 <p>IntelliJ IDEA 2024.2 Ultimate lets you run Spring Data JPA methods directly in the IDE for instant repository query verification. It also simplifies the management of cron expressions by providing inline descriptions and advanced autocompletion, and it upgrades the HTTP Client to use the GraalJS execution engine. Additionally, this version enhances IntelliJ IDEA’s overall startup efficiency by enabling key functionalities during project indexing, and it integrates K2 mode, now in Beta, to further boost the IDE’s performance and stability for Kotlin, as well as its support for language features.</p>
             </description>
         </release>
-        <release date="2024-04-04" version="2024.1">
+        <release version="2024.1" date="2024-04-04">
             <url type="details">https://www.jetbrains.com/idea/whatsnew/2024-1/</url>
             <description>
                 <p>IntelliJ IDEA 2024.1 introduces an array of exciting upgrades to help streamline your workflows. IntelliJ IDEA Ultimate now boasts full line code completion, providing comprehensive code-aware suggestions for entire lines of code. Support for Java 22 ensures compatibility with the latest language features. The overhauled terminal enhances command-line operations, while sticky lines in the editor facilitate smoother navigation through codebases.</p>
             </description>
         </release>
-        <release date="2023-12-06" version="2023.3">
+        <release version="2023.3" date="2023-12-06">
             <url type="details">https://www.jetbrains.com/idea/whatsnew/2023-3/</url>
             <description>
                 <p>The IntelliJ IDEA 2023.3 release signifies the continued evolution of AI Assistant, which has now moved beyond the technical preview stage and features a host of exciting improvements. In other areas, this version includes comprehensive support for the latest Java 21 features, introduces an intuitive floating toolbar with editing actions, and adds a Run to Cursor inlay option for an enhanced debugging workflow. IntelliJ IDEA Ultimate now provides a seamless out-of-the-box Kubernetes development experience.</p>
-            </description>
-        </release>
-        <release date="2023-07-26" version="2023.2">
-            <url type="details">https://www.jetbrains.com/idea/whatsnew/2023-2/</url>
-            <description>
-                <p>IntelliJ IDEA 2023.2 introduces AI Assistant to enhance your development with a set of AI-powered features. The upgraded IntelliJ Profiler now provides in-editor hints, making the profiling process more intuitive and informative. This release also includes GitLab integration, which helps streamline your development workflow.</p>
             </description>
         </release>
     </releases>
