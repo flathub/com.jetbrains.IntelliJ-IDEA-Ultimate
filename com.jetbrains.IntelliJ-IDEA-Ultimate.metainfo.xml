@@ -51,23 +51,51 @@
     </description>
     <screenshots>
         <screenshot type="default">
-            <image>https://raw.githubusercontent.com/flathub/com.jetbrains.IntelliJ-IDEA-Ultimate/refs/heads/master/screenshots/java-and-kotlin-support-1.png</image>
+            <image>https://www.jetbrains.com/idea/img/overview-heading-screenshot.png</image>
+            <caption>Overview heading</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://www.jetbrains.com/idea/features/screenshots/java-and-kotlin-support-1.png</image>
             <caption>Java support</caption>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/flathub/com.jetbrains.IntelliJ-IDEA-Ultimate/refs/heads/master/screenshots/java-and-kotlin-support-2.png</image>
+            <image>https://www.jetbrains.com/idea/features/screenshots/java-and-kotlin-support-2.png</image>
             <caption>Kotlin support</caption>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/flathub/com.jetbrains.IntelliJ-IDEA-Ultimate/refs/heads/master/screenshots/AI_Assistant_features_v2.png</image>
+            <image>https://www.jetbrains.com/idea/features/screenshots/full-line-code-completion.png</image>
+            <caption>Full line code completion</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://www.jetbrains.com/idea/features/screenshots/features_2023/AI_Assistant_features_v2.png</image>
             <caption>AI Assistant</caption>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/flathub/com.jetbrains.IntelliJ-IDEA-Ultimate/refs/heads/master/screenshots/ProblemsToolsWindow.png</image>
+            <image>https://www.jetbrains.com/idea/features/screenshots/features_2021/LanguageInjections.png</image>
+            <caption>Language injections</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://www.jetbrains.com/idea/features/screenshots/features_2021/IntelligentCodeCompletion.png</image>
+            <caption>Intelligent code completion</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://www.jetbrains.com/idea/features/screenshots/features_2023/ProblemsToolsWindow.png</image>
             <caption>The Problems tool window</caption>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/flathub/com.jetbrains.IntelliJ-IDEA-Ultimate/refs/heads/master/screenshots/CodeDuplicates.png</image>
+            <image>https://www.jetbrains.com/idea/features/screenshots/features_2023/InspectionsAndContextActions.png</image>
+            <caption>Inspections and context actions</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://www.jetbrains.com/idea/features/screenshots/features_2021/LiveTemplates.png</image>
+            <caption>Live templates</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://www.jetbrains.com/idea/features/screenshots/features_2021/ProjectWideRefactoring.png</image>
+            <caption>Project-wide refactoring</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://www.jetbrains.com/idea/features/screenshots/features_2023/CodeDuplicates.png</image>
             <caption>Detection of code duplicates</caption>
         </screenshot>
     </screenshots>
