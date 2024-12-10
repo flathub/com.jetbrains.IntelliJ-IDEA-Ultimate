@@ -103,7 +103,7 @@
         <release version="2024.3.1" date="2024-12-09">
             <url type="details">https://blog.jetbrains.com/idea/2024/12/intellij-idea-2024-3-1/</url>
             <description>
-                <p>v2024.3.1 introduces advanced interprocedural data flow analysis capabilities for Java and Kotlin. This allows you to find and fix security vulnerabilities in real time, ensuring your code is not only more efficient but also more secure – simply install the Security Analysis by Qodana plugin.</p>
+                <p>This version introduces advanced interprocedural data flow analysis capabilities for Java and Kotlin. This allows you to find and fix security vulnerabilities in real time, ensuring your code is not only more efficient but also more secure – simply install the Security Analysis by Qodana plugin.</p>
                 <ul>
                     <li>JSON schema validation is now aware of YAML tags, for example, !reference in a .gitlab-ci.yml file.</li>
                     <li>When changing the Version Control setting for remote development environments, the Open Diff as Editor Tab checkbox now works as intended.</li>
