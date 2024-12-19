@@ -6,7 +6,7 @@
     <name>IntelliJ IDEA Ultimate</name>
     <launchable type="desktop-id">com.jetbrains.IntelliJ-IDEA-Ultimate.desktop</launchable>
     <update_contact>idea@jetbrains.com</update_contact>
-    <summary>Leading Java and Kotlin IDE</summary>
+    <summary>Leading Java and Kotlin editor</summary>
     <url type="bugtracker">https://youtrack.jetbrains.com/issues/IDEA/</url>
     <url type="help">https://www.jetbrains.com/idea/documentation/</url>
     <url type="homepage">https://www.jetbrains.com/idea/</url>
@@ -72,6 +72,12 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2024.3.1.1" date="2024-12-19">
+            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662337/IntelliJ-IDEA-2024.3.1.1-243.22562.218-build-Release-Notes</url>
+            <description>
+                <p>FIXED: Git GPG signing fails with errors like: Bad CA certificate or failed to write commit object</p>
+            </description>
+        </release>
         <release version="2024.3.1" date="2024-12-09">
             <url type="details">https://blog.jetbrains.com/idea/2024/12/intellij-idea-2024-3-1/</url>
             <description>
@@ -112,12 +118,6 @@
             <url type="details">https://www.jetbrains.com/idea/whatsnew/2024-1/</url>
             <description>
                 <p>IntelliJ IDEA 2024.1 introduces an array of exciting upgrades to help streamline your workflows. IntelliJ IDEA Ultimate now boasts full line code completion, providing comprehensive code-aware suggestions for entire lines of code. Support for Java 22 ensures compatibility with the latest language features. The overhauled terminal enhances command-line operations, while sticky lines in the editor facilitate smoother navigation through codebases.</p>
-            </description>
-        </release>
-        <release version="2023.3" date="2023-12-06">
-            <url type="details">https://www.jetbrains.com/idea/whatsnew/2023-3/</url>
-            <description>
-                <p>The IntelliJ IDEA 2023.3 release signifies the continued evolution of AI Assistant, which has now moved beyond the technical preview stage and features a host of exciting improvements. In other areas, this version includes comprehensive support for the latest Java 21 features, introduces an intuitive floating toolbar with editing actions, and adds a Run to Cursor inlay option for an enhanced debugging workflow. IntelliJ IDEA Ultimate now provides a seamless out-of-the-box Kubernetes development experience.</p>
             </description>
         </release>
     </releases>
