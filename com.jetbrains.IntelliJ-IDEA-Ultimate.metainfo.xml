@@ -72,6 +72,9 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2024.3.1.1" date="2024-12-19">
+            <description></description>
+        </release>
         <release version="2024.3.1" date="2024-12-09">
             <url type="details">https://blog.jetbrains.com/idea/2024/12/intellij-idea-2024-3-1/</url>
             <description>
