@@ -72,6 +72,21 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2024.3.2" date="2025-01-16">
+            <url type="details">https://blog.jetbrains.com/idea/2025/01/intellij-idea-2024-3-2/</url>
+            <description>
+                <p>This release includes the following improvements:</p>
+                <ul>
+                    <li>Using certain third-party plugins no longer causes the font settings to reset to default.</li>
+                    <li>It’s again possible to compile Java 7 projects with Javac version 7.</li>
+                    <li>When establishing an SSH connection with a specified deployment path, the IDE no longer mistakenly sets the working directory to the host’s root directory.</li>
+                    <li>The IDE no longer incorrectly reports valid JPQL syntax as errors.</li>
+                    <li>JPA Buddy’s New Association Attribute dialog option for @OneToMany once again works as expected.</li>
+                    <li>The IDE correctly displays the GitHub pull request timeline with mannequins and deleted participants.</li>
+                    <li>The Collection Presentation window properly displays nested collections in the debugger.</li>
+                </ul>
+            </description>
+        </release>
         <release version="2024.3.1.1" date="2024-12-19">
             <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662337/IntelliJ-IDEA-2024.3.1.1-243.22562.218-build-Release-Notes</url>
             <description>
@@ -106,18 +121,6 @@
                     <li>IntelliJ IDEA now offers cluster-wide Kubernetes log access with streaming and pattern matching. This feature provides a centralized view of all events across pods, nodes, and services, helping you quickly identify issues without manually checking each log.</li>
                     <li>K2 mode has officially moved out of Beta and is now Stable and ready for general use.</li>
                 </ul>
-            </description>
-        </release>
-        <release version="2024.2" date="2024-08-07">
-            <url type="details">https://www.jetbrains.com/idea/whatsnew/2024-2/</url>
-            <description>
-                <p>IntelliJ IDEA 2024.2 Ultimate lets you run Spring Data JPA methods directly in the IDE for instant repository query verification. It also simplifies the management of cron expressions by providing inline descriptions and advanced autocompletion, and it upgrades the HTTP Client to use the GraalJS execution engine. Additionally, this version enhances IntelliJ IDEA’s overall startup efficiency by enabling key functionalities during project indexing, and it integrates K2 mode, now in Beta, to further boost the IDE’s performance and stability for Kotlin, as well as its support for language features.</p>
-            </description>
-        </release>
-        <release version="2024.1" date="2024-04-04">
-            <url type="details">https://www.jetbrains.com/idea/whatsnew/2024-1/</url>
-            <description>
-                <p>IntelliJ IDEA 2024.1 introduces an array of exciting upgrades to help streamline your workflows. IntelliJ IDEA Ultimate now boasts full line code completion, providing comprehensive code-aware suggestions for entire lines of code. Support for Java 22 ensures compatibility with the latest language features. The overhauled terminal enhances command-line operations, while sticky lines in the editor facilitate smoother navigation through codebases.</p>
             </description>
         </release>
     </releases>
