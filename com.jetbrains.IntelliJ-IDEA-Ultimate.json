@@ -15,7 +15,6 @@
         "--env=JAVA_HOME=/app/extra/idea-IU/jbr",
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.freedesktop.secrets",
-        "--env=IDEA_PROPERTIES=/app/bin/idea.properties",
         "--filesystem=xdg-run/app/com.discordapp.Discord:create",
         "--filesystem=xdg-run/docker",
         "--filesystem=xdg-run/gnupg",
@@ -28,7 +27,6 @@
         {
             "name": "idea",
             "build-commands": [
-                "install -Dm644 -t ${FLATPAK_DEST}/bin/ idea.properties",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg",
@@ -80,10 +78,6 @@
                 {
                     "type": "file",
                     "path": "com.jetbrains.IntelliJ-IDEA-Ultimate.metainfo.xml"
-                },
-                {
-                    "type": "file",
-                    "path": "idea.properties"
                 },
                 {
                     "type": "script",
