@@ -10,6 +10,7 @@
     <url type="bugtracker">https://youtrack.jetbrains.com/issues/IDEA/</url>
     <url type="help">https://www.jetbrains.com/idea/documentation/</url>
     <url type="homepage">https://www.jetbrains.com/idea/</url>
+    <url type="contact">https://www.jetbrains.com/company/contacts</url>
     <developer id="com.jetbrains">
         <name>JetBrains s.r.o.</name>
     </developer>
