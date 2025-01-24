@@ -73,6 +73,12 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2024.3.2.1" date="2025-01-23">
+            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662352/IntelliJ-IDEA-2024.3.2.1-243.23654.153-build-Release-Notes</url>
+            <description>
+                <p>FIXED: Autocomplete showing many duplicate entries</p>
+            </description>
+        </release>
         <release version="2024.3.2" date="2025-01-16">
             <url type="details">https://blog.jetbrains.com/idea/2025/01/intellij-idea-2024-3-2/</url>
             <description>
@@ -109,18 +115,6 @@
                     <li>The Merge Request Diff view again correctly shows the selected file.</li>
                     <li>The conversion to an enhanced switch now retains the default value.</li>
                     <li>We fixed the issue where, in some cases, Inline Method refactoring created unnecessary intermediate variables.</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2024.3" date="2024-11-12">
-            <url type="details">https://blog.jetbrains.com/idea/2024/11/intellij-idea-2024-3/</url>
-            <description>
-                <p>Key highlights include a visual representation of your code’s logical structure in the Structure tool window, a smoother debugging experience for Kubernetes applications, and cluster-wide Kubernetes log access. This version also moves K2 mode out of Beta.</p>
-                <ul>
-                    <li>The Structure tool window now includes a Logical code structure alongside the familiar Physical structure. This allows you to view not only classes, methods, and fields but also the links and interactions between components in your project.</li>
-                    <li>We’ve made debugging Kubernetes applications even easier. You can use the Add Tunnel for Remote Debug option to make your workstation a virtual part of the Kubernetes cluster, allowing you to swap in a pod and debug microservices locally with your preferred tools.</li>
-                    <li>IntelliJ IDEA now offers cluster-wide Kubernetes log access with streaming and pattern matching. This feature provides a centralized view of all events across pods, nodes, and services, helping you quickly identify issues without manually checking each log.</li>
-                    <li>K2 mode has officially moved out of Beta and is now Stable and ready for general use.</li>
                 </ul>
             </description>
         </release>
