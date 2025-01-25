@@ -1,1 +1,4 @@
+# https://blog.jetbrains.com/platform/2024/07/wayland-support-preview-in-2024-2/
+# https://www.jetbrains.com/help/idea/tuning-the-ide.html#configure-jvm-options
+
 -Dawt.toolkit.name=WLToolkit
