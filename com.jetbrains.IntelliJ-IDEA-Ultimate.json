@@ -6,6 +6,7 @@
     "command": "idea-wrapper",
     "finish-args": [
         "--socket=wayland",
+        "--socket=fallback-x11",
         "--socket=pulseaudio",
         "--socket=ssh-auth",
         "--share=ipc",
