@@ -1,43 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>com.jetbrains.IntelliJ-IDEA-Ultimate</id>
-  <metadata_license>CC0-1.0</metadata_license>
-  <project_license>LicenseRef-proprietary</project_license>
-  <name>IntelliJ IDEA Ultimate</name>
-  <summary>Capable and Ergonomic Java IDE for Enterprise, Web and Mobile Development</summary>
-  <description>
-    <p>
-      IntelliJ IDEA Ultimate is a fully-fledged commercial IDE for the JVM platform. IntelliJ IDEA provides all the
-      tools you need for productive enterprise, Web, and mobile development. IntelliJ IDEA supports Java, Groovy,
-      Kotlin, Scala, Android, JavaScript, SQL and lots of other languages and frameworks. It offers instant and clever
-      code completion, on-the-fly code analysis and reliable refactoring tools. Mission-critical tools such as
-      integrated version controls systems and a wide variety of supported languages and frameworks are at hand — no
-      plugin hustle included.
-    </p>
-    <p>
-      IntelliJ IDEA Ultimate is available for a free 30-day evaluation. Monthly and yearly subscription options are
-      available for companies and individual users.
-    </p>
-    <p>NOTE: This wrapper is not verified by, affiliated with, or supported by JetBrains s.r.o.</p>
-  </description>
-  <launchable type="desktop-id">com.jetbrains.IntelliJ-IDEA-Ultimate.desktop</launchable>
-  <screenshots>
-    <screenshot type="default">
-      <image>https://www.jetbrains.com/idea/img/screenshots/idea_overview_2.png</image>
-    </screenshot>
-    <screenshot>
-      <image>https://www.jetbrains.com/idea/img/screenshots/idea_overview_5_1.png</image>
-    </screenshot>
-  </screenshots>
-  <url type="bugtracker">https://youtrack.jetbrains.com/issues/IDEA/</url>
-  <url type="help">https://www.jetbrains.com/idea/documentation/</url>
-  <url type="homepage">https://www.jetbrains.com/idea/</url>
-  <developer_name>JetBrains s.r.o.</developer_name>
-  <update_contact>idea@jetbrains.com</update_contact>
-  <content_rating type="oars-1.1"/>
-  <releases>
-    <release version="2020.3" date="2020-12-01"/>
-    <release version="2020.2.4" date="2020-11-25"/>
-    <release version="2020.2.3" date="2020-10-06"/>
-  </releases>
+    <id>com.jetbrains.IntelliJ-IDEA-Ultimate</id>
+    <metadata_license>CC0-1.0</metadata_license>
+    <project_license>LicenseRef-proprietary</project_license>
+    <name>IntelliJ IDEA Ultimate</name>
+    <launchable type="desktop-id">com.jetbrains.IntelliJ-IDEA-Ultimate.desktop</launchable>
+    <update_contact>idea@jetbrains.com</update_contact>
+    <summary>Leading Java and Kotlin editor</summary>
+    <url type="bugtracker">https://youtrack.jetbrains.com/issues/IDEA/</url>
+    <url type="help">https://www.jetbrains.com/idea/documentation/</url>
+    <url type="homepage">https://www.jetbrains.com/idea/</url>
+    <url type="contact">https://www.jetbrains.com/company/contacts</url>
+    <developer id="com.jetbrains">
+        <name>JetBrains s.r.o.</name>
+    </developer>
+    <content_rating type="oars-1.1">
+        <content_attribute id="social-info">moderate</content_attribute>
+    </content_rating>
+    <branding>
+        <color scheme_preference="light" type="primary">#f4f4f4</color>
+        <color scheme_preference="dark" type="primary">#9d4f94</color>
+    </branding>
+    <categories>
+        <category>Development</category>
+        <category>IDE</category>
+    </categories>
+    <keywords>
+        <keyword>kotlin</keyword>
+        <keyword>java</keyword>
+        <keyword>development</keyword>
+        <keyword>ide</keyword>
+    </keywords>
+    <requires>
+        <memory>2048</memory>
+        <control>keyboard</control>
+        <control>pointing</control>
+        <display_length compare="ge">768</display_length>
+    </requires>
+    <recommends>
+        <memory>8192</memory>
+        <display_length compare="ge">1080</display_length>
+        <internet>always</internet>
+    </recommends>
+    <supports>
+        <internet>offline-only</internet>
+    </supports>
+    <description>
+        <p>BETA branch enable Wayland Support Preview</p>
+        <p>IntelliJ IDEA Ultimate is a full-featured Java and Kotlin IDE that provides everything you need out of the box, including built-in developer tools such as database tools and profilers, web and enterprise frameworks, remote development, and much more.</p>
+        <p>IntelliJ IDEA Ultimate is available for a free 30-day evaluation. Monthly and yearly subscription options are available for companies and individual users.</p>
+        <p>NOTE: This wrapper is not verified by, affiliated with, or supported by JetBrains s.r.o.</p>
+    </description>
+    <screenshots>
+        <screenshot type="default">
+            <image>https://raw.githubusercontent.com/flathub/com.jetbrains.IntelliJ-IDEA-Ultimate/refs/heads/master/screenshots/java-and-kotlin-support-1.png</image>
+            <caption>Java support</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://raw.githubusercontent.com/flathub/com.jetbrains.IntelliJ-IDEA-Ultimate/refs/heads/master/screenshots/java-and-kotlin-support-2.png</image>
+            <caption>Kotlin support</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://raw.githubusercontent.com/flathub/com.jetbrains.IntelliJ-IDEA-Ultimate/refs/heads/master/screenshots/AI_Assistant_features_v2.png</image>
+            <caption>AI Assistant</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://raw.githubusercontent.com/flathub/com.jetbrains.IntelliJ-IDEA-Ultimate/refs/heads/master/screenshots/ProblemsToolsWindow.png</image>
+            <caption>The Problems tool window</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://raw.githubusercontent.com/flathub/com.jetbrains.IntelliJ-IDEA-Ultimate/refs/heads/master/screenshots/CodeDuplicates.png</image>
+            <caption>Detection of code duplicates</caption>
+        </screenshot>
+    </screenshots>
+    <releases>
+        <release version="2024.3.2.1" date="2025-01-23">
+            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662352/IntelliJ-IDEA-2024.3.2.1-243.23654.153-build-Release-Notes</url>
+            <description>
+                <p>FIXED: Autocomplete showing many duplicate entries</p>
+            </description>
+        </release>
+        <release version="2024.3.2" date="2025-01-16">
+            <url type="details">https://blog.jetbrains.com/idea/2025/01/intellij-idea-2024-3-2/</url>
+            <description>
+                <p>This release includes the following improvements:</p>
+                <ul>
+                    <li>Using certain third-party plugins no longer causes the font settings to reset to default.</li>
+                    <li>It’s again possible to compile Java 7 projects with Javac version 7.</li>
+                    <li>When establishing an SSH connection with a specified deployment path, the IDE no longer mistakenly sets the working directory to the host’s root directory.</li>
+                    <li>The IDE no longer incorrectly reports valid JPQL syntax as errors.</li>
+                    <li>JPA Buddy’s New Association Attribute dialog option for @OneToMany once again works as expected.</li>
+                    <li>The IDE correctly displays the GitHub pull request timeline with mannequins and deleted participants.</li>
+                    <li>The Collection Presentation window properly displays nested collections in the debugger.</li>
+                </ul>
+            </description>
+        </release>
+        <release version="2024.3.1.1" date="2024-12-19">
+            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662337/IntelliJ-IDEA-2024.3.1.1-243.22562.218-build-Release-Notes</url>
+            <description>
+                <p>FIXED: Git GPG signing fails with errors like: Bad CA certificate or failed to write commit object</p>
+            </description>
+        </release>
+        <release version="2024.3.1" date="2024-12-09">
+            <url type="details">https://blog.jetbrains.com/idea/2024/12/intellij-idea-2024-3-1/</url>
+            <description>
+                <p>This version introduces advanced interprocedural data flow analysis capabilities for Java and Kotlin. This allows you to find and fix security vulnerabilities in real time, ensuring your code is not only more efficient but also more secure – simply install the Security Analysis by Qodana plugin.</p>
+                <ul>
+                    <li>JSON schema validation is now aware of YAML tags, for example, !reference in a .gitlab-ci.yml file.</li>
+                    <li>When changing the Version Control setting for remote development environments, the Open Diff as Editor Tab checkbox now works as intended.</li>
+                    <li>The Render documentation comments option again works as expected.</li>
+                    <li>Settings sync again works with self-signed certificates when a proxy is used.</li>
+                    <li>Debugging a web application deployed on WebLogic 12.2 no longer affects IDE performance.</li>
+                    <li>The IDE once again correctly matches Maven config files when working with several Maven projects simultaneously within one IDEA project.</li>
+                    <li>Scroll positions are once again in sync for split panes of the same file, when the “Open in Opposite Group” and “Split…” actions are used.</li>
+                    <li>The Merge Request Diff view again correctly shows the selected file.</li>
+                    <li>The conversion to an enhanced switch now retains the default value.</li>
+                    <li>We fixed the issue where, in some cases, Inline Method refactoring created unnecessary intermediate variables.</li>
+                </ul>
+            </description>
+        </release>
+    </releases>
 </component>
