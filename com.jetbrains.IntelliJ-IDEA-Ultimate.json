@@ -5,7 +5,7 @@
     "sdk": "org.freedesktop.Sdk",
     "command": "idea-wrapper",
     "finish-args": [
-        "--socket=x11",
+        "--socket=wayland",
         "--socket=pulseaudio",
         "--socket=ssh-auth",
         "--share=ipc",
@@ -22,7 +22,8 @@
         "--filesystem=xdg-run/keyring",
         "--filesystem=xdg-run/pipewire-0",
         "--filesystem=xdg-run/podman",
-        "--socket=gpg-agent"
+        "--socket=gpg-agent",
+        "--env=IDEA_VM_OPTIONS=/app/bin/idea64.vmoptions"
     ],
     "modules": [
         {
@@ -32,7 +33,8 @@
                 "install -Dm644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg",
-                "install -D apply_extra ${FLATPAK_DEST}/bin/apply_extra"
+                "install -D apply_extra ${FLATPAK_DEST}/bin/apply_extra",
+                "install -Dm644 -t ${FLATPAK_DEST}/bin/ idea64.vmoptions"
             ],
             "buildsystem": "simple",
             "sources": [
@@ -92,6 +94,10 @@
                         "rm ideaIU.tar.gz"
                     ],
                     "dest-filename": "apply_extra"
+                },
+                {
+                    "type": "file",
+                    "path": "idea64.vmoptions"
                 }
             ]
         },
