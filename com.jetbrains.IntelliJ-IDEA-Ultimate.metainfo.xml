@@ -74,6 +74,7 @@
     </screenshots>
     <releases>
         <release version="2024.3.2.2" date="2025-01-29">
+            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662355/IntelliJ-IDEA-2024.3.2.2-243.23654.189-build-Release-Notes</url>
             <description>
                 <p>FIXED: Annotation processor version not imported from maven dependecyManagement</p>
             </description>
