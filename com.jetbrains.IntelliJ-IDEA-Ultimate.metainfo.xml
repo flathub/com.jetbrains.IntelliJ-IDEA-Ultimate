@@ -73,6 +73,12 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2024.3.2.2" date="2025-01-29">
+            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662355/IntelliJ-IDEA-2024.3.2.2-243.23654.189-build-Release-Notes</url>
+            <description>
+                <p>FIXED: Annotation processor version not imported from maven dependecyManagement</p>
+            </description>
+        </release>
         <release version="2024.3.2.1" date="2025-01-23">
             <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662352/IntelliJ-IDEA-2024.3.2.1-243.23654.153-build-Release-Notes</url>
             <description>
@@ -91,30 +97,6 @@
                     <li>JPA Buddy’s New Association Attribute dialog option for @OneToMany once again works as expected.</li>
                     <li>The IDE correctly displays the GitHub pull request timeline with mannequins and deleted participants.</li>
                     <li>The Collection Presentation window properly displays nested collections in the debugger.</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2024.3.1.1" date="2024-12-19">
-            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662337/IntelliJ-IDEA-2024.3.1.1-243.22562.218-build-Release-Notes</url>
-            <description>
-                <p>FIXED: Git GPG signing fails with errors like: Bad CA certificate or failed to write commit object</p>
-            </description>
-        </release>
-        <release version="2024.3.1" date="2024-12-09">
-            <url type="details">https://blog.jetbrains.com/idea/2024/12/intellij-idea-2024-3-1/</url>
-            <description>
-                <p>This version introduces advanced interprocedural data flow analysis capabilities for Java and Kotlin. This allows you to find and fix security vulnerabilities in real time, ensuring your code is not only more efficient but also more secure – simply install the Security Analysis by Qodana plugin.</p>
-                <ul>
-                    <li>JSON schema validation is now aware of YAML tags, for example, !reference in a .gitlab-ci.yml file.</li>
-                    <li>When changing the Version Control setting for remote development environments, the Open Diff as Editor Tab checkbox now works as intended.</li>
-                    <li>The Render documentation comments option again works as expected.</li>
-                    <li>Settings sync again works with self-signed certificates when a proxy is used.</li>
-                    <li>Debugging a web application deployed on WebLogic 12.2 no longer affects IDE performance.</li>
-                    <li>The IDE once again correctly matches Maven config files when working with several Maven projects simultaneously within one IDEA project.</li>
-                    <li>Scroll positions are once again in sync for split panes of the same file, when the “Open in Opposite Group” and “Split…” actions are used.</li>
-                    <li>The Merge Request Diff view again correctly shows the selected file.</li>
-                    <li>The conversion to an enhanced switch now retains the default value.</li>
-                    <li>We fixed the issue where, in some cases, Inline Method refactoring created unnecessary intermediate variables.</li>
                 </ul>
             </description>
         </release>
