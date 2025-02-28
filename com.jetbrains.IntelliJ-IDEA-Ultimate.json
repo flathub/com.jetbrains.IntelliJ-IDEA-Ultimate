@@ -42,9 +42,9 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "sha256": "e730c61185146c8afc181d058873932dd1ea7ef528d3dc3eaba2d3c4337b6b3b",
-                    "size": 1587582018,
-                    "url": "https://download.jetbrains.com/idea/ideaIU-2024.3.3-aarch64.tar.gz",
+                    "sha256": "6928108d6481f1c827a6a5c994cd225229b9131b53f0c8dc03854aa585006648",
+                    "size": 1587680935,
+                    "url": "https://download.jetbrains.com/idea/ideaIU-2024.3.4-aarch64.tar.gz",
                     "x-checker-data": {
                         "code": "IIU",
                         "is-main-source": true,
@@ -57,9 +57,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "sha256": "9860a8d2a15c1033a8fcac9ffdabd797403318b516b63fdee474fa82ff0d738d",
-                    "size": 1588250972,
-                    "url": "https://download.jetbrains.com/idea/ideaIU-2024.3.3.tar.gz",
+                    "sha256": "3765f4619f7ab8c28a6d523f741a4492d31d7d7d9ac8f5e7d8212dd2a71fdf9c",
+                    "size": 1588341291,
+                    "url": "https://download.jetbrains.com/idea/ideaIU-2024.3.4.tar.gz",
                     "x-checker-data": {
                         "code": "IIU",
                         "is-main-source": true,
