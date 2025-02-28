@@ -74,7 +74,16 @@
     </screenshots>
     <releases>
         <release version="2024.3.4" date="2025-02-27">
-            <description></description>
+            <url type="details">https://blog.jetbrains.com/idea/2025/02/intellij-idea-2024-3-4/</url>
+            <description>
+                <ul>
+                    <li>The IDE no longer incorrectly reports missing required keys in gitlab-ci.yml.</li>
+                    <li>The IDE no longer adds unnecessary spaces around slashes when copying text from the quick documentation.</li>
+                    <li>Plugin updates are once again detected and processed correctly.</li>
+                    <li>AWS providers in Terraform are now properly recognized, with correct code completion.</li>
+                    <li>Several issues related to the Kafka plugin have been resolved.</li>
+                </ul>
+            </description>
         </release>
         <release version="2024.3.3" date="2025-02-12">
             <url type="details">https://blog.jetbrains.com/idea/2025/02/intellij-idea-2024-3-3/</url>
