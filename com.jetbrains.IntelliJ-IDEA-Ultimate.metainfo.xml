@@ -74,7 +74,10 @@
     </screenshots>
     <releases>
         <release version="2024.3.4.1" date="2025-03-05">
-            <description></description>
+            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662393/IntelliJ-IDEA-2024.3.4.1-243.25659.59-build-Release-Notes</url>
+            <description>
+                <p>FIXED: Auto-import puts java imports first even when Editor -> Code style -> Java -> Import layout puts them last</p>
+            </description>
         </release>
         <release version="2024.3.4" date="2025-02-27">
             <url type="details">https://blog.jetbrains.com/idea/2025/02/intellij-idea-2024-3-4/</url>
@@ -111,21 +114,6 @@
             <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662352/IntelliJ-IDEA-2024.3.2.1-243.23654.153-build-Release-Notes</url>
             <description>
                 <p>FIXED: Autocomplete showing many duplicate entries</p>
-            </description>
-        </release>
-        <release version="2024.3.2" date="2025-01-16">
-            <url type="details">https://blog.jetbrains.com/idea/2025/01/intellij-idea-2024-3-2/</url>
-            <description>
-                <p>This release includes the following improvements:</p>
-                <ul>
-                    <li>Using certain third-party plugins no longer causes the font settings to reset to default.</li>
-                    <li>It’s again possible to compile Java 7 projects with Javac version 7.</li>
-                    <li>When establishing an SSH connection with a specified deployment path, the IDE no longer mistakenly sets the working directory to the host’s root directory.</li>
-                    <li>The IDE no longer incorrectly reports valid JPQL syntax as errors.</li>
-                    <li>JPA Buddy’s New Association Attribute dialog option for @OneToMany once again works as expected.</li>
-                    <li>The IDE correctly displays the GitHub pull request timeline with mannequins and deleted participants.</li>
-                    <li>The Collection Presentation window properly displays nested collections in the debugger.</li>
-                </ul>
             </description>
         </release>
     </releases>
