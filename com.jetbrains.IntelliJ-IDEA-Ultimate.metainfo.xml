@@ -74,7 +74,12 @@
     </screenshots>
     <releases>
         <release version="2024.3.5" date="2025-03-18">
-            <description></description>
+            <url type="details">https://blog.jetbrains.com/idea/2025/03/intellij-idea-2024-3-5/</url>
+            <description>
+                <p>The code completion popup once again includes a dropdown menu, allowing for quick access to additional actions and settings.</p>
+                <p>You can now customize the hostname length in HostLabelDropdown, improving usability for infrastructures with longer hostnames.</p>
+                <p>Breakpoints in Dart code can once again be set and hit.</p>
+            </description>
         </release>
         <release version="2024.3.4.1" date="2025-03-05">
             <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662393/IntelliJ-IDEA-2024.3.4.1-243.25659.59-build-Release-Notes</url>
