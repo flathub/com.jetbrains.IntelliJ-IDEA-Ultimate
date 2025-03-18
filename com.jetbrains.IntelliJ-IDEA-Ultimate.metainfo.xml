@@ -73,10 +73,13 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2024.3.5" date="2025-03-18">
+            <description></description>
+        </release>
         <release version="2024.3.4.1" date="2025-03-05">
             <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662393/IntelliJ-IDEA-2024.3.4.1-243.25659.59-build-Release-Notes</url>
             <description>
-                <p>FIXED: Auto-import puts java imports first even when Editor -> Code style -> Java -> Import layout puts them last</p>
+                <p>FIXED: Auto-import puts java imports first even when Editor -&gt; Code style -&gt; Java -&gt; Import layout puts them last</p>
             </description>
         </release>
         <release version="2024.3.4" date="2025-02-27">
