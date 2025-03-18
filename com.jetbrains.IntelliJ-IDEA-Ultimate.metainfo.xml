@@ -73,10 +73,18 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2024.3.5" date="2025-03-18">
+            <url type="details">https://blog.jetbrains.com/idea/2025/03/intellij-idea-2024-3-5/</url>
+            <description>
+                <p>The code completion popup once again includes a dropdown menu, allowing for quick access to additional actions and settings.</p>
+                <p>You can now customize the hostname length in HostLabelDropdown, improving usability for infrastructures with longer hostnames.</p>
+                <p>Breakpoints in Dart code can once again be set and hit.</p>
+            </description>
+        </release>
         <release version="2024.3.4.1" date="2025-03-05">
             <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662393/IntelliJ-IDEA-2024.3.4.1-243.25659.59-build-Release-Notes</url>
             <description>
-                <p>FIXED: Auto-import puts java imports first even when Editor -> Code style -> Java -> Import layout puts them last</p>
+                <p>FIXED: Auto-import puts java imports first even when Editor -&gt; Code style -&gt; Java -&gt; Import layout puts them last</p>
             </description>
         </release>
         <release version="2024.3.4" date="2025-02-27">
@@ -108,12 +116,6 @@
             <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662355/IntelliJ-IDEA-2024.3.2.2-243.23654.189-build-Release-Notes</url>
             <description>
                 <p>FIXED: Annotation processor version not imported from maven dependecyManagement</p>
-            </description>
-        </release>
-        <release version="2024.3.2.1" date="2025-01-23">
-            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662352/IntelliJ-IDEA-2024.3.2.1-243.23654.153-build-Release-Notes</url>
-            <description>
-                <p>FIXED: Autocomplete showing many duplicate entries</p>
             </description>
         </release>
     </releases>
