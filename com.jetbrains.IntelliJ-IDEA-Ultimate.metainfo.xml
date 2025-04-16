@@ -74,20 +74,32 @@
     </screenshots>
     <releases>
         <release version="2025.1" date="2025-04-16">
-            <description></description>
+            <url type="details">https://blog.jetbrains.com/idea/2025/04/intellij-idea-2025-1/</url>
+            <description>
+                <ul>
+                    <li>Full support for all features in the Java 24 release, ensuring a seamless experience with the newest language updates.</li>
+                    <li>K2 mode is enabled by default, marking a major milestone in our journey to enhance code analysis, memory efficiency, and overall performance for Kotlin development in IntelliJ IDEA. Active users are already experiencing a smoother workflow, and we’re continuing to address outstanding issues, refine refactorings and inspections, and further improve quality based on your feedback.</li>
+                    <li>You can now pause and resume watch evaluations during debugging to control the potential side effects of watch computations.</li>
+                    <li>Kotlin Notebook, a new interactive environment for JVM developers, is now a built-in feature of IntelliJ IDEA! Kotlin notebooks are perfect for a wide range of tasks – from real-time prototyping, presenting, log parsing, and documentation writing to in-depth data analysis and visualization.</li>
+                </ul>
+            </description>
         </release>
         <release version="2024.3.5" date="2025-03-18">
             <url type="details">https://blog.jetbrains.com/idea/2025/03/intellij-idea-2024-3-5/</url>
             <description>
-                <p>The code completion popup once again includes a dropdown menu, allowing for quick access to additional actions and settings.</p>
-                <p>You can now customize the hostname length in HostLabelDropdown, improving usability for infrastructures with longer hostnames.</p>
-                <p>Breakpoints in Dart code can once again be set and hit.</p>
+                <ul>
+                    <li>The code completion popup once again includes a dropdown menu, allowing for quick access to additional actions and settings.</li>
+                    <li>You can now customize the hostname length in HostLabelDropdown, improving usability for infrastructures with longer hostnames.</li>
+                    <li>Breakpoints in Dart code can once again be set and hit.</li>
+                </ul>
             </description>
         </release>
         <release version="2024.3.4.1" date="2025-03-05">
             <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662393/IntelliJ-IDEA-2024.3.4.1-243.25659.59-build-Release-Notes</url>
             <description>
-                <p>FIXED: Auto-import puts java imports first even when Editor -&gt; Code style -&gt; Java -&gt; Import layout puts them last</p>
+                <ul>
+                    <li>FIXED: Auto-import puts java imports first even when Editor -&gt; Code style -&gt; Java -&gt; Import layout puts them last</li>
+                </ul>
             </description>
         </release>
         <release version="2024.3.4" date="2025-02-27">
@@ -113,12 +125,6 @@
                     <li>Resolving merge conflicts using the Conflicts tool window is now possible again</li>
                     <li>A list of active Kafka producers and consumers is available via Recent Files</li>
                 </ul>
-            </description>
-        </release>
-        <release version="2024.3.2.2" date="2025-01-29">
-            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662355/IntelliJ-IDEA-2024.3.2.2-243.23654.189-build-Release-Notes</url>
-            <description>
-                <p>FIXED: Annotation processor version not imported from maven dependecyManagement</p>
             </description>
         </release>
     </releases>
