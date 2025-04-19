@@ -16,6 +16,7 @@
         "--env=JAVA_HOME=/app/extra/idea-IU/jbr",
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.freedesktop.secrets",
+        "--env=IDEA_PROPERTIES=/app/bin/idea.properties",
         "--filesystem=xdg-run/app/com.discordapp.Discord:create",
         "--filesystem=xdg-run/docker",
         "--filesystem=xdg-run/gnupg",
@@ -29,6 +30,7 @@
         {
             "name": "idea",
             "build-commands": [
+                "install -Dm644 -t ${FLATPAK_DEST}/bin/ idea.properties",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg",
@@ -43,9 +45,9 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "sha256": "8d9ee909c39d396091439ecebc691e92200ef485d179a8f1d114a7d311d3ae0f",
-                    "size": 1584455316,
-                    "url": "https://download.jetbrains.com/idea/ideaIU-2024.3.2.1-aarch64.tar.gz",
+                    "sha256": "b269898937bb0c3309eeae34ca039cff9532867eb7ee787b577b11bb49c87bda",
+                    "size": 1673340362,
+                    "url": "https://download.jetbrains.com/idea/ideaIU-2025.1-aarch64.tar.gz",
                     "x-checker-data": {
                         "code": "IIU",
                         "is-main-source": true,
@@ -58,9 +60,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "sha256": "2fba2ff7f4d7c799b4b5c474827ff8253eea37d22ed7a3dd25a2ab9a38587a26",
-                    "size": 1585102040,
-                    "url": "https://download.jetbrains.com/idea/ideaIU-2024.3.2.1.tar.gz",
+                    "sha256": "9946a690072f166607fd7b0d29e9e9c6a24c79fd5d7365a5600366b0b27532ec",
+                    "size": 1676307222,
+                    "url": "https://download.jetbrains.com/idea/ideaIU-2025.1.tar.gz",
                     "x-checker-data": {
                         "code": "IIU",
                         "is-main-source": true,
@@ -81,6 +83,10 @@
                 {
                     "type": "file",
                     "path": "com.jetbrains.IntelliJ-IDEA-Ultimate.metainfo.xml"
+                },
+                {
+                    "type": "file",
+                    "path": "idea.properties"
                 },
                 {
                     "type": "script",

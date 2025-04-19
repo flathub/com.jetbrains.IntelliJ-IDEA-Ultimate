@@ -74,48 +74,57 @@
         </screenshot>
     </screenshots>
     <releases>
-        <release version="2024.3.2.1" date="2025-01-23">
-            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662352/IntelliJ-IDEA-2024.3.2.1-243.23654.153-build-Release-Notes</url>
+        <release version="2025.1" date="2025-04-16">
+            <url type="details">https://blog.jetbrains.com/idea/2025/04/intellij-idea-2025-1/</url>
             <description>
-                <p>FIXED: Autocomplete showing many duplicate entries</p>
-            </description>
-        </release>
-        <release version="2024.3.2" date="2025-01-16">
-            <url type="details">https://blog.jetbrains.com/idea/2025/01/intellij-idea-2024-3-2/</url>
-            <description>
-                <p>This release includes the following improvements:</p>
                 <ul>
-                    <li>Using certain third-party plugins no longer causes the font settings to reset to default.</li>
-                    <li>It’s again possible to compile Java 7 projects with Javac version 7.</li>
-                    <li>When establishing an SSH connection with a specified deployment path, the IDE no longer mistakenly sets the working directory to the host’s root directory.</li>
-                    <li>The IDE no longer incorrectly reports valid JPQL syntax as errors.</li>
-                    <li>JPA Buddy’s New Association Attribute dialog option for @OneToMany once again works as expected.</li>
-                    <li>The IDE correctly displays the GitHub pull request timeline with mannequins and deleted participants.</li>
-                    <li>The Collection Presentation window properly displays nested collections in the debugger.</li>
+                    <li>Full support for all features in the Java 24 release, ensuring a seamless experience with the newest language updates.</li>
+                    <li>K2 mode is enabled by default, marking a major milestone in our journey to enhance code analysis, memory efficiency, and overall performance for Kotlin development in IntelliJ IDEA. Active users are already experiencing a smoother workflow, and we’re continuing to address outstanding issues, refine refactorings and inspections, and further improve quality based on your feedback.</li>
+                    <li>You can now pause and resume watch evaluations during debugging to control the potential side effects of watch computations.</li>
+                    <li>Kotlin Notebook, a new interactive environment for JVM developers, is now a built-in feature of IntelliJ IDEA! Kotlin notebooks are perfect for a wide range of tasks – from real-time prototyping, presenting, log parsing, and documentation writing to in-depth data analysis and visualization.</li>
                 </ul>
             </description>
         </release>
-        <release version="2024.3.1.1" date="2024-12-19">
-            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662337/IntelliJ-IDEA-2024.3.1.1-243.22562.218-build-Release-Notes</url>
+        <release version="2024.3.5" date="2025-03-18">
+            <url type="details">https://blog.jetbrains.com/idea/2025/03/intellij-idea-2024-3-5/</url>
             <description>
-                <p>FIXED: Git GPG signing fails with errors like: Bad CA certificate or failed to write commit object</p>
+                <ul>
+                    <li>The code completion popup once again includes a dropdown menu, allowing for quick access to additional actions and settings.</li>
+                    <li>You can now customize the hostname length in HostLabelDropdown, improving usability for infrastructures with longer hostnames.</li>
+                    <li>Breakpoints in Dart code can once again be set and hit.</li>
+                </ul>
             </description>
         </release>
-        <release version="2024.3.1" date="2024-12-09">
-            <url type="details">https://blog.jetbrains.com/idea/2024/12/intellij-idea-2024-3-1/</url>
+        <release version="2024.3.4.1" date="2025-03-05">
+            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662393/IntelliJ-IDEA-2024.3.4.1-243.25659.59-build-Release-Notes</url>
             <description>
-                <p>This version introduces advanced interprocedural data flow analysis capabilities for Java and Kotlin. This allows you to find and fix security vulnerabilities in real time, ensuring your code is not only more efficient but also more secure – simply install the Security Analysis by Qodana plugin.</p>
                 <ul>
-                    <li>JSON schema validation is now aware of YAML tags, for example, !reference in a .gitlab-ci.yml file.</li>
-                    <li>When changing the Version Control setting for remote development environments, the Open Diff as Editor Tab checkbox now works as intended.</li>
-                    <li>The Render documentation comments option again works as expected.</li>
-                    <li>Settings sync again works with self-signed certificates when a proxy is used.</li>
-                    <li>Debugging a web application deployed on WebLogic 12.2 no longer affects IDE performance.</li>
-                    <li>The IDE once again correctly matches Maven config files when working with several Maven projects simultaneously within one IDEA project.</li>
-                    <li>Scroll positions are once again in sync for split panes of the same file, when the “Open in Opposite Group” and “Split…” actions are used.</li>
-                    <li>The Merge Request Diff view again correctly shows the selected file.</li>
-                    <li>The conversion to an enhanced switch now retains the default value.</li>
-                    <li>We fixed the issue where, in some cases, Inline Method refactoring created unnecessary intermediate variables.</li>
+                    <li>FIXED: Auto-import puts java imports first even when Editor -&gt; Code style -&gt; Java -&gt; Import layout puts them last</li>
+                </ul>
+            </description>
+        </release>
+        <release version="2024.3.4" date="2025-02-27">
+            <url type="details">https://blog.jetbrains.com/idea/2025/02/intellij-idea-2024-3-4/</url>
+            <description>
+                <ul>
+                    <li>The IDE no longer incorrectly reports missing required keys in gitlab-ci.yml.</li>
+                    <li>The IDE no longer adds unnecessary spaces around slashes when copying text from the quick documentation.</li>
+                    <li>Plugin updates are once again detected and processed correctly.</li>
+                    <li>AWS providers in Terraform are now properly recognized, with correct code completion.</li>
+                    <li>Several issues related to the Kafka plugin have been resolved.</li>
+                </ul>
+            </description>
+        </release>
+        <release version="2024.3.3" date="2025-02-12">
+            <url type="details">https://blog.jetbrains.com/idea/2025/02/intellij-idea-2024-3-3/</url>
+            <description>
+                <ul>
+                    <li>The Reload All Maven Projects action now correctly syncs dependencies</li>
+                    <li>Screen reader detection now works on the first startup on Windows</li>
+                    <li>Custom toolbar icons for external tools are now properly displayed after an IDE restart</li>
+                    <li>The IDE no longer hangs on the Configuring SDK step when adding an IntelliJ Platform Plugin SDK</li>
+                    <li>Resolving merge conflicts using the Conflicts tool window is now possible again</li>
+                    <li>A list of active Kafka producers and consumers is available via Recent Files</li>
                 </ul>
             </description>
         </release>
