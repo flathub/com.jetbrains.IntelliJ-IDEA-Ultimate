@@ -132,18 +132,5 @@
                 </ul>
             </description>
         </release>
-        <release version="2024.3.3" date="2025-02-12">
-            <url type="details">https://blog.jetbrains.com/idea/2025/02/intellij-idea-2024-3-3/</url>
-            <description>
-                <ul>
-                    <li>The Reload All Maven Projects action now correctly syncs dependencies</li>
-                    <li>Screen reader detection now works on the first startup on Windows</li>
-                    <li>Custom toolbar icons for external tools are now properly displayed after an IDE restart</li>
-                    <li>The IDE no longer hangs on the Configuring SDK step when adding an IntelliJ Platform Plugin SDK</li>
-                    <li>Resolving merge conflicts using the Conflicts tool window is now possible again</li>
-                    <li>A list of active Kafka producers and consumers is available via Recent Files</li>
-                </ul>
-            </description>
-        </release>
     </releases>
 </component>
