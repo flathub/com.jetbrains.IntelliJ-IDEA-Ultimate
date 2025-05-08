@@ -73,6 +73,24 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2025.1.1" date="2025-05-07">
+            <url type="details">https://blog.jetbrains.com/idea/2025/05/intellij-idea-2025-1-1/</url>
+            <description>
+                <ul>
+                    <li>Setting backup and synchronization via Backup and Sync now works as expected upon authorization with JetBrains Account.</li>
+                    <li>Debugging tests when using Gradle 7.x.x no longer fails.</li>
+                    <li>The IDE again correctly imports Maven projects that use several –add-exports arguments.</li>
+                    <li>The Paths filter in the Git tool window again works as expected, filtering branches according to the selected repository.</li>
+                    <li>Zsh with custom config files again works correctly in the IDE terminal.</li>
+                    <li>It is again possible to deploy applications to WildFly from the IDE when using Java 24.</li>
+                    <li>The Markdown preview is now consistently displayed.</li>
+                    <li>Text copied from tooltip popups via Option/Alt + click no longer includes unwanted HTML tags.</li>
+                    <li>The Kotest tool window is again consistently available and works as expected.</li>
+                    <li>It is now possible to disable the HTTP Client to encode special characters like +, @, %, and more in URLs so they are sent as is by adding the @no-auto-encoding annotation before the request.</li>
+                    <li>The IDE now correctly respects @Nullable on local variables when a default qualifier is used.</li>
+                </ul>
+            </description>
+        </release>
         <release version="2025.1" date="2025-04-16">
             <url type="details">https://blog.jetbrains.com/idea/2025/04/intellij-idea-2025-1/</url>
             <description>
@@ -111,19 +129,6 @@
                     <li>Plugin updates are once again detected and processed correctly.</li>
                     <li>AWS providers in Terraform are now properly recognized, with correct code completion.</li>
                     <li>Several issues related to the Kafka plugin have been resolved.</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2024.3.3" date="2025-02-12">
-            <url type="details">https://blog.jetbrains.com/idea/2025/02/intellij-idea-2024-3-3/</url>
-            <description>
-                <ul>
-                    <li>The Reload All Maven Projects action now correctly syncs dependencies</li>
-                    <li>Screen reader detection now works on the first startup on Windows</li>
-                    <li>Custom toolbar icons for external tools are now properly displayed after an IDE restart</li>
-                    <li>The IDE no longer hangs on the Configuring SDK step when adding an IntelliJ Platform Plugin SDK</li>
-                    <li>Resolving merge conflicts using the Conflicts tool window is now possible again</li>
-                    <li>A list of active Kafka producers and consumers is available via Recent Files</li>
                 </ul>
             </description>
         </release>
