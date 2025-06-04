@@ -74,7 +74,19 @@
     </screenshots>
     <releases>
         <release version="2025.1.2" date="2025-06-04">
-            <description></description>
+            <url type="details">https://blog.jetbrains.com/idea/2025/06/intellij-idea-2025-1-2/</url>
+            <description>
+                <ul>
+                    <li>The IDE no longer fails to start if a plugin defines an action with unresolved message bundle keys, and it now provides a report identifying the problematic plugin.</li>
+                    <li>The IDE no longer produces the false positive “Package is declared in module which is not in the module graph” warning.</li>
+                    <li>The IDE once again correctly takes compilerArgs from pom.xml into account when building Maven projects.</li>
+                    <li>The GitLab code review mode now functions as expected, correctly displaying changes with proper highlighting.</li>
+                    <li>Working directories are once again preserved upon restart when working with the new terminal.</li>
+                    <li>Inspections in Terraform can now be suppressed again.</li>
+                    <li>Font size rescaling for the Quick Documentation popup works as expected.</li>
+                    <li>The Git option now appears correctly in the context menu when right-clicking a file or folder in a project located on a path that includes a symbolic link.</li>
+                </ul>
+            </description>
         </release>
         <release version="2025.1.1.1" date="2025-05-09">
             <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662430/IntelliJ-IDEA-2025.1.1.1-251.25410.129-build-Release-Notes</url>
@@ -120,14 +132,6 @@
                     <li>The code completion popup once again includes a dropdown menu, allowing for quick access to additional actions and settings.</li>
                     <li>You can now customize the hostname length in HostLabelDropdown, improving usability for infrastructures with longer hostnames.</li>
                     <li>Breakpoints in Dart code can once again be set and hit.</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2024.3.4.1" date="2025-03-05">
-            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662393/IntelliJ-IDEA-2024.3.4.1-243.25659.59-build-Release-Notes</url>
-            <description>
-                <ul>
-                    <li>FIXED: Auto-import puts java imports first even when Editor -&gt; Code style -&gt; Java -&gt; Import layout puts them last</li>
                 </ul>
             </description>
         </release>
