@@ -73,6 +73,9 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2025.1.2" date="2025-06-04">
+            <description></description>
+        </release>
         <release version="2025.1.1.1" date="2025-05-09">
             <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662430/IntelliJ-IDEA-2025.1.1.1-251.25410.129-build-Release-Notes</url>
             <description>
