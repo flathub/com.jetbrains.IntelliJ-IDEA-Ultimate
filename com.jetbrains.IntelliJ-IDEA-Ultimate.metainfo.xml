@@ -73,6 +73,20 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2025.1.3" date="2025-06-23">
+            <url type="details">https://blog.jetbrains.com/idea/2025/06/intellij-idea-2025-1-3/</url>
+            <description>
+                <ul>
+                    <li>The IDE no longer erroneously displays &lt;no name&gt; in the Test Results tree in the Run tool window for Dart tests.</li>
+                    <li>The preview panel is now available for AsyncAPI 3.0 files.</li>
+                    <li>The IDE no longer truncates postCreateCommand environment variables at equals signs in the build process output.</li>
+                    <li>The IDE no longer misses OS-specific plugins in Aarch64 distributions, including those required for WSL support in the Python interpreter.</li>
+                    <li>The Modify classpath area in the Run/Debug Configuration interface now displays at the correct size.</li>
+                    <li>The IDE now correctly suggests Implement methods at the top of the list of quick-fixes instead of Make class abstract, where appropriate.</li>
+                    <li>The IDE no longer shows misleading warnings when searching for tasks using GitHub as the task server.</li>
+                </ul>
+            </description>
+        </release>
         <release version="2025.1.2" date="2025-06-04">
             <url type="details">https://blog.jetbrains.com/idea/2025/06/intellij-idea-2025-1-2/</url>
             <description>
@@ -122,16 +136,6 @@
                     <li>K2 mode is enabled by default, marking a major milestone in our journey to enhance code analysis, memory efficiency, and overall performance for Kotlin development in IntelliJ IDEA. Active users are already experiencing a smoother workflow, and we’re continuing to address outstanding issues, refine refactorings and inspections, and further improve quality based on your feedback.</li>
                     <li>You can now pause and resume watch evaluations during debugging to control the potential side effects of watch computations.</li>
                     <li>Kotlin Notebook, a new interactive environment for JVM developers, is now a built-in feature of IntelliJ IDEA! Kotlin notebooks are perfect for a wide range of tasks – from real-time prototyping, presenting, log parsing, and documentation writing to in-depth data analysis and visualization.</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2024.3.5" date="2025-03-18">
-            <url type="details">https://blog.jetbrains.com/idea/2025/03/intellij-idea-2024-3-5/</url>
-            <description>
-                <ul>
-                    <li>The code completion popup once again includes a dropdown menu, allowing for quick access to additional actions and settings.</li>
-                    <li>You can now customize the hostname length in HostLabelDropdown, improving usability for infrastructures with longer hostnames.</li>
-                    <li>Breakpoints in Dart code can once again be set and hit.</li>
                 </ul>
             </description>
         </release>
