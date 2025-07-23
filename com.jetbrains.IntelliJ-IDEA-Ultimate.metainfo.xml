@@ -74,7 +74,15 @@
     </screenshots>
     <releases>
         <release version="2025.1.4" date="2025-07-23">
-            <description></description>
+            <url type="details">https://blog.jetbrains.com/idea/2025/06/intellij-idea-2025-1-4/</url>
+            <description>
+                <ul>
+                    <li>Closing labels in Dart have been updated for better usability and now appear as inlay hints, with improved configuration options.</li>
+                    <li>The Final declaration can’t be overridden at runtime warning no longer falsely appears for @Configuration classes with proxyBeanMethods.</li>
+                    <li>It is once again possible to override variables from imported .http files in the HTTP Client.</li>
+                    <li>Artifacts with circular dependencies between .main and .testwar exploded types can now be built correctly when working with Maven projects.</li>
+                </ul>
+            </description>
         </release>
         <release version="2025.1.3" date="2025-06-23">
             <url type="details">https://blog.jetbrains.com/idea/2025/06/intellij-idea-2025-1-3/</url>
