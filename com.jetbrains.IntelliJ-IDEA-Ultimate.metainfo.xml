@@ -74,9 +74,6 @@
     </screenshots>
     <releases>
         <release version="2025.1.4.1" date="2025-07-25">
-            <description></description>
-        </release>
-        <release version="2025.1.4" date="2025-07-23">
             <url type="details">https://blog.jetbrains.com/idea/2025/06/intellij-idea-2025-1-4/</url>
             <description>
                 <ul>
@@ -139,17 +136,6 @@
                     <li>The Kotest tool window is again consistently available and works as expected.</li>
                     <li>It is now possible to disable the HTTP Client to encode special characters like +, @, %, and more in URLs so they are sent as is by adding the @no-auto-encoding annotation before the request.</li>
                     <li>The IDE now correctly respects @Nullable on local variables when a default qualifier is used.</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2025.1" date="2025-04-16">
-            <url type="details">https://blog.jetbrains.com/idea/2025/04/intellij-idea-2025-1/</url>
-            <description>
-                <ul>
-                    <li>Full support for all features in the Java 24 release, ensuring a seamless experience with the newest language updates.</li>
-                    <li>K2 mode is enabled by default, marking a major milestone in our journey to enhance code analysis, memory efficiency, and overall performance for Kotlin development in IntelliJ IDEA. Active users are already experiencing a smoother workflow, and we’re continuing to address outstanding issues, refine refactorings and inspections, and further improve quality based on your feedback.</li>
-                    <li>You can now pause and resume watch evaluations during debugging to control the potential side effects of watch computations.</li>
-                    <li>Kotlin Notebook, a new interactive environment for JVM developers, is now a built-in feature of IntelliJ IDEA! Kotlin notebooks are perfect for a wide range of tasks – from real-time prototyping, presenting, log parsing, and documentation writing to in-depth data analysis and visualization.</li>
                 </ul>
             </description>
         </release>
