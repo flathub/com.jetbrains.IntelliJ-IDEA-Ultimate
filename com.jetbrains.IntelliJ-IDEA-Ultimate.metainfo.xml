@@ -73,6 +73,25 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2025.2" date="2025-08-04">
+            <url type="details">https://www.jetbrains.com/idea/whatsnew/2025-2/</url>
+            <description>
+                <ul>
+                    <li>Next-level AI experience with more control and better context management</li>
+                    <li>Java 25 support for early adopters</li>
+                    <li>Spring Debugger – the new standard for Spring Boot debugging Ultimate</li>
+                    <li>Spring Modulith Ultimate</li>
+                    <li>Maven 4 support for early adopters</li>
+                    <li>Virtual thread debugging</li>
+                    <li>Scala support</li>
+                    <li>Improved experience when your subscription expires Ultimate</li>
+                    <li>Improved database workflows Ultimate</li>
+                    <li>Web development updates Ultimate</li>
+                    <li>JSpecify support – a major step toward safer code</li>
+                    <li>Native Bazel support</li>
+                </ul>
+            </description>
+        </release>
         <release version="2025.1.4.1" date="2025-07-25">
             <url type="details">https://blog.jetbrains.com/idea/2025/06/intellij-idea-2025-1-4/</url>
             <description>
@@ -118,24 +137,6 @@
             <description>
                 <ul>
                     <li>FIXED: Android plugin breaks Kotlin functionality in release 2025.1.1 after update from 2025.1</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2025.1.1" date="2025-05-07">
-            <url type="details">https://blog.jetbrains.com/idea/2025/05/intellij-idea-2025-1-1/</url>
-            <description>
-                <ul>
-                    <li>Setting backup and synchronization via Backup and Sync now works as expected upon authorization with JetBrains Account.</li>
-                    <li>Debugging tests when using Gradle 7.x.x no longer fails.</li>
-                    <li>The IDE again correctly imports Maven projects that use several –add-exports arguments.</li>
-                    <li>The Paths filter in the Git tool window again works as expected, filtering branches according to the selected repository.</li>
-                    <li>Zsh with custom config files again works correctly in the IDE terminal.</li>
-                    <li>It is again possible to deploy applications to WildFly from the IDE when using Java 24.</li>
-                    <li>The Markdown preview is now consistently displayed.</li>
-                    <li>Text copied from tooltip popups via Option/Alt + click no longer includes unwanted HTML tags.</li>
-                    <li>The Kotest tool window is again consistently available and works as expected.</li>
-                    <li>It is now possible to disable the HTTP Client to encode special characters like +, @, %, and more in URLs so they are sent as is by adding the @no-auto-encoding annotation before the request.</li>
-                    <li>The IDE now correctly respects @Nullable on local variables when a default qualifier is used.</li>
                 </ul>
             </description>
         </release>
