@@ -74,7 +74,19 @@
     </screenshots>
     <releases>
         <release version="2025.2.1" date="2025-08-29">
-            <description></description>
+            <url type="details">https://blog.jetbrains.com/idea/2025/08/intellij-idea-2025-2-1/</url>
+            <description>
+                <ul>
+                    <li>The IDE correctly interprets and manages EAR artifact configurations as expected.</li>
+                    <li>The Create Branch action is now accessible from all parts of the UI again.</li>
+                    <li>Exporting diagrams as SVG now works as intended.</li>
+                    <li>Maven Runner now properly recognizes and handles JVM options starting with the -X prefix in the VM Options field as expected.</li>
+                    <li>Terminal processes again terminate correctly on Windows.</li>
+                    <li>The IDE again correctly recognizes valid WebLogic server home paths and runs the WebLogic server.</li>
+                    <li>The IDE now correctly runs the main() functions in Kotlin projects built with Gradle 9.0.</li>
+                    <li>Maven run configurations again properly recognize and execute custom POM files specified with the -f option.</li>
+                </ul>
+            </description>
         </release>
         <release version="2025.2" date="2025-08-04">
             <url type="details">https://www.jetbrains.com/idea/whatsnew/2025-2/</url>
