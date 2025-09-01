@@ -12,7 +12,7 @@
         "--share=network",
         "--device=all",
         "--filesystem=home",
-        "--env=JAVA_HOME=/app/extra/idea-IU/jbr",
+        "--env=JAVA_HOME=/app/extra/idea/jbr",
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.freedesktop.secrets",
         "--env=IDEA_PROPERTIES=/app/bin/idea.properties",
@@ -28,8 +28,7 @@
         {
             "name": "idea",
             "build-commands": [
-                "install -D -t ${FLATPAK_DEST}/bin/ apply_extra idea-wrapper",
-                "install -Dm644 -t ${FLATPAK_DEST}/bin/ idea.properties",
+                "install -D -t ${FLATPAK_DEST}/bin/ apply_extra idea-wrapper idea.properties",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg"
@@ -38,7 +37,7 @@
             "sources": [
                 {
                     "type": "extra-data",
-                    "filename": "ideaIU.tar.gz",
+                    "filename": "idea.tar.gz",
                     "only-arches": [
                         "aarch64"
                     ],
@@ -53,7 +52,7 @@
                 },
                 {
                     "type": "extra-data",
-                    "filename": "ideaIU.tar.gz",
+                    "filename": "idea.tar.gz",
                     "only-arches": [
                         "x86_64"
                     ],
@@ -87,8 +86,8 @@
                 {
                     "type": "script",
                     "commands": [
-                        "tar xzf ideaIU.tar.gz --one-top-level=idea-IU --strip-components=1",
-                        "rm ideaIU.tar.gz"
+                        "tar xzf idea.tar.gz --one-top-level=idea --strip-components=1",
+                        "rm idea.tar.gz"
                     ],
                     "dest-filename": "apply_extra"
                 },
@@ -96,7 +95,7 @@
                     "type": "script",
                     "dest-filename": "idea-wrapper",
                     "commands": [
-                        "/app/extra/idea-IU/bin/idea $@"
+                        "/app/extra/idea/bin/idea $@"
                     ]
                 }
             ]
