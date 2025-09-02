@@ -12,7 +12,7 @@
         "--share=network",
         "--device=all",
         "--filesystem=home",
-        "--env=JAVA_HOME=/app/extra/idea/jbr",
+        "--env=JAVA_HOME=/app/extra/jbr",
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.freedesktop.secrets",
         "--env=IDEA_PROPERTIES=/app/bin/idea.properties",
@@ -85,17 +85,17 @@
                 },
                 {
                     "type": "script",
+                    "dest-filename": "apply_extra",
                     "commands": [
-                        "tar xzf idea.tar.gz --one-top-level=idea --strip-components=1",
+                        "tar xzf idea.tar.gz --strip-components=1",
                         "rm idea.tar.gz"
-                    ],
-                    "dest-filename": "apply_extra"
+                    ]
                 },
                 {
                     "type": "script",
                     "dest-filename": "idea-wrapper",
                     "commands": [
-                        "/app/extra/idea/bin/idea $@"
+                        "/app/extra/bin/idea $@"
                     ]
                 }
             ]
