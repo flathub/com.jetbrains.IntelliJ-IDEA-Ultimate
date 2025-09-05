@@ -28,7 +28,7 @@
         {
             "name": "idea",
             "build-commands": [
-                "install -D -t ${FLATPAK_DEST}/bin/ apply_extra idea-wrapper idea.properties",
+                "install -D -t ${FLATPAK_DEST}/bin/ apply_extra idea.properties",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg"
@@ -90,13 +90,27 @@
                         "tar xzf idea.tar.gz --strip-components=1",
                         "rm idea.tar.gz"
                     ]
+                }
+            ]
+        },
+        {
+            "name": "ide-flatpak-wrapper",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Deditor_binary=/app/extra/bin/idea",
+                "-Deditor_title=IntelliJ IDEA Ultimate",
+                "-Dprogram_name=idea-wrapper",
+                "-Dfirst_run_template=README.md",
+                "-Dflagfile_prefix=flatpak-idea"
+            ],
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "ide-flatpak-wrapper"
                 },
                 {
-                    "type": "script",
-                    "dest-filename": "idea-wrapper",
-                    "commands": [
-                        "/app/extra/bin/idea $@"
-                    ]
+                    "type": "file",
+                    "path": "README.md"
                 }
             ]
         }
