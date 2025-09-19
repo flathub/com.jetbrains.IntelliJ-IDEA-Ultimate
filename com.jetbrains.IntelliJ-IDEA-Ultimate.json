@@ -5,24 +5,22 @@
     "sdk": "org.freedesktop.Sdk",
     "command": "idea-wrapper",
     "finish-args": [
-        "--socket=x11",
-        "--socket=pulseaudio",
-        "--socket=ssh-auth",
-        "--share=ipc",
-        "--share=network",
         "--device=all",
-        "--filesystem=home",
-        "--env=JAVA_HOME=/app/extra/jbr",
-        "--talk-name=org.freedesktop.Notifications",
-        "--talk-name=org.freedesktop.secrets",
         "--env=IDEA_PROPERTIES=/app/bin/idea.properties",
+        "--env=JAVA_HOME=/app/extra/jbr",
+        "--filesystem=home",
         "--filesystem=xdg-run/app/com.discordapp.Discord:create",
         "--filesystem=xdg-run/docker",
         "--filesystem=xdg-run/gnupg",
         "--filesystem=xdg-run/keyring",
         "--filesystem=xdg-run/pipewire-0",
         "--filesystem=xdg-run/podman",
-        "--socket=gpg-agent"
+        "--share=ipc",
+        "--share=network",
+        "--socket=pulseaudio",
+        "--socket=x11",
+        "--talk-name=org.freedesktop.Notifications",
+        "--talk-name=org.freedesktop.secrets"
     ],
     "modules": [
         {
@@ -41,9 +39,9 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "sha256": "bf292cf0a2822c4b697e4d1e6a7c049c6b91f8cab3d457259d52fd65bbdcdea9",
-                    "size": 1774139359,
-                    "url": "https://download.jetbrains.com/idea/ideaIU-2025.2.1-aarch64.tar.gz",
+                    "sha256": "d40c5fa210a28a23b9e1d736057a711b41c785e32841f5a27969074feee5df4d",
+                    "size": 1774804304,
+                    "url": "https://download.jetbrains.com/idea/ideaIU-2025.2.2-aarch64.tar.gz",
                     "x-checker-data": {
                         "code": "IIU",
                         "is-main-source": true,
@@ -56,9 +54,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "sha256": "ac36d03153894f393fb65c05f57be4722c2a2374d03b7374b37baf856705d5fd",
-                    "size": 1777088273,
-                    "url": "https://download.jetbrains.com/idea/ideaIU-2025.2.1.tar.gz",
+                    "sha256": "7150ece389a4bc8649f68b103018edeeb09205559671549410ded11de523da62",
+                    "size": 1777919438,
+                    "url": "https://download.jetbrains.com/idea/ideaIU-2025.2.2.tar.gz",
                     "x-checker-data": {
                         "code": "IIU",
                         "is-main-source": true,

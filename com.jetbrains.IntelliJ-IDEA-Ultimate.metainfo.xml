@@ -73,6 +73,22 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2025.2.2" date="2025-09-19">
+            <url type="details">https://blog.jetbrains.com/idea/2025/08/intellij-idea-2025-2-2/</url>
+            <description>
+                <ul>
+                    <li>The Run Maven Build icon is once again available in the Maven panel toolbar.</li>
+                    <li>Remote SSH external tools now work as expected.</li>
+                    <li>The IDE again correctly parses environment variables with semicolon values pasted in the Run/Debug dialog.</li>
+                    <li>The IDE now properly handles MAVEN_OPTS environment variables.</li>
+                    <li>On Windows, the Find in Files dialog again works as expected, closes correctly, and no longer shows a persistent green area.</li>
+                    <li>Several issues with the terminal and WSL have been fixed.</li>
+                    <li>The terminal now starts correctly and works as expected on Windows 10.</li>
+                    <li>It is once again possible to switch between split editors using the Switch popup.</li>
+                    <li>The distributionUrl for Gradle 9 now contains the proper version when creating a new project, preventing sync failures.</li>
+                </ul>
+            </description>
+        </release>
         <release version="2025.2.1" date="2025-08-29">
             <url type="details">https://blog.jetbrains.com/idea/2025/08/intellij-idea-2025-2-1/</url>
             <description>
@@ -129,29 +145,6 @@
                     <li>The Modify classpath area in the Run/Debug Configuration interface now displays at the correct size.</li>
                     <li>The IDE now correctly suggests Implement methods at the top of the list of quick-fixes instead of Make class abstract, where appropriate.</li>
                     <li>The IDE no longer shows misleading warnings when searching for tasks using GitHub as the task server.</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2025.1.2" date="2025-06-04">
-            <url type="details">https://blog.jetbrains.com/idea/2025/06/intellij-idea-2025-1-2/</url>
-            <description>
-                <ul>
-                    <li>The IDE no longer fails to start if a plugin defines an action with unresolved message bundle keys, and it now provides a report identifying the problematic plugin.</li>
-                    <li>The IDE no longer produces the false positive “Package is declared in module which is not in the module graph” warning.</li>
-                    <li>The IDE once again correctly takes compilerArgs from pom.xml into account when building Maven projects.</li>
-                    <li>The GitLab code review mode now functions as expected, correctly displaying changes with proper highlighting.</li>
-                    <li>Working directories are once again preserved upon restart when working with the new terminal.</li>
-                    <li>Inspections in Terraform can now be suppressed again.</li>
-                    <li>Font size rescaling for the Quick Documentation popup works as expected.</li>
-                    <li>The Git option now appears correctly in the context menu when right-clicking a file or folder in a project located on a path that includes a symbolic link.</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2025.1.1.1" date="2025-05-09">
-            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662430/IntelliJ-IDEA-2025.1.1.1-251.25410.129-build-Release-Notes</url>
-            <description>
-                <ul>
-                    <li>FIXED: Android plugin breaks Kotlin functionality in release 2025.1.1 after update from 2025.1</li>
                 </ul>
             </description>
         </release>
