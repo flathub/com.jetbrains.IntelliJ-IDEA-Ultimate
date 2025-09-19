@@ -5,24 +5,22 @@
     "sdk": "org.freedesktop.Sdk",
     "command": "idea-wrapper",
     "finish-args": [
-        "--socket=x11",
-        "--socket=pulseaudio",
-        "--socket=ssh-auth",
-        "--share=ipc",
-        "--share=network",
         "--device=all",
-        "--filesystem=home",
-        "--env=JAVA_HOME=/app/extra/jbr",
-        "--talk-name=org.freedesktop.Notifications",
-        "--talk-name=org.freedesktop.secrets",
         "--env=IDEA_PROPERTIES=/app/bin/idea.properties",
+        "--env=JAVA_HOME=/app/extra/jbr",
+        "--filesystem=home",
         "--filesystem=xdg-run/app/com.discordapp.Discord:create",
         "--filesystem=xdg-run/docker",
         "--filesystem=xdg-run/gnupg",
         "--filesystem=xdg-run/keyring",
         "--filesystem=xdg-run/pipewire-0",
         "--filesystem=xdg-run/podman",
-        "--socket=gpg-agent"
+        "--share=ipc",
+        "--share=network",
+        "--socket=pulseaudio",
+        "--socket=x11",
+        "--talk-name=org.freedesktop.Notifications",
+        "--talk-name=org.freedesktop.secrets"
     ],
     "modules": [
         {
