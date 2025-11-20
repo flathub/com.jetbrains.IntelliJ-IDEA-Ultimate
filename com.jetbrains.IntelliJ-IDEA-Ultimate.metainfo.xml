@@ -8,7 +8,7 @@
     <update_contact>idea@jetbrains.com</update_contact>
     <summary>Leading Java and Kotlin editor</summary>
     <url type="bugtracker">https://youtrack.jetbrains.com/issues/IDEA/</url>
-    <url type="help">https://www.jetbrains.com/idea/documentation/</url>
+    <url type="help">https://www.jetbrains.com/help/idea</url>
     <url type="homepage">https://www.jetbrains.com/idea/</url>
     <url type="contact">https://www.jetbrains.com/company/contacts</url>
     <developer id="com.jetbrains">
@@ -18,8 +18,8 @@
         <content_attribute id="social-info">moderate</content_attribute>
     </content_rating>
     <branding>
-        <color scheme_preference="light" type="primary">#f4f4f4</color>
-        <color scheme_preference="dark" type="primary">#9d4f94</color>
+        <color scheme_preference="light" type="primary">#ff8100</color>
+        <color scheme_preference="dark" type="primary">#047dfc</color>
     </branding>
     <categories>
         <category>Development</category>
@@ -73,6 +73,17 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2025.2.5" date="2025-11-20">
+            <url type="details">https://blog.jetbrains.com/idea/2025/08/intellij-idea-2025-2-5/</url>
+            <description>
+                <ul>
+                    <li>The IDE now correctly processes API calls when the Docker Engine is updated to v29.</li>
+                    <li>Gradle 9.x projects with a Spring Boot now run as expected using the Gradle Runner.</li>
+                    <li>Resolved an issue where the IDE could hang when scanning HTTP request files containing certain JSON structures.</li>
+                    <li>The GitLab plugin now correctly handles large pipeline IDs.</li>
+                </ul>
+            </description>
+        </release>
         <release version="2025.2.4" date="2025-10-23">
             <url type="details">https://blog.jetbrains.com/idea/2025/08/intellij-idea-2025-2-4/</url>
             <description>
@@ -126,25 +137,6 @@
                     <li>The IDE again correctly recognizes valid WebLogic server home paths and runs the WebLogic server.</li>
                     <li>The IDE now correctly runs the main() functions in Kotlin projects built with Gradle 9.0.</li>
                     <li>Maven run configurations again properly recognize and execute custom POM files specified with the -f option.</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2025.2" date="2025-08-04">
-            <url type="details">https://www.jetbrains.com/idea/whatsnew/2025-2/</url>
-            <description>
-                <ul>
-                    <li>Next-level AI experience with more control and better context management</li>
-                    <li>Java 25 support for early adopters</li>
-                    <li>Spring Debugger – the new standard for Spring Boot debugging Ultimate</li>
-                    <li>Spring Modulith Ultimate</li>
-                    <li>Maven 4 support for early adopters</li>
-                    <li>Virtual thread debugging</li>
-                    <li>Scala support</li>
-                    <li>Improved experience when your subscription expires Ultimate</li>
-                    <li>Improved database workflows Ultimate</li>
-                    <li>Web development updates Ultimate</li>
-                    <li>JSpecify support – a major step toward safer code</li>
-                    <li>Native Bazel support</li>
                 </ul>
             </description>
         </release>
