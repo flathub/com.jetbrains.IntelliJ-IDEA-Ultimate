@@ -46,9 +46,10 @@
         <internet>offline-only</internet>
     </supports>
     <description>
-        <p>IntelliJ IDEA Ultimate is a full-featured Java and Kotlin IDE that provides everything you need out of the box, including built-in developer tools such as database tools and profilers, web and enterprise frameworks, remote development, and much more.</p>
-        <p>IntelliJ IDEA Ultimate is available for a free 30-day evaluation. Monthly and yearly subscription options are available for companies and individual users.</p>
-        <p>NOTE: This wrapper is not verified by, affiliated with, or supported by JetBrains s.r.o.</p>
+        <p>IntelliJ IDEA is an Integrated Development Environment (IDE) for professional development in Java and Kotlin. It is designed to maximize developer productivity and has a strong focus on privacy and security. It does the routine and repetitive tasks for you by providing clever code completion, static code analysis, and refactorings. It lets you focus on the bright side of software development, making it not only productive but also an enjoyable experience.</p>
+        <p>The development of modern applications involves using multiple languages, tools, frameworks, and technologies. IntelliJ IDEA is designed as an IDE for JVM languages, but numerous plugins can extend it to provide a polyglot experience.</p>
+        <p>Use IntelliJ IDEA to develop applications in the following languages that can be compiled into the JVM bytecode, namely: Java, Kotlin, Scala and Groovy</p>
+        <p>IntelliJ IDEA Ultimate is a full-featured Java and Kotlin IDE. It includes all the features of the Community edition, plus adds support for languages that other IntelliJ platform-based IDEs focus on. It provides support for a variety of server-side and front-end frameworks, application servers, integration with database and profiling tools, and more.</p>
     </description>
     <screenshots>
         <screenshot type="default">
