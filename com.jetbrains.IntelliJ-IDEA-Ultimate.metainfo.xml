@@ -3,7 +3,7 @@
     <id>com.jetbrains.IntelliJ-IDEA-Ultimate</id>
     <metadata_license>CC0-1.0</metadata_license>
     <project_license>LicenseRef-proprietary</project_license>
-    <name>IntelliJ IDEA Ultimate</name>
+    <name>IntelliJ IDEA</name>
     <launchable type="desktop-id">com.jetbrains.IntelliJ-IDEA-Ultimate.desktop</launchable>
     <update_contact>idea@jetbrains.com</update_contact>
     <summary>Leading Java and Kotlin editor</summary>
@@ -49,7 +49,7 @@
         <p>IntelliJ IDEA is an Integrated Development Environment (IDE) for professional development in Java and Kotlin. It is designed to maximize developer productivity and has a strong focus on privacy and security. It does the routine and repetitive tasks for you by providing clever code completion, static code analysis, and refactorings. It lets you focus on the bright side of software development, making it not only productive but also an enjoyable experience.</p>
         <p>The development of modern applications involves using multiple languages, tools, frameworks, and technologies. IntelliJ IDEA is designed as an IDE for JVM languages, but numerous plugins can extend it to provide a polyglot experience.</p>
         <p>Use IntelliJ IDEA to develop applications in the following languages that can be compiled into the JVM bytecode, namely: Java, Kotlin, Scala and Groovy</p>
-        <p>IntelliJ IDEA Ultimate is a full-featured Java and Kotlin IDE. It includes all the features of the Community edition, plus adds support for languages that other IntelliJ platform-based IDEs focus on. It provides support for a variety of server-side and front-end frameworks, application servers, integration with database and profiling tools, and more.</p>
+        <p>Previously, IntelliJ IDEA was offered as two separate products: IntelliJ IDEA Community Edition and IntelliJ IDEA Ultimate with extended capabilities. Starting with IntelliJ IDEA 2025.3, we're combining these two editions into a single, unified product: IntelliJ IDEA. This change allows all users to access essential functionality without needing to decide between editions. The core functionality of IntelliJ IDEA remains free and now comes with even more features compared to the former Community Edition. Additionally, the new Ultimate subscription gives you access to advanced tooling with a free 30-day trial available for all users when installing IntelliJ IDEA. Afterward, you can choose to subscribe or continue using IntelliJ IDEA for free.</p>
     </description>
     <screenshots>
         <screenshot type="default">
@@ -74,6 +74,16 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2025.3" date="2025-12-08">
+            <url type="details">https://blog.jetbrains.com/idea/2025/12/intellij-idea-2025-3/</url>
+            <description>
+                <ul>
+                    <li>Productivity-enhancing features: unified distribution, command completion, spring Debugger improvements, islands theme</li>
+                    <li>Support for new technologies: Spring Boot 4 and Spring Framework 7, Java 25, Spring Data JDBC, Vitest 4</li>
+                    <li>AI upgrades: native support for Junie and Claude Agent, transparent AI quota, bring Your Own Key</li>
+                </ul>
+            </description>
+        </release>
         <release version="2025.2.5" date="2025-11-20">
             <url type="details">https://blog.jetbrains.com/idea/2025/08/intellij-idea-2025-2-5/</url>
             <description>
