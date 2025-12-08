@@ -98,7 +98,7 @@
             "buildsystem": "meson",
             "config-opts": [
                 "-Deditor_binary=/app/extra/bin/idea",
-                "-Deditor_title=IntelliJ IDEA Ultimate",
+                "-Deditor_title=IntelliJ IDEA",
                 "-Dprogram_name=idea-wrapper",
                 "-Dfirst_run_template=README.md",
                 "-Dflagfile_prefix=flatpak-idea"
