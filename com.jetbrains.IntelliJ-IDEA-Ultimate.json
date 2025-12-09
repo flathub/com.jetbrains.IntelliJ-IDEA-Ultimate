@@ -7,6 +7,7 @@
     "finish-args": [
         "--device=all",
         "--env=IDEA_PROPERTIES=/app/bin/idea.properties",
+        "--env=IDEA_VM_OPTIONS=/app/bin/idea64.vmoptions",
         "--env=JAVA_HOME=/app/extra/jbr",
         "--filesystem=home",
         "--filesystem=xdg-run/app/com.discordapp.Discord:create",
@@ -20,7 +21,8 @@
         "--socket=ssh-auth",
         "--socket=gpg-agent",
         "--socket=pulseaudio",
-        "--socket=x11",
+        "--socket=wayland",
+        "--socket=fallback-x11",
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.freedesktop.secrets"
     ],
@@ -28,7 +30,7 @@
         {
             "name": "idea",
             "build-commands": [
-                "install -D -t ${FLATPAK_DEST}/bin/ apply_extra idea.properties",
+                "install -D -t ${FLATPAK_DEST}/bin/ apply_extra idea.properties idea64.vmoptions",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg"
@@ -82,6 +84,10 @@
                 {
                     "type": "file",
                     "path": "idea.properties"
+                },
+                {
+                    "type": "file",
+                    "path": "idea64.vmoptions"
                 },
                 {
                     "type": "script",
