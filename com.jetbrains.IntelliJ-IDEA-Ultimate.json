@@ -41,9 +41,9 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "sha256": "095711329d1e9c14641ba426e652d4dbd3885b27c9a046e44725ae677491e8c3",
-                    "size": 1512282519,
-                    "url": "https://download.jetbrains.com/idea/idea-2025.3.1-aarch64.tar.gz",
+                    "sha256": "87516d2f07b8ec1ff6cfe9d14d68fc3f76f5d57b86611325b9eabac1b6043ccb",
+                    "size": 1512535435,
+                    "url": "https://download.jetbrains.com/idea/idea-2025.3.1.1-aarch64.tar.gz",
                     "x-checker-data": {
                         "code": "IIU",
                         "is-main-source": true,
@@ -56,9 +56,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "sha256": "21e1b90b5ec684767a03498ba424ef3f9acc5dbf759cceefd5edd474f043ad6c",
-                    "size": 1516627420,
-                    "url": "https://download.jetbrains.com/idea/idea-2025.3.1.tar.gz",
+                    "sha256": "3a064b22961f3f39b866b64b628558e0d0f708d423a3f9565d43f0e81196997b",
+                    "size": 1516858855,
+                    "url": "https://download.jetbrains.com/idea/idea-2025.3.1.1.tar.gz",
                     "x-checker-data": {
                         "code": "IIU",
                         "is-main-source": true,
