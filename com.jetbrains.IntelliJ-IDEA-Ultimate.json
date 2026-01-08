@@ -45,7 +45,7 @@
                     "size": 1512535435,
                     "url": "https://download.jetbrains.com/idea/idea-2025.3.1.1-aarch64.tar.gz",
                     "x-checker-data": {
-                        "code": "IIU",
+                        "code": "II",
                         "is-main-source": true,
                         "type": "jetbrains"
                     }
@@ -60,7 +60,7 @@
                     "size": 1516858855,
                     "url": "https://download.jetbrains.com/idea/idea-2025.3.1.1.tar.gz",
                     "x-checker-data": {
-                        "code": "IIU",
+                        "code": "II",
                         "is-main-source": true,
                         "type": "jetbrains"
                     }
