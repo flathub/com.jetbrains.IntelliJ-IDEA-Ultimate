@@ -76,7 +76,14 @@
     </screenshots>
     <releases>
         <release version="2025.3.2" date="2026-01-22">
-            <description></description>
+            <url type="details">https://blog.jetbrains.com/idea/2026/01/intellij-idea-2025-3-2/</url>
+            <description>
+                <ul>
+                    <li>The Terminal tool window no longer flickers when you use CLI tools with synchronized output, such as Claude Code.</li>
+                    <li>Several issues related to credential storage and settings synchronization in remote development have been resolved</li>
+                    <li>Run configuration handling in the Services tool window has received multiple improvements</li>
+                </ul>
+            </description>
         </release>
         <release version="2025.3.1.1" date="2026-01-08">
             <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662602/IntelliJ-IDEA-2025.3.1.1-253.29346.240-build-Release-Notes</url>
