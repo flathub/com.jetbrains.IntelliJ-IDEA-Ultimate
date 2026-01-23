@@ -128,30 +128,5 @@
                 </ul>
             </description>
         </release>
-        <release version="2025.2.4" date="2025-10-23">
-            <url type="details">https://blog.jetbrains.com/idea/2025/08/intellij-idea-2025-2-4/</url>
-            <description>
-                <ul>
-                    <li>The uninstaller now works as expected and should no longer fail and report an error when uninstalling a patched version.</li>
-                    <li>The IDE no longer freezes during code completion, which was previously caused by recursive StubIndex calls leading to a deadlock.</li>
-                    <li>cURL command conversion in the HTTP Client no longer fails when using the -b or --cookie options.</li>
-                    <li>The IDE now preserves original line endings when shelving and unshelving changes, instead of converting between CRLF and LF formats.</li>
-                    <li>Background images are now correctly displayed in all tool windows.</li>
-                    <li>Maven console output in Chinese is now displayed correctly.</li>
-                    <li>In the AI diff view, the middle section with gutters has been resized for improved usability.</li>
-                    <li>The IDE once again correctly builds dependent modules after the modules they are dependent on.</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2025.2.3" date="2025-10-02">
-            <url type="details">https://blog.jetbrains.com/idea/2025/08/intellij-idea-2025-2-3/</url>
-            <description>
-                <ul>
-                    <li>Jira Task Server integration now works as before when fetching tasks.</li>
-                    <li>Breakpoints now work as expected in the Services view when the ClassicUI plugin is enabled.</li>
-                    <li>Opening multiple files at once is again accessible from the Find Usages dialog.</li>
-                </ul>
-            </description>
-        </release>
     </releases>
 </component>
