@@ -8,6 +8,8 @@
         "--device=all",
         "--env=IDEA_PROPERTIES=/app/bin/idea.properties",
         "--env=JAVA_HOME=/app/extra/jbr",
+        "--env=GROFF_FONT_PATH=/app/share/groff/current/font",
+        "--env=GROFF_TMAC_PATH=/app/share/groff/current/tmac",
         "--filesystem=home",
         "--filesystem=xdg-run/app/com.discordapp.Discord:create",
         "--filesystem=xdg-run/docker",
@@ -88,6 +90,22 @@
                         "tar xzf idea.tar.gz --strip-components=1",
                         "rm idea.tar.gz"
                     ]
+                }
+            ]
+        },
+        {
+            "name": "aws-cli",
+            "buildsystem": "simple",
+            "build-commands": [
+                "./install --install-dir /app/aws-cli --bin-dir /app/bin",
+                "rm -rf /app/aws-cli/v2/current/dist/awscli/examples"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.33.9.zip",
+                    "sha256": "fdf377b9c5bf0caeb25965276d92c86728e395003b857cc92a61dd936f35cec2",
+                    "strip-components": 1
                 }
             ]
         },
