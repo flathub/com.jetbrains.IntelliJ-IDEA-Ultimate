@@ -76,7 +76,19 @@
     </screenshots>
     <releases>
         <release version="2025.3.3" date="2026-02-20">
-            <description></description>
+            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662631/IntelliJ-IDEA-2025.3.3-253.31033.143-build-Release-Notes</url>
+            <description>
+                <ul>
+                    <li>Spring MVC: complete and add not consumed path variables</li>
+                    <li>Support JEP 530: Primitive Types in Patterns, instanceof, and switch (Fourth Preview)</li>
+                    <li>Add Java 26 language level</li>
+                    <li>Allow customers to bundle their own plugins in IDE distributions</li>
+                    <li>Make Shift+Enter insert a new line in ClaudeCode</li>
+                    <li>Update CMP to 1.10.0 stable</li>
+                    <li>Popups/menus: implement ad text</li>
+                    <li>Hide mouse cursor while typing in BTF on macOS</li>
+                </ul>
+            </description>
         </release>
         <release version="2025.3.2" date="2026-01-22">
             <url type="details">https://blog.jetbrains.com/idea/2026/01/intellij-idea-2025-3-2/</url>
