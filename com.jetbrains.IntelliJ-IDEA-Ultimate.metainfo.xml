@@ -75,6 +75,9 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2025.3.4" date="2026-03-17">
+            <description></description>
+        </release>
         <release version="2025.3.3" date="2026-02-20">
             <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662631/IntelliJ-IDEA-2025.3.3-253.31033.143-build-Release-Notes</url>
             <description>
