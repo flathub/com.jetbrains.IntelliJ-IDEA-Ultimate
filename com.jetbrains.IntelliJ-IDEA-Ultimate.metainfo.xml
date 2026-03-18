@@ -76,20 +76,23 @@
     </screenshots>
     <releases>
         <release version="2025.3.4" date="2026-03-17">
-            <description></description>
-        </release>
-        <release version="2025.3.3" date="2026-02-20">
-            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662631/IntelliJ-IDEA-2025.3.3-253.31033.143-build-Release-Notes</url>
+            <url type="details">https://blog.jetbrains.com/idea/2026/03/intellij-idea-2025-3-4/</url>
             <description>
                 <ul>
-                    <li>Spring MVC: complete and add not consumed path variables</li>
-                    <li>Support JEP 530: Primitive Types in Patterns, instanceof, and switch (Fourth Preview)</li>
-                    <li>Add Java 26 language level</li>
-                    <li>Allow customers to bundle their own plugins in IDE distributions</li>
-                    <li>Make Shift+Enter insert a new line in ClaudeCode</li>
-                    <li>Update CMP to 1.10.0 stable</li>
-                    <li>Popups/menus: implement ad text</li>
-                    <li>Hide mouse cursor while typing in BTF on macOS</li>
+                    <li>Resolved an issue where running an HTTP request could trigger a different request in the same file</li>
+                    <li>Local changes refresh in large Perforce projects now works as expected</li>
+                    <li>The Dependencies tab now opens correctly when using the Analyze Cyclic Dependencies feature</li>
+                </ul>
+            </description>
+        </release>
+        <release version="2025.3.3" date="2026-02-20">
+            <url type="details">https://blog.jetbrains.com/idea/2026/02/intellij-idea-2025-3-3/</url>
+            <description>
+                <ul>
+                    <li>MCP server output schema now correctly handles default properties in the schema, preventing invalid schema errors during structured output</li>
+                    <li>Downloading the IDE backend now works as intended with a configured proxy</li>
+                    <li>Resolved an issue that prevented successful proxy authentication</li>
+                    <li>Package annotations referenced through JAR dependencies are now correctly reflected in the PSI model</li>
                 </ul>
             </description>
         </release>
@@ -100,14 +103,6 @@
                     <li>The Terminal tool window no longer flickers when you use CLI tools with synchronized output, such as Claude Code.</li>
                     <li>Several issues related to credential storage and settings synchronization in remote development have been resolved</li>
                     <li>Run configuration handling in the Services tool window has received multiple improvements</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2025.3.1.1" date="2026-01-08">
-            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662602/IntelliJ-IDEA-2025.3.1.1-253.29346.240-build-Release-Notes</url>
-            <description>
-                <ul>
-                    <li>Bug fix</li>
                 </ul>
             </description>
         </release>
@@ -132,17 +127,6 @@
                     <li>Productivity-enhancing features: unified distribution, command completion, spring Debugger improvements, islands theme</li>
                     <li>Support for new technologies: Spring Boot 4 and Spring Framework 7, Java 25, Spring Data JDBC, Vitest 4</li>
                     <li>AI upgrades: native support for Junie and Claude Agent, transparent AI quota, bring Your Own Key</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2025.2.5" date="2025-11-20">
-            <url type="details">https://blog.jetbrains.com/idea/2025/08/intellij-idea-2025-2-5/</url>
-            <description>
-                <ul>
-                    <li>The IDE now correctly processes API calls when the Docker Engine is updated to v29.</li>
-                    <li>Gradle 9.x projects with a Spring Boot now run as expected using the Gradle Runner.</li>
-                    <li>Resolved an issue where the IDE could hang when scanning HTTP request files containing certain JSON structures.</li>
-                    <li>The GitLab plugin now correctly handles large pipeline IDs.</li>
                 </ul>
             </description>
         </release>
