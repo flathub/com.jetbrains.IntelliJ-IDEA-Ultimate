@@ -75,6 +75,9 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2026.1" date="2026-03-25">
+            <description></description>
+        </release>
         <release version="2025.3.4" date="2026-03-17">
             <url type="details">https://blog.jetbrains.com/idea/2026/03/intellij-idea-2025-3-4/</url>
             <description>
