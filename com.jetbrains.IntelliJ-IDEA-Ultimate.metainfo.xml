@@ -76,7 +76,24 @@
     </screenshots>
     <releases>
         <release version="2026.1" date="2026-03-25">
-            <description></description>
+            <url type="details">https://blog.jetbrains.com/idea/2026/03/intellij-idea-2026-1/</url>
+            <description>
+                <ul>
+                    <li>ACP Registry: Browse and install AI agents in one click.</li>
+                    <li>Git worktrees: Work in parallel branches and hand one off to an agent while you keep moving in another.</li>
+                    <li>Database access for AI agents: Let Codex or Claude Agent query and modify your data sources natively.</li>
+                    <li>Quota-free next edit suggestions: Propagate changes throughout a given file with IDE-driven assistance.</li>
+                    <li>Spring runtime insight: Inspect injected beans, endpoint security, and property values without pausing execution.</li>
+                    <li>Kotlin-aware JPA: Detect and fix Kotlin-specific pitfalls in Jakarta Persistence entities.</li>
+                    <li>Java 26: Enjoy day-one support, including preview features.</li>
+                    <li>Kotlin 2.3.20: Enjoy day-one support, including experimental features.</li>
+                    <li>C/C++ in IntelliJ IDEA: Access first-class C/C++ coding assistance for multi-language projects.</li>
+                    <li>Support for JavaScript without an Ultimate subscription.</li>
+                    <li>Expanded command completion, now with AI actions, postfix templates, and config file support.</li>
+                    <li>Better performance for large-scale TypeScript projects.</li>
+                    <li>Native Dev Container workflow: Open containerized projects as if they were local.</li>
+                </ul>
+            </description>
         </release>
         <release version="2025.3.4" date="2026-03-17">
             <url type="details">https://blog.jetbrains.com/idea/2026/03/intellij-idea-2025-3-4/</url>
@@ -120,16 +137,6 @@
                     <li>The IDE no longer shifts mouse text selection in the terminal one character to the left of the cursor position.</li>
                     <li>The IDE once again correctly loads the list of suggested plugins invoked by the Configure Plugins action.</li>
                     <li>The IDE no longer displays a stray = character in the terminal when working with Fish shell versions 4.0.0–4.0.9 in Docker or when opening a terminal tab via a new SSH session.</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2025.3" date="2025-12-08">
-            <url type="details">https://blog.jetbrains.com/idea/2025/12/intellij-idea-2025-3/</url>
-            <description>
-                <ul>
-                    <li>Productivity-enhancing features: unified distribution, command completion, spring Debugger improvements, islands theme</li>
-                    <li>Support for new technologies: Spring Boot 4 and Spring Framework 7, Java 25, Spring Data JDBC, Vitest 4</li>
-                    <li>AI upgrades: native support for Junie and Claude Agent, transparent AI quota, bring Your Own Key</li>
                 </ul>
             </description>
         </release>
