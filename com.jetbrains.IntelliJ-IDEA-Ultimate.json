@@ -6,8 +6,7 @@
     "command": "idea-wrapper",
     "finish-args": [
         "--device=all",
-        "--env=IDEA_PROPERTIES=/app/bin/idea.properties",
-        "--env=JAVA_HOME=/app/extra/jbr",
+        "--env=JAVA_HOME=/app/jbr",
         "--filesystem=home",
         "--filesystem=xdg-run/docker",
         "--filesystem=xdg-run/keyring",
@@ -27,7 +26,8 @@
         {
             "name": "idea",
             "build-commands": [
-                "install -D -t ${FLATPAK_DEST}/bin/ apply_extra idea.properties",
+                "cp -a idea-*/* ${FLATPAK_DEST}",
+                "cat idea.properties >> ${FLATPAK_DEST}/bin/idea.properties",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg"
@@ -35,13 +35,12 @@
             "buildsystem": "simple",
             "sources": [
                 {
-                    "type": "extra-data",
-                    "filename": "idea.tar.gz",
+                    "type": "archive",
+                    "strip-components": 0,
                     "only-arches": [
                         "aarch64"
                     ],
                     "sha256": "c235f664c35c20422c3ab28c850b86ea4ab7a05d9df9c027581a3a8c98be401b",
-                    "size": 1560324895,
                     "url": "https://download.jetbrains.com/idea/idea-2026.1-aarch64.tar.gz",
                     "x-checker-data": {
                         "code": "IIU",
@@ -50,13 +49,12 @@
                     }
                 },
                 {
-                    "type": "extra-data",
-                    "filename": "idea.tar.gz",
+                    "type": "archive",
+                    "strip-components": 0,
                     "only-arches": [
                         "x86_64"
                     ],
                     "sha256": "f57d3dba9970c774cf377583629aea540418e677ec6365570e76dea9cb2f3f9b",
-                    "size": 1565208103,
                     "url": "https://download.jetbrains.com/idea/idea-2026.1.tar.gz",
                     "x-checker-data": {
                         "code": "IIU",
@@ -79,14 +77,6 @@
                 {
                     "type": "file",
                     "path": "idea.properties"
-                },
-                {
-                    "type": "script",
-                    "dest-filename": "apply_extra",
-                    "commands": [
-                        "tar xzf idea.tar.gz --strip-components=1",
-                        "rm idea.tar.gz"
-                    ]
                 }
             ]
         },
@@ -94,7 +84,7 @@
             "name": "ide-flatpak-wrapper",
             "buildsystem": "meson",
             "config-opts": [
-                "-Deditor_binary=/app/extra/bin/idea",
+                "-Deditor_binary=/app/bin/idea",
                 "-Deditor_title=IntelliJ IDEA",
                 "-Dprogram_name=idea-wrapper",
                 "-Dfirst_run_template=README.md",
@@ -104,7 +94,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/flathub/ide-flatpak-wrapper.git",
-                    "commit": "d581fd9b873acbf6fb22899aa388435f6c00f61a"
+                    "commit": "2881abaf9efc6e14923b8a0bb085275aaf2fbddf"
                 },
                 {
                     "type": "file",
