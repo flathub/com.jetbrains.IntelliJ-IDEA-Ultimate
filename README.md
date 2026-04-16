@@ -24,7 +24,7 @@ you can modify `Settings > Tools > Terminal > Shell path` to
 `/usr/bin/env -- flatpak-spawn --host bash`
 
 ## Flatpak standard SDK
-This flatpak provides a standard development environment (gcc, python, etc).
+This Flatpak provides a standard development environment (gcc, python, etc.).
 To see what's available:
 ```
 $ flatpak run --command=sh @FLATPAK_ID@
@@ -32,8 +32,16 @@ $ ls /usr/bin (shared runtime)
 $ ls /app/bin (bundled with this flatpak)
 ```
 
+## Running GUI app from IDE
+By default, java uses X11 but not exist inside Flatpak there is only Wayland.
+You need to switch to Wayland toolkit for your app.
+Go to `Edit Configuration`, `Modify options` and enable `Add VM Options`.
+On the new box named `VM Options` add:
+
+`-Dawt.toolkit.name=WLToolkit`
+
 ## Flatpak extensions
-To get support for additional languages, you have to install SDK extensions, e. g.
+To get support for additional languages, you have to install SDK extensions, e.g.
 ```
 $ flatpak install flathub org.freedesktop.Sdk.Extension.openjdk
 $ flatpak install flathub org.freedesktop.Sdk.Extension.openjdk21
@@ -47,7 +55,7 @@ to a comma-separated list of extension names (name is ID portion after the last 
 
 `$ FLATPAK_ENABLE_SDK_EXT=openjdk,xxx flatpak run @FLATPAK_ID@`
 
-To make this persistent, set the variable via flatpak override:
+To make this persistent, set the variable via Flatpak override:
 
 `$ flatpak override --user @FLATPAK_ID@ --env=FLATPAK_ENABLE_SDK_EXT="dotnet,golang"`
 
