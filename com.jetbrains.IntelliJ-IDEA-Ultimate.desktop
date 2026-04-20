@@ -1,9 +1,10 @@
 [Desktop Entry]
 Categories=Development;IDE;
-Exec=idea-wrapper
+Exec=idea-wrapper %F
 GenericName=Capable and Ergonomic IDE for the Java Virtual Machine
 Icon=com.jetbrains.IntelliJ-IDEA-Ultimate
 Keywords=development;idea;ide;intellij;java;
+MimeType=text/plain;inode/directory;
 Name=IntelliJ IDEA
 StartupNotify=true
 StartupWMClass=jetbrains-idea
