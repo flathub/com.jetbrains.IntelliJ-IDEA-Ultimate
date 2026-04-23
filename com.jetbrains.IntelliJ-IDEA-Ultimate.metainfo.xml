@@ -75,6 +75,22 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2026.1.1" date="2026-04-23">
+            <url type="details">https://blog.jetbrains.com/idea/2026/04/intellij-idea-2026-1-1/</url>
+            <description>
+                <ul>
+                    <li>It’s once again possible to set up a WSL Python SDK.</li>
+                    <li>Emmet in remote development now works as expected.</li>
+                    <li>Gradle sync no longer fails due to a class cast error involving InternalIdeaModule and org.gradle.tooling.model.ProjectModel.</li>
+                    <li>The IDE now correctly connects to the WildFly admin process after server startup, restoring deployment and the Open browser after launch option.</li>
+                    <li>The IDE no longer fails to locate the WSL 2 JDK.</li>
+                    <li>Double-clicking an Ant target in the Ant tool window now runs the target and shows the build output in the Messages tool window.</li>
+                    <li>Search for context actions and code completion in large Spring projects are now more responsive and faster.</li>
+                    <li>The IDE now correctly supports creating a run configuration for a local WebLogic server.</li>
+                    <li>The Find and Replace action now works as expected when pressing Enter.</li>
+                </ul>
+            </description>
+        </release>
         <release version="2026.1" date="2026-03-25">
             <url type="details">https://blog.jetbrains.com/idea/2026/03/intellij-idea-2026-1/</url>
             <description>
@@ -123,20 +139,6 @@
                     <li>The Terminal tool window no longer flickers when you use CLI tools with synchronized output, such as Claude Code.</li>
                     <li>Several issues related to credential storage and settings synchronization in remote development have been resolved</li>
                     <li>Run configuration handling in the Services tool window has received multiple improvements</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2025.3.1" date="2025-12-18">
-            <url type="details">https://blog.jetbrains.com/idea/2025/12/intellij-idea-2025-3-1/</url>
-            <description>
-                <ul>
-                    <li>The IDE once again shows the Resume Build From button in the Run tool window for Maven projects.</li>
-                    <li>In the Version Control section of Advanced Settings, there’s now an option to disable the warning dialog on force-pushing.</li>
-                    <li>Query result tabs now follow the corresponding active editor tabs as expected.</li>
-                    <li>Several issues that appeared when running or debugging in WSL using Gradle have been resolved.</li>
-                    <li>The IDE no longer shifts mouse text selection in the terminal one character to the left of the cursor position.</li>
-                    <li>The IDE once again correctly loads the list of suggested plugins invoked by the Configure Plugins action.</li>
-                    <li>The IDE no longer displays a stray = character in the terminal when working with Fish shell versions 4.0.0–4.0.9 in Docker or when opening a terminal tab via a new SSH session.</li>
                 </ul>
             </description>
         </release>
