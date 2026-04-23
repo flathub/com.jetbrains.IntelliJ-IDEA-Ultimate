@@ -142,19 +142,5 @@
                 </ul>
             </description>
         </release>
-        <release version="2025.3.1" date="2025-12-18">
-            <url type="details">https://blog.jetbrains.com/idea/2025/12/intellij-idea-2025-3-1/</url>
-            <description>
-                <ul>
-                    <li>The IDE once again shows the Resume Build From button in the Run tool window for Maven projects.</li>
-                    <li>In the Version Control section of Advanced Settings, there’s now an option to disable the warning dialog on force-pushing.</li>
-                    <li>Query result tabs now follow the corresponding active editor tabs as expected.</li>
-                    <li>Several issues that appeared when running or debugging in WSL using Gradle have been resolved.</li>
-                    <li>The IDE no longer shifts mouse text selection in the terminal one character to the left of the cursor position.</li>
-                    <li>The IDE once again correctly loads the list of suggested plugins invoked by the Configure Plugins action.</li>
-                    <li>The IDE no longer displays a stray = character in the terminal when working with Fish shell versions 4.0.0–4.0.9 in Docker or when opening a terminal tab via a new SSH session.</li>
-                </ul>
-            </description>
-        </release>
     </releases>
 </component>
