@@ -75,6 +75,17 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2026.1.3" date="2026-06-04">
+            <url type="details">https://blog.jetbrains.com/idea/2026/05/intellij-idea-2026-1-3/</url>
+            <description>
+                <ul>
+                    <li>In tmux, the terminal cursor is no longer rendered above the current line.</li>
+                    <li>The Markdown preview now correctly displays images when referencing files outside the project directory.</li>
+                    <li>Custom colors are rendered correctly in various UI components in the Database tool window.</li>
+                    <li>Launching WSL via wsl.exe -d &lt;distribution&gt; no longer causes shell integration and process detection issues.</li>
+                </ul>
+            </description>
+        </release>
         <release version="2026.1.2" date="2026-05-15">
             <url type="details">https://blog.jetbrains.com/idea/2026/05/intellij-idea-2026-1-2/</url>
             <description>
