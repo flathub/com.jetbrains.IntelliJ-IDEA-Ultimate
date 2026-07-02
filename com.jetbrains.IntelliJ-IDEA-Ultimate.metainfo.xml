@@ -76,7 +76,15 @@
     </screenshots>
     <releases>
         <release version="2026.1.4" date="2026-07-02">
-            <description></description>
+            <url type="details">https://blog.jetbrains.com/idea/2026/07/intellij-idea-2026-1-4/</url>
+            <description>
+                <ul>
+                    <li>The active Git branch now updates correctly.</li>
+                    <li>Fixed an issue where using pull_policy in Docker Compose files prevented the PHP interpreter from being created.</li>
+                    <li>The IDE no longer erroneously marks successful Gradle syncs as failed when running Gradle 9.5.0 on WSL.</li>
+                    <li>Fixed an error that caused Dev Container connections to fail with an Unknown Docker endpoint schema message.</li>
+                </ul>
+            </description>
         </release>
         <release version="2026.1.3" date="2026-06-04">
             <url type="details">https://blog.jetbrains.com/idea/2026/05/intellij-idea-2026-1-3/</url>
@@ -138,27 +146,6 @@
                     <li>Expanded command completion, now with AI actions, postfix templates, and config file support.</li>
                     <li>Better performance for large-scale TypeScript projects.</li>
                     <li>Native Dev Container workflow: Open containerized projects as if they were local.</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2025.3.4" date="2026-03-17">
-            <url type="details">https://blog.jetbrains.com/idea/2026/03/intellij-idea-2025-3-4/</url>
-            <description>
-                <ul>
-                    <li>Resolved an issue where running an HTTP request could trigger a different request in the same file</li>
-                    <li>Local changes refresh in large Perforce projects now works as expected</li>
-                    <li>The Dependencies tab now opens correctly when using the Analyze Cyclic Dependencies feature</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2025.3.3" date="2026-02-20">
-            <url type="details">https://blog.jetbrains.com/idea/2026/02/intellij-idea-2025-3-3/</url>
-            <description>
-                <ul>
-                    <li>MCP server output schema now correctly handles default properties in the schema, preventing invalid schema errors during structured output</li>
-                    <li>Downloading the IDE backend now works as intended with a configured proxy</li>
-                    <li>Resolved an issue that prevented successful proxy authentication</li>
-                    <li>Package annotations referenced through JAR dependencies are now correctly reflected in the PSI model</li>
                 </ul>
             </description>
         </release>
