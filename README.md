@@ -1,8 +1,8 @@
-# IntelliJ IDEA Ultimate unofficial Flatpak wrapper
+# IntelliJ IDEA unofficial Flatpak wrapper
 This version is running inside a container and is therefore not able  to access SDKs on your host system!
 
 ## How to run commands on the host system
-To execute commands on the host system, run IntelliJ IDEA Ultimate with:
+To execute commands on the host system, run IntelliJ IDEA with:
 
 `$ flatpak run --talk-name=org.freedesktop.Flatpak com.jetbrains.IntelliJ-IDEA-Ultimate`
 
