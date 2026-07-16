@@ -75,6 +75,26 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2026.2" date="2026-07-16">
+            <url type="details">https://blog.jetbrains.com/idea/2026/07/intellij-idea-2026-2/</url>
+            <description>
+                <ul>
+                    <li>Native GitHub Copilot integration</li>
+                    <li>Agent skills</li>
+                    <li>AI completion support for third-party providers</li>
+                    <li>Logpoints</li>
+                    <li>Dependency completion</li>
+                    <li>Early Gradle 10 support and migration assistance</li>
+                    <li>Streamlined Git conflict resolution flow</li>
+                    <li>Docker Compose improvements</li>
+                    <li>Java 27</li>
+                    <li>Kotlin 2.4 Stable features</li>
+                    <li>Spring support improvements</li>
+                    <li>Terraform testing framework</li>
+                    <li>TypeScript 7.0</li>
+                </ul>
+            </description>
+        </release>
         <release version="2026.1.4" date="2026-07-02">
             <url type="details">https://blog.jetbrains.com/idea/2026/07/intellij-idea-2026-1-4/</url>
             <description>
@@ -126,26 +146,6 @@
                     <li>Search for context actions and code completion in large Spring projects are now more responsive and faster.</li>
                     <li>The IDE now correctly supports creating a run configuration for a local WebLogic server.</li>
                     <li>The Find and Replace action now works as expected when pressing Enter.</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2026.1" date="2026-03-25">
-            <url type="details">https://blog.jetbrains.com/idea/2026/03/intellij-idea-2026-1/</url>
-            <description>
-                <ul>
-                    <li>ACP Registry: Browse and install AI agents in one click.</li>
-                    <li>Git worktrees: Work in parallel branches and hand one off to an agent while you keep moving in another.</li>
-                    <li>Database access for AI agents: Let Codex or Claude Agent query and modify your data sources natively.</li>
-                    <li>Quota-free next edit suggestions: Propagate changes throughout a given file with IDE-driven assistance.</li>
-                    <li>Spring runtime insight: Inspect injected beans, endpoint security, and property values without pausing execution.</li>
-                    <li>Kotlin-aware JPA: Detect and fix Kotlin-specific pitfalls in Jakarta Persistence entities.</li>
-                    <li>Java 26: Enjoy day-one support, including preview features.</li>
-                    <li>Kotlin 2.3.20: Enjoy day-one support, including experimental features.</li>
-                    <li>C/C++ in IntelliJ IDEA: Access first-class C/C++ coding assistance for multi-language projects.</li>
-                    <li>Support for JavaScript without an Ultimate subscription.</li>
-                    <li>Expanded command completion, now with AI actions, postfix templates, and config file support.</li>
-                    <li>Better performance for large-scale TypeScript projects.</li>
-                    <li>Native Dev Container workflow: Open containerized projects as if they were local.</li>
                 </ul>
             </description>
         </release>
