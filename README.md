@@ -1,10 +1,10 @@
-# @EDITOR_TITLE@ unofficial Flatpak wrapper
+# IntelliJ IDEA unofficial Flatpak wrapper
 This version is running inside a container and is therefore not able  to access SDKs on your host system!
 
 ## How to run commands on the host system
-To execute commands on the host system, run @EDITOR_TITLE@ with:
+To execute commands on the host system, run IntelliJ IDEA with:
 
-`$ flatpak run --talk-name=org.freedesktop.Flatpak @FLATPAK_ID@`
+`$ flatpak run --talk-name=org.freedesktop.Flatpak com.jetbrains.IntelliJ-IDEA-Ultimate`
 
 And this inside the sandbox:
 
@@ -16,7 +16,7 @@ This is are considered a security issue, use at your risk.
 
 To make it permanent
 
-`$ flatpak override --user < --talk-name=org.freedesktop.Flatpak @FLATPAK_ID@`
+`$ flatpak override --user < --talk-name=org.freedesktop.Flatpak com.jetbrains.IntelliJ-IDEA-Ultimate`
 
 To make the Integrated Terminal automatically use the host system's shell,
 you can modify `Settings > Tools > Terminal > Shell path` to 
@@ -27,7 +27,7 @@ you can modify `Settings > Tools > Terminal > Shell path` to
 This Flatpak provides a standard development environment (gcc, python, etc.).
 To see what's available:
 ```
-$ flatpak run --command=sh @FLATPAK_ID@
+$ flatpak run --command=sh com.jetbrains.IntelliJ-IDEA-Ultimate
 $ ls /usr/bin (shared runtime)
 $ ls /app/bin (bundled with this flatpak)
 ```
@@ -53,11 +53,11 @@ $ flatpak install flathub org.freedesktop.Sdk.Extension.openjdk8
 To enable selected extensions, set `FLATPAK_ENABLE_SDK_EXT` environment variable
 to a comma-separated list of extension names (name is ID portion after the last dot):
 
-`$ FLATPAK_ENABLE_SDK_EXT=openjdk,xxx flatpak run @FLATPAK_ID@`
+`$ FLATPAK_ENABLE_SDK_EXT=openjdk,xxx flatpak run com.jetbrains.IntelliJ-IDEA-Ultimate`
 
 To make this persistent, set the variable via Flatpak override:
 
-`$ flatpak override --user @FLATPAK_ID@ --env=FLATPAK_ENABLE_SDK_EXT="dotnet,golang"`
+`$ flatpak override --user com.jetbrains.IntelliJ-IDEA-Ultimate --env=FLATPAK_ENABLE_SDK_EXT="dotnet,golang"`
 
 You can use to find others
 
