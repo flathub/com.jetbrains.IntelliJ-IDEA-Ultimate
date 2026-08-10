@@ -74,8 +74,28 @@
         </screenshot>
     </screenshots>
     <releases>
-        <release version="2026.2.1" date="2026-08-10">
-            <description></description>
+        <release version="2026.2.1" date="2026-08-05">
+            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662722</url>
+            <description>
+                <ul>
+                    <li>JPS should respect custom module no-deprecation parameter</li>
+                    <li>Non-instrumented logging breakpoints with stack trace</li>
+                    <li>Spring: show warning for @EventListeners for some application events</li>
+                    <li>Spring: check that @TransactionalEventListener is not used with @Transactional unless it REQUIRES_NEW or NOT_SUPPORTED</li>
+                    <li>Spring Security: show error for requestMatchers after anyRequest</li>
+                    <li>Spring Security: provide inspection that checks the matchers order</li>
+                    <li>Figma Connect: set up Figma skill</li>
+                    <li>Figma Layers panel: drag a node to the terminal should insert its node id</li>
+                    <li>Add "Restart Tailwind CSS Service" action to "Search Everywhere"</li>
+                    <li>TypeScript GO: use getSignatureHelp to provide parameter info</li>
+                    <li>Support Authentication and Authorization with OIDC/OAuth 2.0 for MongoDB</li>
+                    <li>Remdev skills for writing/refactoring code for split mode</li>
+                    <li>Add support for new islands palette</li>
+                    <li>Support sized images in Markdown renderer</li>
+                    <li>Update JDialogRenderer to Support Custom Window Shape</li>
+                    <li>Add support for macOS scrollbar settings detection on standalone</li>
+                </ul>
+            </description>
         </release>
         <release version="2026.2.0.1" date="2026-07-23">
             <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662711</url>
