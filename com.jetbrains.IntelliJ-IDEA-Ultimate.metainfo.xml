@@ -74,6 +74,9 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2026.2.1" date="2026-08-10">
+            <description></description>
+        </release>
         <release version="2026.2.0.1" date="2026-07-23">
             <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662711</url>
             <description>
