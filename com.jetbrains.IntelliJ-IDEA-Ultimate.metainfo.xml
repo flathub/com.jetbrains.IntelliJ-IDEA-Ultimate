@@ -75,7 +75,17 @@
     </screenshots>
     <releases>
         <release version="2026.2.2" date="2026-09-02">
-            <description></description>
+            <url type="details">https://blog.jetbrains.com/idea/2026/09/intellij-idea-2026-2-2</url>
+            <description>
+                <ul>
+                    <li>Loading a remote OpenAPI specification no longer fails.</li>
+                    <li>The order of terminal tabs is now preserved after reopening a project.</li>
+                    <li>Checkboxes in Markdown now have improved contrast for better visibility.</li>
+                    <li>The vertical scrollbar is once again displayed correctly in the Markdown preview pane.</li>
+                    <li>Opening directories containing a large number of .md files no longer causes the IDE to freeze.</li>
+                    <li>Spring Modulith no longer incorrectly reports accessibility violations for types exposed through @NamedInterface in nested modules.</li>
+                </ul>
+            </description>
         </release>
         <release version="2026.2.1" date="2026-08-05">
             <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662722</url>
