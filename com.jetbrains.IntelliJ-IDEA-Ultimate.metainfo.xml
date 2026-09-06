@@ -74,6 +74,19 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2026.2.2" date="2026-09-02">
+            <url type="details">https://blog.jetbrains.com/idea/2026/09/intellij-idea-2026-2-2</url>
+            <description>
+                <ul>
+                    <li>Loading a remote OpenAPI specification no longer fails.</li>
+                    <li>The order of terminal tabs is now preserved after reopening a project.</li>
+                    <li>Checkboxes in Markdown now have improved contrast for better visibility.</li>
+                    <li>The vertical scrollbar is once again displayed correctly in the Markdown preview pane.</li>
+                    <li>Opening directories containing a large number of .md files no longer causes the IDE to freeze.</li>
+                    <li>Spring Modulith no longer incorrectly reports accessibility violations for types exposed through @NamedInterface in nested modules.</li>
+                </ul>
+            </description>
+        </release>
         <release version="2026.2.1" date="2026-08-05">
             <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662722</url>
             <description>
@@ -133,17 +146,6 @@
                     <li>Fixed an issue where using pull_policy in Docker Compose files prevented the PHP interpreter from being created.</li>
                     <li>The IDE no longer erroneously marks successful Gradle syncs as failed when running Gradle 9.5.0 on WSL.</li>
                     <li>Fixed an error that caused Dev Container connections to fail with an Unknown Docker endpoint schema message.</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2026.1.3" date="2026-06-04">
-            <url type="details">https://blog.jetbrains.com/idea/2026/05/intellij-idea-2026-1-3/</url>
-            <description>
-                <ul>
-                    <li>In tmux, the terminal cursor is no longer rendered above the current line.</li>
-                    <li>The Markdown preview now correctly displays images when referencing files outside the project directory.</li>
-                    <li>Custom colors are rendered correctly in various UI components in the Database tool window.</li>
-                    <li>Launching WSL via wsl.exe -d &lt;distribution&gt; no longer causes shell integration and process detection issues.</li>
                 </ul>
             </description>
         </release>
