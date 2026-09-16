@@ -74,6 +74,18 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2026.2.3" date="2026-09-16">
+            <url type="details">https://blog.jetbrains.com/idea/2026/09/intellij-idea-2026-2-3</url>
+            <description>
+                <ul>
+                    <li>When opening a recent project, the Maven tool window is now populated with the corresponding data.</li>
+                    <li>Several causes of IDE freezes have been resolved.</li>
+                    <li>The vertical scrollbar is once again displayed correctly in the Markdown preview pane.</li>
+                    <li>The PlantUML extension has been updated to version 1.2026.6, enabling support for its latest features.</li>
+                    <li>Applications running in Debug mode with WSL2 mirrored networking no longer become unresponsive and can be stopped as expected.</li>
+                </ul>
+            </description>
+        </release>
         <release version="2026.2.2" date="2026-09-02">
             <url type="details">https://blog.jetbrains.com/idea/2026/09/intellij-idea-2026-2-2</url>
             <description>
@@ -107,14 +119,6 @@
                     <li>Support sized images in Markdown renderer</li>
                     <li>Update JDialogRenderer to Support Custom Window Shape</li>
                     <li>Add support for macOS scrollbar settings detection on standalone</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2026.2.0.1" date="2026-07-23">
-            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662711</url>
-            <description>
-                <ul>
-                    <li>Bugfix</li>
                 </ul>
             </description>
         </release>
