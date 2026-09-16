@@ -40,8 +40,8 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "sha256": "04baba6fb1034aebfbf86e8b55186c818b93dbbbe131012975718ff7f70740f5",
-                    "url": "https://download.jetbrains.com/idea/idea-2026.2.2-aarch64.tar.gz",
+                    "sha256": "873286dd6406971a2311827edd66c56060c345582a4a6b1774e3925183b02ec5",
+                    "url": "https://download.jetbrains.com/idea/idea-2026.2.3-aarch64.tar.gz",
                     "x-checker-data": {
                         "code": "IIU",
                         "is-main-source": true,
@@ -54,8 +54,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "sha256": "f1cc5329a7adf3ab3bd8886744103f7d3bcf1ca12e699762ecd9bffe57335f8b",
-                    "url": "https://download.jetbrains.com/idea/idea-2026.2.2.tar.gz",
+                    "sha256": "68751c8ae4d49407251cd197df795fbed91b6fdc85d10c73c4649a99e496ab37",
+                    "url": "https://download.jetbrains.com/idea/idea-2026.2.3.tar.gz",
                     "x-checker-data": {
                         "code": "IIU",
                         "is-main-source": true,
