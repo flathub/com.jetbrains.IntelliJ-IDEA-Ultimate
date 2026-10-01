@@ -5,7 +5,7 @@
     "sdk": "org.freedesktop.Sdk",
     "command": "idea-wrapper",
     "finish-args": [
-        "--device=all",
+        "--device=dri",
         "--env=JAVA_HOME=/app/jbr",
         "--filesystem=home",
         "--share=ipc",
@@ -14,7 +14,6 @@
         "--socket=gpg-agent",
         "--socket=fallback-x11",
         "--socket=wayland",
-        "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.freedesktop.secrets",
         "--talk-name=org.freedesktop.FileManager1"
     ],
