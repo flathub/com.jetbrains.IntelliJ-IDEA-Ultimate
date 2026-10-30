@@ -2,7 +2,7 @@
 <component type="desktop-application">
     <id>com.jetbrains.IntelliJ-IDEA-Ultimate</id>
     <metadata_license>CC0-1.0</metadata_license>
-    <project_license>LicenseRef-proprietary</project_license>
+    <project_license>LicenseRef-proprietary=https://www.jetbrains.com/legal/docs/toolbox/user/</project_license>
     <name>IntelliJ IDEA</name>
     <launchable type="desktop-id">com.jetbrains.IntelliJ-IDEA-Ultimate.desktop</launchable>
     <update_contact>idea@jetbrains.com</update_contact>
