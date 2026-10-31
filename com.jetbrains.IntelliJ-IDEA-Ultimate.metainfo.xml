@@ -74,6 +74,17 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2026.2.4" date="2026-10-30">
+            <url type="details">https://blog.jetbrains.com/idea/2026/10/intellij-idea-2026-2-4</url>
+            <description>
+                <ul>
+                    <li>Files and directories in WSL projects no longer incorrectly appear as deleted or missing when file system prefetching fails.</li>
+                    <li>The Java onboarding tour now ensures smooth progression through its lessons.</li>
+                    <li>Import optimization now works as expected without affecting IDE responsiveness during code formatting, saving, or committing changes.</li>
+                    <li>The IDE starts up reliably even if the plugin cache file contains invalid data.</li>
+                </ul>
+            </description>
+        </release>
         <release version="2026.2.3" date="2026-09-16">
             <url type="details">https://blog.jetbrains.com/idea/2026/09/intellij-idea-2026-2-3</url>
             <description>
@@ -139,17 +150,6 @@
                     <li>Spring support improvements</li>
                     <li>Terraform testing framework</li>
                     <li>TypeScript 7.0</li>
-                </ul>
-            </description>
-        </release>
-        <release version="2026.1.4" date="2026-07-02">
-            <url type="details">https://blog.jetbrains.com/idea/2026/07/intellij-idea-2026-1-4/</url>
-            <description>
-                <ul>
-                    <li>The active Git branch now updates correctly.</li>
-                    <li>Fixed an issue where using pull_policy in Docker Compose files prevented the PHP interpreter from being created.</li>
-                    <li>The IDE no longer erroneously marks successful Gradle syncs as failed when running Gradle 9.5.0 on WSL.</li>
-                    <li>Fixed an error that caused Dev Container connections to fail with an Unknown Docker endpoint schema message.</li>
                 </ul>
             </description>
         </release>
