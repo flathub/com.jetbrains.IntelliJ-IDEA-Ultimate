@@ -75,86 +75,75 @@
     </screenshots>
     <releases>
         <release version="2026.3" date="2026-11-05">
-            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662768</url>
-            <description></description>
+            <url type="details">https://www.jetbrains.com/idea/whatsnew/2026-3/</url>
+            <description>
+                <p>IntelliJ IDEA 2026.3 is now out! The highlights of this release include:</p>
+                <ul>
+                    <li>JetBrains Air – a new layer for agentic development</li>
+                    <li>IntelliJ IDEA's Java and Kotlin extension for Cursor and VS Code</li>
+                    <li>ij-debugger agent skill</li>
+                    <li>Hibernate debugger</li>
+                    <li>Spring Security diagnostics in HTTP responses</li>
+                    <li>AppGlass</li>
+                    <li>Java 28</li>
+                    <li>Jakarta Persistence 4 and Hibernate 8 support</li>
+                    <li>Scala updates</li>
+                    <li>Kotlin support for Spring Modulith</li>
+                    <li>Quick tasks and edits without opening a project</li>
+                    <li>Git worktrees for parallel work and easy code reviews</li>
+                </ul>
+                <p>Visit our What's New page to learn about these and other improvements.</p>
+            </description>
         </release>
         <release version="2026.2.4" date="2026-10-30">
             <url type="details">https://blog.jetbrains.com/idea/2026/10/intellij-idea-2026-2-4</url>
             <description>
+                <p>IntelliJ IDEA 2026.2.4 is now available! The latest update brings the following improvements:</p>
                 <ul>
                     <li>Files and directories in WSL projects no longer incorrectly appear as deleted or missing when file system prefetching fails.</li>
                     <li>The Java onboarding tour now ensures smooth progression through its lessons.</li>
                     <li>Import optimization now works as expected without affecting IDE responsiveness during code formatting, saving, or committing changes.</li>
                     <li>The IDE starts up reliably even if the plugin cache file contains invalid data.</li>
+                    <li>Oracle's fixes were integrated into JBR.</li>
                 </ul>
+                <p>Get more details in our blog post.</p>
             </description>
         </release>
         <release version="2026.2.3" date="2026-09-16">
             <url type="details">https://blog.jetbrains.com/idea/2026/09/intellij-idea-2026-2-3</url>
             <description>
+                <p>IntelliJ IDEA 2026.2.3 is out with the following improvements:</p>
                 <ul>
-                    <li>When opening a recent project, the Maven tool window is now populated with the corresponding data.</li>
+                    <li>When opening a recent project, the <em>Maven</em> tool window is now populated with the corresponding data.</li>
                     <li>Several causes of IDE freezes have been resolved.</li>
-                    <li>The vertical scrollbar is once again displayed correctly in the Markdown preview pane.</li>
-                    <li>The PlantUML extension has been updated to version 1.2026.6, enabling support for its latest features.</li>
-                    <li>Applications running in Debug mode with WSL2 mirrored networking no longer become unresponsive and can be stopped as expected.</li>
+                    <li>The vertical scrollbar is once again displayed correctly in the <em>Markdown</em> preview pane.</li>
                 </ul>
+                <p>Get more details in our blog post.</p>
             </description>
         </release>
         <release version="2026.2.2" date="2026-09-02">
             <url type="details">https://blog.jetbrains.com/idea/2026/09/intellij-idea-2026-2-2</url>
             <description>
+                <p>IntelliJ IDEA 2026.2.2 is out with the following improvements:</p>
                 <ul>
                     <li>Loading a remote OpenAPI specification no longer fails.</li>
                     <li>The order of terminal tabs is now preserved after reopening a project.</li>
                     <li>Checkboxes in Markdown now have improved contrast for better visibility.</li>
                     <li>The vertical scrollbar is once again displayed correctly in the Markdown preview pane.</li>
-                    <li>Opening directories containing a large number of .md files no longer causes the IDE to freeze.</li>
-                    <li>Spring Modulith no longer incorrectly reports accessibility violations for types exposed through @NamedInterface in nested modules.</li>
                 </ul>
+                <p>Get more details in our blog post.</p>
             </description>
         </release>
         <release version="2026.2.1" date="2026-08-05">
             <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662722</url>
             <description>
+                <p>IntelliJ IDEA 2026.2.1 is out with the following improvements:</p>
                 <ul>
-                    <li>JPS should respect custom module no-deprecation parameter</li>
-                    <li>Non-instrumented logging breakpoints with stack trace</li>
-                    <li>Spring: show warning for @EventListeners for some application events</li>
-                    <li>Spring: check that @TransactionalEventListener is not used with @Transactional unless it REQUIRES_NEW or NOT_SUPPORTED</li>
-                    <li>Spring Security: show error for requestMatchers after anyRequest</li>
-                    <li>Spring Security: provide inspection that checks the matchers order</li>
-                    <li>Figma Connect: set up Figma skill</li>
-                    <li>Figma Layers panel: drag a node to the terminal should insert its node id</li>
-                    <li>Add "Restart Tailwind CSS Service" action to "Search Everywhere"</li>
-                    <li>TypeScript GO: use getSignatureHelp to provide parameter info</li>
-                    <li>Support Authentication and Authorization with OIDC/OAuth 2.0 for MongoDB</li>
-                    <li>Remdev skills for writing/refactoring code for split mode</li>
-                    <li>Add support for new islands palette</li>
-                    <li>Support sized images in Markdown renderer</li>
-                    <li>Update JDialogRenderer to Support Custom Window Shape</li>
-                    <li>Add support for macOS scrollbar settings detection on standalone</li>
+                    <li>Markdown shell scripts now execute in the correct order.</li>
+                    <li>Undo now works correctly after applying <em>Optimize imports on the fly</em>.</li>
+                    <li>Dragging a terminal tab after using the <em>Move to Editor</em> action no longer restarts the terminal session.</li>
                 </ul>
-            </description>
-        </release>
-        <release version="2026.2" date="2026-07-16">
-            <url type="details">https://blog.jetbrains.com/idea/2026/07/intellij-idea-2026-2/</url>
-            <description>
-                <ul>
-                    <li>Native GitHub Copilot integration</li>
-                    <li>Agent skills</li>
-                    <li>AI completion support for third-party providers</li>
-                    <li>Logpoints</li>
-                    <li>Dependency completion</li>
-                    <li>Early Gradle 10 support and migration assistance</li>
-                    <li>Streamlined Git conflict resolution flow</li>
-                    <li>Docker Compose improvements</li>
-                    <li>Java 27</li>
-                    <li>Kotlin 2.4 Stable features</li>
-                    <li>Spring support improvements</li>
-                    <li>Terraform testing framework</li>
-                    <li>TypeScript 7.0</li>
-                </ul>
+                <p>Get more details in our blog post.</p>
             </description>
         </release>
     </releases>
