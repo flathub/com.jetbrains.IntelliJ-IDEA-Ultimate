@@ -74,6 +74,10 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="2026.3" date="2026-11-05">
+            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662768</url>
+            <description></description>
+        </release>
         <release version="2026.2.4" date="2026-10-30">
             <url type="details">https://blog.jetbrains.com/idea/2026/10/intellij-idea-2026-2-4</url>
             <description>
