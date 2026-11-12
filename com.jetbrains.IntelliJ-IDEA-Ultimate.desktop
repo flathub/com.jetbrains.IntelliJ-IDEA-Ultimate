@@ -1,7 +1,7 @@
 [Desktop Entry]
 Categories=Development;IDE;
 Exec=idea-wrapper %F
-GenericName=Java and Kotlin IDE for you and your agents
+GenericName=Java and Kotlin IDE with agents
 Icon=com.jetbrains.IntelliJ-IDEA-Ultimate
 Keywords=development;idea;ide;intellij;java;
 MimeType=text/plain;inode/directory;
