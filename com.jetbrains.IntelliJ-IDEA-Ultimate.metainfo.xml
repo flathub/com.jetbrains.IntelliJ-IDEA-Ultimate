@@ -140,17 +140,5 @@
                 <p>Get more details in our blog post.</p>
             </description>
         </release>
-        <release version="2026.2.1" date="2026-08-05">
-            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662729</url>
-            <description>
-                <p>IntelliJ IDEA 2026.2.1 is out with the following improvements:</p>
-                <ul>
-                    <li>Markdown shell scripts now execute in the correct order.</li>
-                    <li>Undo now works correctly after applying <em>Optimize imports on the fly</em>.</li>
-                    <li>Dragging a terminal tab after using the <em>Move to Editor</em> action no longer restarts the terminal session.</li>
-                </ul>
-                <p>Get more details in our blog post.</p>
-            </description>
-        </release>
     </releases>
 </component>
