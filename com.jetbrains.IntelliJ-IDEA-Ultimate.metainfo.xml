@@ -71,7 +71,15 @@
             <caption>Detection of code duplicates</caption>
         </screenshot>
     </screenshots>
+    <!-- https://data.services.jetbrains.com/products/releases?code=IIU&type=release&latest=true -->
     <releases>
+        <release version="2026.3.0.1" date="2026-11-24">
+            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662776</url>
+            <description>
+                <p>IntelliJ IDEA 2026.3.0.1 is out, fixing a security issue.</p>
+                <p>For more details, please refer to the release notes.</p>
+            </description>
+        </release>
         <release version="2026.3" date="2026-11-05">
             <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662768</url>
             <description>
@@ -128,18 +136,6 @@
                     <li>The order of terminal tabs is now preserved after reopening a project.</li>
                     <li>Checkboxes in Markdown now have improved contrast for better visibility.</li>
                     <li>The vertical scrollbar is once again displayed correctly in the Markdown preview pane.</li>
-                </ul>
-                <p>Get more details in our blog post.</p>
-            </description>
-        </release>
-        <release version="2026.2.1" date="2026-08-05">
-            <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662729</url>
-            <description>
-                <p>IntelliJ IDEA 2026.2.1 is out with the following improvements:</p>
-                <ul>
-                    <li>Markdown shell scripts now execute in the correct order.</li>
-                    <li>Undo now works correctly after applying <em>Optimize imports on the fly</em>.</li>
-                    <li>Dragging a terminal tab after using the <em>Move to Editor</em> action no longer restarts the terminal session.</li>
                 </ul>
                 <p>Get more details in our blog post.</p>
             </description>
