@@ -71,10 +71,14 @@
             <caption>Detection of code duplicates</caption>
         </screenshot>
     </screenshots>
+    <!-- https://data.services.jetbrains.com/products/releases?code=IIU&type=release&latest=true -->
     <releases>
         <release version="2026.3.0.1" date="2026-11-24">
             <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662776</url>
-            <description></description>
+            <description>
+                <p>IntelliJ IDEA 2026.3.0.1 is out, fixing a security issue.</p>
+                <p>For more details, please refer to the release notes.</p>
+            </description>
         </release>
         <release version="2026.3" date="2026-11-05">
             <url type="details">https://youtrack.jetbrains.com/articles/IDEA-A-2100662768</url>
